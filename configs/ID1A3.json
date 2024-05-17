@@ -1,0 +1,692 @@
+[
+  {
+    "key": "facility",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF",
+    "utils": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "cycle",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify cycle (e.g. 2022-3)",
+    "utils": "",
+    "placeholder": "2022-3"
+  },
+  {
+    "key": "pi",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Last name of the PI",
+    "utils": "",
+    "placeholder": "batterman"
+  },
+  {
+    "key": "btr",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "BTR ID",
+    "utils": "",
+    "placeholder": "batterman-1111-c"
+  },
+  {
+    "key": "experimenters",
+    "type": "string",
+    "optional": true,
+    "multiple": true,
+    "section": "User",
+    "description": "List experimenters",
+    "utils": "",
+    "placeholder": "Lastname1Initials, Lastname2Initials"
+  },
+  {
+    "key": "beamline",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify beamline",
+    "utils": "",
+    "placeholder": "1A3"
+  },
+  {
+    "key": "staff_scientist",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "User",
+    "description": "List staff scientists",
+    "utils": "",
+    "placeholder": "KoJYP, NygrenKE, DasA"
+  },
+  {
+    "key": "beamline_funding_partner",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Select a funding partner",
+    "utils": "",
+    "placeholder": "MSNC_AFRL"
+  },
+  {
+    "key": "affiliation",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Select affiliation",
+    "utils": "",
+    "placeholder": "AirForce"
+  },
+  {
+    "key": "data_location_raw",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Raw data location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
+    "utils": "",
+    "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/raw_data/test-1"
+  },
+  {
+    "key": "data_location_meta",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Metadata location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
+    "utils": "",
+    "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/metadata/test-1"
+  },
+  {
+    "key": "data_location_reduced",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Reduced data location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
+    "utils": "",
+    "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/reduced_data/test-1"
+  },
+  {
+    "key": "data_location_scratch",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Scartch data location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
+    "utils": "",
+    "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/scratch_data/test-1"
+  },
+  {
+    "key": "data_location_beamtime_notes",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Beam time notes location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
+    "utils": "",
+    "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/metadata/batterman-1111-c_notebook.txt"
+  },
+  {
+    "key": "alignment",
+    "type": "bool",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "Are scans related to alignment?",
+    "utils": "",
+    "placeholder": "false"
+  },
+  {
+    "key": "energy_scan",
+    "type": "bool",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "Are scans related to energy scans?",
+    "utils": "",
+    "placeholder": "false"
+  },
+  {
+    "key": "energy_scan_document",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "Energy scan document location",
+    "utils": "",
+    "placeholder": "/"
+  },
+  {
+    "key": "pre_slit_horizontal_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if mono beam mode: horizontal pre-slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "pre_slit_vertical_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if mono beam mode: vertical pre-slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "pre_slit_horizontal_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if mono beam mode: horizontal pre-slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "pre_slit_vertical_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if mono beam mode: vertical pre-slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "beam_slit_horizontal_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "horizontal beam-defining slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "beam_slit_vertical_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "vertical beam-defining slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "beam_slit_horizontal_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "horizontal beam-defining slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "beam_slit_vertical_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "vertical beam-defining slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "guard_slit_horizontal_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if mono beam mode: horizontal guard slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "guard_slit_vertical_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if mono beam mode: vertical guard slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "guard_slit_horizontal_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if mono beam mode: horizontal guard slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "guard_slit_vertical_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if mono beam mode: verticall guard slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "upstream_detector_slit_horizontal_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if white beam mode: horizontal upstream detector slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "upstream_detector_slit_vertical_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if white beam mode: vertical upstream detector slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "upstream_detector_slit_horizontal_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if white beam mode: horizontal upstream detector slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "upstream_detector_slit_vertical_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if white beam mode: verticall upstream detector slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "downstream_detector_slit_horizontal_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if white beam mode: horizontal downstream detector slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "downstream_detector_slit_vertical_size",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if white beam mode: vertical downstream detector slit size",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "downstream_detector_slit_horizontal_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if white beam mode: horizontal downstream detector slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "downstream_detector_slit_vertical_position",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "if white beam mode: verticall downstream detector slit position",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "cesr_conditions",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "CESR bunch mode",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "insertion_device",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Insertion device",
+    "utils": "",
+    "placeholder": "Wiggler"
+  },
+  {
+    "key": "monochromator",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Specify monochromator",
+    "utils": "",
+    "placeholder": "SiLaueMono"
+  },
+  {
+    "key": "focusing",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Sagittal",
+    "utils": "",
+    "placeholder": "Sagittal"
+  },
+  {
+    "key": "beam_mode",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beam mode",
+    "utils": "",
+    "placeholder": "White"
+  },
+  {
+    "key": "beam_energy",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beam energy",
+    "utils": "",
+    "placeholder": "80.725"
+  },
+  {
+    "key": "atten_material",
+    "type": "list_str",
+    "optional": true,
+    "multiple": true,
+    "section": "Beam",
+    "description": "List of attenuator materials used",
+    "utils": "",
+    "placeholder": "Steel"
+  },
+  {
+    "key": "atten_thickness",
+    "type": "float64",
+    "optional": true,
+    "multiple": true,
+    "section": "Beam",
+    "description": "Thickness [mm] of attenuator(s) - enter one value for each attenutor material",
+    "utils": "",
+    "placeholder": "3.25"
+  },
+  {
+    "key": "energy_foil",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Energy foil used, if any",
+    "utils": "",
+    "placeholder": "Pr"
+  },
+  {
+    "key": "beamline_setup_document",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beamline setup document location",
+    "utils": "",
+    "placeholder": "/"
+  },
+  {
+    "key": "detectors",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Indicate detector(s) being used",
+    "utils": "",
+    "placeholder": "GE2"
+  },
+  {
+    "key": "experiment_type",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Specify experiment type",
+    "utils": "",
+    "placeholder": "Scattering/Diffraction"
+  },
+  {
+    "key": "technique",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Specify technique",
+    "utils": "",
+    "placeholder": "EDD"
+  },
+  {
+    "key": "in_situ",
+    "type": "bool",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "In situ experiments?",
+    "utils": "",
+    "placeholder": "false"
+  },
+  {
+    "key": "mechanical_test",
+    "type": "bool",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Do scans contain mechanical tests?",
+    "utils": "",
+    "placeholder": "false"
+  },
+  {
+    "key": "mechanical_test_type",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "What kind of mechnical test?",
+    "utils": "",
+    "placeholder": "Tension"
+  },
+  {
+    "key": "mechanical_load_frame",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Specify load frame",
+    "utils": "",
+    "placeholder": "RAMSIV"
+  },
+  {
+    "key": "mechanical_grips",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Specify grips",
+    "utils": "",
+    "placeholder": "Wedge"
+  },
+  {
+    "key": "supplementary_technique",
+    "type": "list_str",
+    "optional": true,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Specify supplimentary techniques, if applicable",
+    "utils": "",
+    "placeholder": "DigitalImageCorrelation"
+  },
+  {
+    "key": "furnace",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Specify furnace",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "calibration",
+    "type": "bool",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Are scans related to calibration?",
+    "utils": "",
+    "placeholder": "false"
+  },
+  {
+    "key": "calibration_document",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Calibration document location",
+    "utils": "",
+    "placeholder": "/"
+  },
+  {
+    "key": "sample_name",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Specify sample name",
+    "utils": "",
+    "placeholder": "ti64-1"
+  },
+  {
+    "key": "sample_common_name",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Common name of sample material",
+    "utils": "",
+    "placeholder": "Ti64"
+  },
+  {
+    "key": "sample_chemical_formula",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Chemical formula of sample",
+    "utils": "",
+    "placeholder": "Ti6Al4V"
+  },
+  {
+    "key": "sample_space_group",
+    "type": "int64",
+    "optional": true,
+    "multiple": true,
+    "section": "Sample",
+    "description": "Specify sample space group",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "sample_unit_cell",
+    "type": "list_float",
+    "optional": true,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Unit cell dimensions a, b, c, alha, beta, gamma; Angstroms and degrees",
+    "utils": "",
+    "placeholder": "2.511, 2.9511, 4.6843, 90, 90, 120"
+  },
+  {
+    "key": "sample_geometry",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Specify sample geometry",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "sample_mat_ped_heat_treatment",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Specify sample material pedigree (heat treatment)",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "sample_mat_ped_processing_route",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Specify sample material pedigree (processing)",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "material_safety_hazardous_samples",
+    "type": "bool",
+    "optional": true,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Hazardous sample?",
+    "utils": "",
+    "placeholder": ""
+  },
+  {
+    "key": "sample_state",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Sample state",
+    "utils": "",
+    "placeholder": ""
+  }
+]

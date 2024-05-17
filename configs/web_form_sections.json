@@ -1,0 +1,9 @@
+{
+    "User": ["facility", "cycle", "pi", "btr", "experimenters", "beamline", "staff_scientist", "beamline_funding_partner"],
+    "Alignment": [],
+    "DataLocations": ["data_location_raw", "data_location_meta", "data_location_reduced", "data_location_scratch", "data_location_beamtime_notes"],
+    "Beam": ["cesr_condtions"],
+    "Experiment": ["detectors", "experiment_type", "technique"],
+    "Sample": ["sample_type", "sample_name", "calibration"]
+
+}
