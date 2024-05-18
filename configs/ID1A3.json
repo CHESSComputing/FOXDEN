@@ -6,7 +6,7 @@
     "multiple": false,
     "section": "User",
     "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF",
-    "utils": "",
+    "units": "",
     "placeholder": "CHESS"
   },
   {
@@ -16,7 +16,7 @@
     "multiple": false,
     "section": "User",
     "description": "Specify cycle (e.g. 2022-3)",
-    "utils": "",
+    "units": "",
     "placeholder": "2022-3"
   },
   {
@@ -26,7 +26,7 @@
     "multiple": false,
     "section": "User",
     "description": "Last name of the PI",
-    "utils": "",
+    "units": "",
     "placeholder": "batterman"
   },
   {
@@ -36,7 +36,7 @@
     "multiple": false,
     "section": "User",
     "description": "BTR ID",
-    "utils": "",
+    "units": "",
     "placeholder": "batterman-1111-c"
   },
   {
@@ -46,7 +46,7 @@
     "multiple": true,
     "section": "User",
     "description": "List experimenters",
-    "utils": "",
+    "units": "",
     "placeholder": "Lastname1Initials, Lastname2Initials"
   },
   {
@@ -56,7 +56,7 @@
     "multiple": false,
     "section": "User",
     "description": "Specify beamline",
-    "utils": "",
+    "units": "",
     "placeholder": "1A3"
   },
   {
@@ -66,7 +66,7 @@
     "multiple": true,
     "section": "User",
     "description": "List staff scientists",
-    "utils": "",
+    "units": "",
     "placeholder": "KoJYP, NygrenKE, DasA"
   },
   {
@@ -76,7 +76,7 @@
     "multiple": false,
     "section": "User",
     "description": "Select a funding partner",
-    "utils": "",
+    "units": "",
     "placeholder": "MSNC_AFRL"
   },
   {
@@ -86,7 +86,7 @@
     "multiple": false,
     "section": "User",
     "description": "Select affiliation",
-    "utils": "",
+    "units": "",
     "placeholder": "AirForce"
   },
   {
@@ -96,7 +96,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Raw data location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
-    "utils": "",
+    "units": "",
     "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/raw_data/test-1"
   },
   {
@@ -106,7 +106,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Metadata location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
-    "utils": "",
+    "units": "",
     "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/metadata/test-1"
   },
   {
@@ -116,7 +116,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Reduced data location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
-    "utils": "",
+    "units": "",
     "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/reduced_data/test-1"
   },
   {
@@ -126,7 +126,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Scartch data location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
-    "utils": "",
+    "units": "",
     "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/scratch_data/test-1"
   },
   {
@@ -136,7 +136,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Beam time notes location (do not input \"current\" in the path directory. Instead, specify the actual cycle, e.g. 2022-3)",
-    "utils": "",
+    "units": "",
     "placeholder": "/nfs/chess/aux/cycles/2022-2/id1a3/batterman-1111-c/metadata/batterman-1111-c_notebook.txt"
   },
   {
@@ -146,7 +146,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "Are scans related to alignment?",
-    "utils": "",
+    "units": "",
     "placeholder": "false"
   },
   {
@@ -156,7 +156,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "Are scans related to energy scans?",
-    "utils": "",
+    "units": "",
     "placeholder": "false"
   },
   {
@@ -166,7 +166,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "Energy scan document location",
-    "utils": "",
+    "units": "",
     "placeholder": "/"
   },
   {
@@ -176,7 +176,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if mono beam mode: horizontal pre-slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -186,7 +186,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if mono beam mode: vertical pre-slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -196,7 +196,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if mono beam mode: horizontal pre-slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -206,7 +206,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if mono beam mode: vertical pre-slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -216,7 +216,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "horizontal beam-defining slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -226,7 +226,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "vertical beam-defining slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -236,7 +236,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "horizontal beam-defining slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -246,7 +246,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "vertical beam-defining slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -256,7 +256,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if mono beam mode: horizontal guard slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -266,7 +266,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if mono beam mode: vertical guard slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -276,7 +276,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if mono beam mode: horizontal guard slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -286,7 +286,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if mono beam mode: verticall guard slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -296,7 +296,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if white beam mode: horizontal upstream detector slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -306,7 +306,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if white beam mode: vertical upstream detector slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -316,7 +316,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if white beam mode: horizontal upstream detector slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -326,7 +326,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if white beam mode: verticall upstream detector slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -336,7 +336,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if white beam mode: horizontal downstream detector slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -346,7 +346,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if white beam mode: vertical downstream detector slit size",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -356,7 +356,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if white beam mode: horizontal downstream detector slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -366,7 +366,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "if white beam mode: verticall downstream detector slit position",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -376,7 +376,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "CESR bunch mode",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -386,7 +386,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Insertion device",
-    "utils": "",
+    "units": "",
     "placeholder": "Wiggler"
   },
   {
@@ -396,7 +396,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Specify monochromator",
-    "utils": "",
+    "units": "",
     "placeholder": "SiLaueMono"
   },
   {
@@ -406,7 +406,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Sagittal",
-    "utils": "",
+    "units": "",
     "placeholder": "Sagittal"
   },
   {
@@ -416,7 +416,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Beam mode",
-    "utils": "",
+    "units": "",
     "placeholder": "White"
   },
   {
@@ -426,7 +426,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Beam energy",
-    "utils": "",
+    "units": "",
     "placeholder": "80.725"
   },
   {
@@ -436,7 +436,7 @@
     "multiple": true,
     "section": "Beam",
     "description": "List of attenuator materials used",
-    "utils": "",
+    "units": "",
     "placeholder": "Steel"
   },
   {
@@ -446,7 +446,7 @@
     "multiple": true,
     "section": "Beam",
     "description": "Thickness [mm] of attenuator(s) - enter one value for each attenutor material",
-    "utils": "",
+    "units": "",
     "placeholder": "3.25"
   },
   {
@@ -456,7 +456,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Energy foil used, if any",
-    "utils": "",
+    "units": "",
     "placeholder": "Pr"
   },
   {
@@ -466,7 +466,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Beamline setup document location",
-    "utils": "",
+    "units": "",
     "placeholder": "/"
   },
   {
@@ -476,7 +476,7 @@
     "multiple": true,
     "section": "Experiment",
     "description": "Indicate detector(s) being used",
-    "utils": "",
+    "units": "",
     "placeholder": "GE2"
   },
   {
@@ -486,7 +486,7 @@
     "multiple": true,
     "section": "Experiment",
     "description": "Specify experiment type",
-    "utils": "",
+    "units": "",
     "placeholder": "Scattering/Diffraction"
   },
   {
@@ -496,7 +496,7 @@
     "multiple": true,
     "section": "Experiment",
     "description": "Specify technique",
-    "utils": "",
+    "units": "",
     "placeholder": "EDD"
   },
   {
@@ -506,7 +506,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "In situ experiments?",
-    "utils": "",
+    "units": "",
     "placeholder": "false"
   },
   {
@@ -516,7 +516,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Do scans contain mechanical tests?",
-    "utils": "",
+    "units": "",
     "placeholder": "false"
   },
   {
@@ -526,7 +526,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "What kind of mechnical test?",
-    "utils": "",
+    "units": "",
     "placeholder": "Tension"
   },
   {
@@ -536,7 +536,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Specify load frame",
-    "utils": "",
+    "units": "",
     "placeholder": "RAMSIV"
   },
   {
@@ -546,7 +546,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Specify grips",
-    "utils": "",
+    "units": "",
     "placeholder": "Wedge"
   },
   {
@@ -556,7 +556,7 @@
     "multiple": true,
     "section": "Experiment",
     "description": "Specify supplimentary techniques, if applicable",
-    "utils": "",
+    "units": "",
     "placeholder": "DigitalImageCorrelation"
   },
   {
@@ -566,7 +566,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Specify furnace",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -576,7 +576,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Are scans related to calibration?",
-    "utils": "",
+    "units": "",
     "placeholder": "false"
   },
   {
@@ -586,7 +586,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Calibration document location",
-    "utils": "",
+    "units": "",
     "placeholder": "/"
   },
   {
@@ -596,7 +596,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Specify sample name",
-    "utils": "",
+    "units": "",
     "placeholder": "ti64-1"
   },
   {
@@ -606,7 +606,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Common name of sample material",
-    "utils": "",
+    "units": "",
     "placeholder": "Ti64"
   },
   {
@@ -616,7 +616,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Chemical formula of sample",
-    "utils": "",
+    "units": "",
     "placeholder": "Ti6Al4V"
   },
   {
@@ -626,7 +626,7 @@
     "multiple": true,
     "section": "Sample",
     "description": "Specify sample space group",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -636,7 +636,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Unit cell dimensions a, b, c, alha, beta, gamma; Angstroms and degrees",
-    "utils": "",
+    "units": "",
     "placeholder": "2.511, 2.9511, 4.6843, 90, 90, 120"
   },
   {
@@ -646,7 +646,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Specify sample geometry",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -656,7 +656,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Specify sample material pedigree (heat treatment)",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -666,7 +666,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Specify sample material pedigree (processing)",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -676,7 +676,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Hazardous sample?",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -686,7 +686,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Sample state",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   }
 ]

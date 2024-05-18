@@ -6,7 +6,7 @@
     "multiple": false,
     "section": "User",
     "description": "Facility where the experiment to be performed, e.g. CHESS",
-    "utils": "",
+    "units": "",
     "placeholder": "CHESS"
   },
   {
@@ -16,7 +16,7 @@
     "multiple": false,
     "section": "User",
     "description": "YYYY-\u003ccycle_number\u003e",
-    "utils": "",
+    "units": "",
     "placeholder": "2022-3"
   },
   {
@@ -26,7 +26,7 @@
     "multiple": false,
     "section": "User",
     "description": "Last name of the Principle Investigator",
-    "utils": "",
+    "units": "",
     "placeholder": "sarker"
   },
   {
@@ -36,7 +36,7 @@
     "multiple": false,
     "section": "User",
     "description": "Beamtime request ID",
-    "utils": "",
+    "units": "",
     "placeholder": "sarker-1800-A"
   },
   {
@@ -46,7 +46,7 @@
     "multiple": true,
     "section": "User",
     "description": "Include all the names who are collecting the data in the beamline",
-    "utils": "",
+    "units": "",
     "placeholder": "fullname1, fullname2, ....."
   },
   {
@@ -56,7 +56,7 @@
     "multiple": false,
     "section": "User",
     "description": "Specify beamline",
-    "utils": "",
+    "units": "",
     "placeholder": "4B"
   },
   {
@@ -66,7 +66,7 @@
     "multiple": true,
     "section": "User",
     "description": "List of staff scientists",
-    "utils": "",
+    "units": "",
     "placeholder": "Fullname1, Fullname2,"
   },
   {
@@ -76,7 +76,7 @@
     "multiple": false,
     "section": "User",
     "description": "Select a funding partner",
-    "utils": "",
+    "units": "",
     "placeholder": "CHEXS_NSF"
   },
   {
@@ -86,7 +86,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "Do you have final alignment?",
-    "utils": "",
+    "units": "",
     "placeholder": "Yes/No"
   },
   {
@@ -96,7 +96,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "Do you have energy scan?",
-    "utils": "",
+    "units": "",
     "placeholder": "Yes/No"
   },
   {
@@ -106,7 +106,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "Do you have the undulator scan?",
-    "utils": "",
+    "units": "",
     "placeholder": "Yes/No"
   },
   {
@@ -116,7 +116,7 @@
     "multiple": false,
     "section": "Alignment",
     "description": "What is the spot size of the sample?",
-    "utils": "",
+    "units": "",
     "placeholder": "200 micron X 500 micron"
   },
   {
@@ -126,7 +126,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Location of the raw data",
-    "utils": "",
+    "units": "",
     "placeholder": "/nfs/chess/id4b/2021-3/ruff-2972-d/samplename"
   },
   {
@@ -136,7 +136,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Location of the metadata",
-    "utils": "",
+    "units": "",
     "placeholder": "/nfs/chess/id4b/2021-3/ruff-2972-d/samplename"
   },
   {
@@ -146,7 +146,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Location of the reduced data",
-    "utils": "",
+    "units": "",
     "placeholder": "/nfs/chess/id4baux/2021-3/ruff-2972-d/sample1"
   },
   {
@@ -156,7 +156,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Location of the beamline notes",
-    "utils": "",
+    "units": "",
     "placeholder": "/nfs/chess/id4b/2021-3/ruff-2972-d/samplename"
   },
   {
@@ -166,7 +166,7 @@
     "multiple": false,
     "section": "DataLocations",
     "description": "Link for the other scientific data related to your research (if you want to share related papers/ calculations etc), insert N/A if None",
-    "utils": "",
+    "units": "",
     "placeholder": "Insert the link"
   },
   {
@@ -176,7 +176,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "CESR bunch mode",
-    "utils": "",
+    "units": "",
     "placeholder": "9x5BunchMode"
   },
   {
@@ -186,7 +186,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "What is beam energy (e.g. 58 KeV )?",
-    "utils": "",
+    "units": "",
     "placeholder": "58 KeV"
   },
   {
@@ -196,7 +196,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Include the insertion device ",
-    "utils": "",
+    "units": "",
     "placeholder": "CCU"
   },
   {
@@ -206,7 +206,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Include the monochromator",
-    "utils": "",
+    "units": "",
     "placeholder": "DoubleCrystalMono"
   },
   {
@@ -216,7 +216,7 @@
     "multiple": true,
     "section": "Beam",
     "description": "Are you using any energy foil?",
-    "utils": "",
+    "units": "",
     "placeholder": "blank1"
   },
   {
@@ -226,7 +226,7 @@
     "multiple": true,
     "section": "Experiment",
     "description": "Detectors used",
-    "utils": "",
+    "units": "",
     "placeholder": "Pilatus6M"
   },
   {
@@ -236,7 +236,7 @@
     "multiple": true,
     "section": "Experiment",
     "description": "Experiment type(s) (e.g. scattering,diffraction)",
-    "utils": "",
+    "units": "",
     "placeholder": "Diffraction"
   },
   {
@@ -246,7 +246,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Is the experiment an in-situ test?",
-    "utils": "",
+    "units": "",
     "placeholder": "Yes/No"
   },
   {
@@ -256,7 +256,7 @@
     "multiple": true,
     "section": "Experiment",
     "description": "Experimental technique(s) (e.g HDRM/ DS/ 3DPDF)",
-    "utils": "",
+    "units": "",
     "placeholder": "3DPDF"
   },
   {
@@ -266,7 +266,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Are you using cryocooler?",
-    "utils": "",
+    "units": "",
     "placeholder": "Yes/No"
   },
   {
@@ -276,7 +276,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Please provide the temperatures of the experiment (e.g. 298.15K)",
-    "utils": "",
+    "units": "",
     "placeholder": "50K, 100K, 323K"
   },
   {
@@ -286,7 +286,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Please provide the temperatures of the experiment or N/A",
-    "utils": "",
+    "units": "",
     "placeholder": "5K, 10K, 25K"
   },
   {
@@ -296,7 +296,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Specify the sample scan K edge, insert \"N/A\" if none",
-    "utils": "",
+    "units": "",
     "placeholder": "Mn- K"
   },
   {
@@ -306,7 +306,7 @@
     "multiple": false,
     "section": "Experiment",
     "description": "Specify the sample scan L edge, insert \"N/A\" if none",
-    "utils": "",
+    "units": "",
     "placeholder": "Ir - L3"
   },
   {
@@ -316,7 +316,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Specify your calibration sample (e.g. CeO2, LaB6)?",
-    "utils": "",
+    "units": "",
     "placeholder": "CeO2"
   },
   {
@@ -326,7 +326,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "If this is not a calibration sample: enter the sample name (used in new sample) for the relevant calibration sample dataset",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -336,7 +336,7 @@
     "multiple": true,
     "section": "Sample",
     "description": "Specify the type of sample",
-    "utils": "",
+    "units": "",
     "placeholder": "sample"
   },
   {
@@ -346,7 +346,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Common name of sample material (e,g Kagome superconductor)",
-    "utils": "",
+    "units": "",
     "placeholder": "Kagome superconductor"
   },
   {
@@ -356,7 +356,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Provide chemical formula of the sample (e.g AV3Sb5)",
-    "utils": "",
+    "units": "",
     "placeholder": "AV3Sb5"
   },
   {
@@ -366,7 +366,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Are you using thermal gradient?",
-    "utils": "",
+    "units": "",
     "placeholder": "Yes/No"
   },
   {
@@ -376,7 +376,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Unit cell dimensions (Angstrom)",
-    "utils": "",
+    "units": "",
     "placeholder": "a = 5.43, b = 5.43, c = 4.34, alpha = 90, beta = 90, gamma = 90"
   },
   {
@@ -386,7 +386,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Provide the sample d spacing (nm)",
-    "utils": "",
+    "units": "",
     "placeholder": "0.132"
   },
   {
@@ -396,7 +396,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Provide the sample mass in  ",
-    "utils": "",
+    "units": "",
     "placeholder": "5 gm"
   },
   {
@@ -406,7 +406,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Provide the sample space group",
-    "utils": "",
+    "units": "",
     "placeholder": "F-43m"
   },
   {
@@ -416,7 +416,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Sample heat-treated (if any)? insert \"N/A\" if none",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -426,7 +426,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Write down shortly the sample synthesis route ",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   },
   {
@@ -436,7 +436,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Specify the sample state (e.g. Single Crystal, Thin-film )",
-    "utils": "",
+    "units": "",
     "placeholder": "SingleCrystal"
   },
   {
@@ -446,7 +446,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Provide the sample preparation date",
-    "utils": "",
+    "units": "",
     "placeholder": "YYYY-MM-DD"
   },
   {
@@ -456,7 +456,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Is the sample hazardous?",
-    "utils": "",
+    "units": "",
     "placeholder": "Yes/No"
   },
   {
@@ -466,7 +466,7 @@
     "multiple": false,
     "section": "Sample",
     "description": "Does the sample holder have a label? Iinsert \"N/A\" if none",
-    "utils": "",
+    "units": "",
     "placeholder": ""
   }
 ]
