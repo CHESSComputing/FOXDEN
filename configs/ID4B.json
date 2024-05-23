@@ -5,7 +5,7 @@
     "optional": true,
     "multiple": false,
     "section": "User",
-    "description": "Dataset IDentifier"
+    "description": "Dataset IDentifier",
     "units": "",
     "placeholder": "CHESS"
   },
