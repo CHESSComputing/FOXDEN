@@ -1,5 +1,15 @@
 [
   {
+    "key": "did",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier"
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
     "key": "facility",
     "type": "string",
     "optional": false,

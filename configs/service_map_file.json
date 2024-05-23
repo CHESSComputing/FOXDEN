@@ -1,4 +1,5 @@
 [
+{"service": "MetaData", "key": "did", "description": "Dataset IDentifier", "units": "", "type": "string", "schema": "ID1A3"},
 {"service": "MetaData", "key": "facility", "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF", "units": "", "type": "string", "schema": "ID1A3"},
 {"service": "MetaData", "key": "cycle", "description": "Specify cycle (e.g. 2022-3)", "units": "", "type": "string", "schema": "ID1A3"},
 {"service": "MetaData", "key": "pi", "description": "Last name of the PI", "units": "", "type": "string", "schema": "ID1A3"},
@@ -68,6 +69,7 @@
 {"service": "MetaData", "key": "sample_mat_ped_processing_route", "description": "Specify sample material pedigree (processing)", "units": "", "type": "string", "schema": "ID1A3"},
 {"service": "MetaData", "key": "material_safety_hazardous_samples", "description": "Hazardous sample?", "units": "", "type": "bool", "schema": "ID1A3"},
 {"service": "MetaData", "key": "sample_state", "description": "Sample state", "units": "", "type": "list_str", "schema": "ID1A3"},
+{"service": "MetaData", "key": "did", "description": "Dataset IDentifier", "units": "", "type": "string", "schema": "ID3A"},
 {"service": "MetaData", "key": "facility", "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF", "units": "", "type": "string", "schema": "ID3A"},
 {"service": "MetaData", "key": "cycle", "description": "Specify the run cycle (e.g. 2022-3)", "units": "", "type": "string", "schema": "ID3A"},
 {"service": "MetaData", "key": "pi", "description": "Last name of principle investigator", "units": "", "type": "string", "schema": "ID3A"},
@@ -130,6 +132,7 @@
 {"service": "MetaData", "key": "sample_mat_ped_processing_route", "description": "Sample processing route, if any - input None if none", "units": "", "type": "string", "schema": "ID3A"},
 {"service": "MetaData", "key": "material_safety_hazardous_samples", "description": "Is the sample hazardous?", "units": "", "type": "bool", "schema": "ID3A"},
 {"service": "MetaData", "key": "sample_state", "description": "Sample state", "units": "", "type": "list_str", "schema": "ID3A"},
+{"service": "MetaData", "key": "did", "description": "Dataset IDentifier", "units": "", "type": "string", "schema": "ID4B"},
 {"service": "MetaData", "key": "facility", "description": "Facility where the experiment to be performed, e.g. CHESS", "units": "", "type": "string", "schema": "ID4B"},
 {"service": "MetaData", "key": "cycle", "description": "YYYY-<cycle_number>", "units": "", "type": "string", "schema": "ID4B"},
 {"service": "MetaData", "key": "pi", "description": "Last name of the Principle Investigator", "units": "", "type": "string", "schema": "ID4B"},
