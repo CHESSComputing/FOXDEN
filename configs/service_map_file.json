@@ -181,11 +181,10 @@
 {"service": "MetaData", "key": "material_safety_hazardous_samples", "description": "Is the sample hazardous?", "units": "", "type": "bool", "schema": "ID4B"},
 {"service": "MetaData", "key": "holder_label", "description": "Does the sample holder have a label? Iinsert N/A if none", "units": "", "type": "string", "schema": "ID4B"},
 {"service":"SpecScans", "key":"did", "description":"dataset id", "type":"string"},
-{"service":"SpecScans", "key":"motor", "description":"motor name", "type":"string"},
-{"service":"SpecScans", "key":"position", "description":"motor positoin","units":"mm", "type":"string"},
+{"service":"SpecScans", "key":"motor_name", "description":"motor name", "units": "degree or mm", "type":"string"},
+{"service":"SpecScans", "key":"motor_position", "description":"motor position","units":"units of motor name", "type":"string"},
 {"service":"Provenance", "key":"version", "description":"sofware version", "type":"string"},
 {"service":"Provenance", "key":"file", "description":"file name", "type":"string"},
 {"service":"Provenance", "key":"did", "description":"dataset id", "type":"string"},
-{"service":"DataManagement", "key":"did", "description":"dataset id", "type":"string"},
 {"service":"DataManagement", "key":"storage", "description":"storage bucket name", "type":"string"}
 ]
