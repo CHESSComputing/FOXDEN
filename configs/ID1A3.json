@@ -185,8 +185,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if mono beam mode: horizontal pre-slit size",
-    "units": "",
+    "description": "if mono beam mode: pre-slit horizontal size",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -195,8 +195,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if mono beam mode: vertical pre-slit size",
-    "units": "",
+    "description": "if mono beam mode: pre-slit vertical size",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -205,8 +205,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if mono beam mode: horizontal pre-slit position",
-    "units": "",
+    "description": "if mono beam mode: pre-slit horizontal position",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -215,8 +215,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if mono beam mode: vertical pre-slit position",
-    "units": "",
+    "description": "if mono beam mode: pre-slit vertical position",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -225,8 +225,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "horizontal beam-defining slit size",
-    "units": "",
+    "description": "beam-defining slit horizontal size",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -235,8 +235,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "vertical beam-defining slit size",
-    "units": "",
+    "description": "beam-defining slit vertical size",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -245,8 +245,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "horizontal beam-defining slit position",
-    "units": "",
+    "description": "beam-defining slit horizontal position",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -255,8 +255,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "vertical beam-defining slit position",
-    "units": "",
+    "description": "beam-defining slit vertical position",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -265,8 +265,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if mono beam mode: horizontal guard slit size",
-    "units": "",
+    "description": "if mono beam mode: guard slit horizontal size",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -275,8 +275,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if mono beam mode: vertical guard slit size",
-    "units": "",
+    "description": "if mono beam mode: guard slit vertical size",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -285,8 +285,8 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if mono beam mode: horizontal guard slit position",
-    "units": "",
+    "description": "if mono beam mode: guard slit horizontal position",
+    "units": "mm",
     "placeholder": ""
   },
   {
@@ -295,88 +295,58 @@
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if mono beam mode: verticall guard slit position",
-    "units": "",
+    "description": "if mono beam mode: guard slit vertical position",
+    "units": "mm",
     "placeholder": ""
   },
   {
-    "key": "upstream_detector_slit_horizontal_size",
+    "key": "upstream_detector_slit_size",
     "type": "float64",
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if white beam mode: horizontal upstream detector slit size",
-    "units": "",
+    "description": "if white beam mode: upstream detector slit size (rsugap)",
+    "units": "mm",
     "placeholder": ""
   },
   {
-    "key": "upstream_detector_slit_vertical_size",
+    "key": "upstream_detector_slit_takeoff_angle",
     "type": "float64",
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if white beam mode: vertical upstream detector slit size",
-    "units": "",
+    "description": "if white beam mode: upstream detector slit takeoff angle (rsutth)",
+    "units": "deg",
     "placeholder": ""
   },
   {
-    "key": "upstream_detector_slit_horizontal_position",
+    "key": "downstream_detector_slit_size",
     "type": "float64",
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if white beam mode: horizontal upstream detector slit position",
-    "units": "",
+    "description": "if white beam mode: downstream detector slit size (rsdgap)",
+    "units": "mm",
     "placeholder": ""
   },
   {
-    "key": "upstream_detector_slit_vertical_position",
+    "key": "downstream_detector_slit_takeoff_angle",
     "type": "float64",
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if white beam mode: verticall upstream detector slit position",
-    "units": "",
+    "description": "if white beam mode: downstream detector slit takeoff angle (rsdtth)",
+    "units": "deg",
     "placeholder": ""
   },
   {
-    "key": "downstream_detector_slit_horizontal_size",
+    "key": "detector_takeoff_angle",
     "type": "float64",
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "if white beam mode: horizontal downstream detector slit size",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "downstream_detector_slit_vertical_size",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "if white beam mode: vertical downstream detector slit size",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "downstream_detector_slit_horizontal_position",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "if white beam mode: horizontal downstream detector slit position",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "downstream_detector_slit_vertical_position",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "if white beam mode: verticall downstream detector slit position",
-    "units": "",
+    "description": "if white beam mode: detector takeoff angle (eddtth)",
+    "units": "deg",
     "placeholder": ""
   },
   {
@@ -436,7 +406,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Beam energy",
-    "units": "",
+    "units": "keV",
     "placeholder": "80.725"
   },
   {
@@ -456,7 +426,7 @@
     "multiple": true,
     "section": "Beam",
     "description": "Thickness [mm] of attenuator(s) - enter one value for each attenutor material",
-    "units": "",
+    "units": "mm",
     "placeholder": "3.25"
   },
   {
