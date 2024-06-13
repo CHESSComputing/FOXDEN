@@ -18,3 +18,9 @@ Lexicon file:
 
 ### QL files
 - `service_map_file.json` is a Query Language (QL) mapping file
+
+### QL Map file
+FOXDEN uses QL map file for auto-completion of users' keys. This file can be
+generated from MetaData schema files and combine QL keys from all FOXDEN
+services. Please run `./update_srv_map.sh` script to generate new
+`service_map_file.json`.
