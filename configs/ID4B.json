@@ -67,7 +67,17 @@
     "section": "User",
     "description": "Specify beamline",
     "units": "",
-    "placeholder": "4B"
+    "placeholder": "4B",
+    "value": [
+      "",
+      "1A3",
+      "2A",
+      "3A",
+      "3B",
+      "4B",
+      "7A",
+      "7B2"
+    ]
   },
   {
     "key": "staff_scientist",
@@ -87,7 +97,15 @@
     "section": "User",
     "description": "Select a funding partner",
     "units": "",
-    "placeholder": "CHEXS_NSF"
+    "placeholder": "CHEXS_NSF",
+    "value": [
+      "",
+      "CHEXS_NSF",
+      "MSNC_AFRL",
+      "MACCHESS_NSF_NIH",
+      "CHESS_internal",
+      "CHEXS_NSF"
+    ]
   },
   {
     "key": "alignment",
@@ -97,7 +115,8 @@
     "section": "Alignment",
     "description": "Do you have final alignment?",
     "units": "",
-    "placeholder": "Yes/No"
+    "placeholder": "Yes/No",
+    "value": true
   },
   {
     "key": "energy_scan",
@@ -107,7 +126,8 @@
     "section": "Alignment",
     "description": "Do you have energy scan?",
     "units": "",
-    "placeholder": "Yes/No"
+    "placeholder": "Yes/No",
+    "value": true
   },
   {
     "key": "undulator_scan",
@@ -117,7 +137,8 @@
     "section": "Alignment",
     "description": "Do you have the undulator scan?",
     "units": "",
-    "placeholder": "Yes/No"
+    "placeholder": "Yes/No",
+    "value": true
   },
   {
     "key": "spot_size",
@@ -187,7 +208,13 @@
     "section": "Beam",
     "description": "CESR bunch mode",
     "units": "",
-    "placeholder": "9x5BunchMode"
+    "placeholder": "9x5BunchMode",
+    "value": [
+      "",
+      "9BunchMode",
+      "21BunchMode",
+      "9x5BunchMode"
+    ]
   },
   {
     "key": "beam_energy",
@@ -207,7 +234,13 @@
     "section": "Beam",
     "description": "Include the insertion device ",
     "units": "",
-    "placeholder": "CCU"
+    "placeholder": "CCU",
+    "value": [
+      "",
+      "CCU",
+      "Wiggler",
+      "CCU"
+    ]
   },
   {
     "key": "monochromator",
@@ -217,7 +250,15 @@
     "section": "Beam",
     "description": "Include the monochromator",
     "units": "",
-    "placeholder": "DoubleCrystalMono"
+    "placeholder": "DoubleCrystalMono",
+    "value": [
+      "",
+      "MultiLayer",
+      "DoubleCrystalMono",
+      "SiLaueMono",
+      "DiamondLaue",
+      "DiamondBragg"
+    ]
   },
   {
     "key": "energy_foil",
@@ -227,7 +268,22 @@
     "section": "Beam",
     "description": "Are you using any energy foil?",
     "units": "",
-    "placeholder": "blank1"
+    "placeholder": "blank1",
+    "value": [
+      "",
+      "scrn",
+      "blank1",
+      "Au",
+      "Pt",
+      "Ir",
+      "W",
+      "Hf",
+      "Yb",
+      "Ho",
+      "Tb",
+      "Sm",
+      "Pr"
+    ]
   },
   {
     "key": "detectors",
@@ -237,7 +293,23 @@
     "section": "Experiment",
     "description": "Detectors used",
     "units": "",
-    "placeholder": "Pilatus6M"
+    "placeholder": "Pilatus6M",
+    "value": [
+      "",
+      "Eiger500",
+      "Vortex",
+      "Pilatus6M",
+      "DualDexelas",
+      "GE2",
+      "Manta",
+      "Retiga",
+      "Eiger216M",
+      "Eiger1M",
+      "Pilatus200K",
+      "Pilatus300K",
+      "CanberraSingleElement",
+      "Pilatus 100K"
+    ]
   },
   {
     "key": "experiment_type",
@@ -247,7 +319,14 @@
     "section": "Experiment",
     "description": "Experiment type(s) (e.g. scattering,diffraction)",
     "units": "",
-    "placeholder": "Diffraction"
+    "placeholder": "Diffraction",
+    "value": [
+      "",
+      "Scattering/Diffraction",
+      "Imaging",
+      "Spectroscopy",
+      "Crystallography"
+    ]
   },
   {
     "key": "in_situ",
@@ -257,7 +336,8 @@
     "section": "Experiment",
     "description": "Is the experiment an in-situ test?",
     "units": "",
-    "placeholder": "Yes/No"
+    "placeholder": "Yes/No",
+    "value": false
   },
   {
     "key": "technique",
@@ -267,7 +347,21 @@
     "section": "Experiment",
     "description": "Experimental technique(s) (e.g HDRM/ DS/ 3DPDF)",
     "units": "",
-    "placeholder": "3DPDF"
+    "placeholder": "3DPDF",
+    "value": [
+      "",
+      "PowderDiffraction",
+      "ResonantElasticX-rayScattering",
+      "3DPDF",
+      "DiffuseScattering",
+      "HighEnergyDiffractionMicroscopyNearField",
+      "HighEnergyDiffractionMicroscopyFarField",
+      "HighEnergyDiffractionMicroscopyMidField",
+      "SAXS+WAXS",
+      "SAXS",
+      "XRayFluorescence",
+      "Tomography"
+    ]
   },
   {
     "key": "cryo_cooler",
@@ -327,7 +421,12 @@
     "section": "Sample",
     "description": "Specify your calibration sample (e.g. CeO2, LaB6)?",
     "units": "",
-    "placeholder": "CeO2"
+    "placeholder": "CeO2",
+    "value": [
+      "CeO2",
+      "LaB6",
+      "Others"
+    ]
   },
   {
     "key": "reference_calibrant_sample_name",
@@ -347,7 +446,20 @@
     "section": "Sample",
     "description": "Specify the type of sample",
     "units": "",
-    "placeholder": "sample"
+    "placeholder": "sample",
+    "value": [
+      "",
+      "sample",
+      "sample+can",
+      "can",
+      "sample+butter",
+      "buffer",
+      "calibration sample",
+      "normalisation sample",
+      "simulated data",
+      "none",
+      "sample environment"
+    ]
   },
   {
     "key": "sample_name",
@@ -447,7 +559,15 @@
     "section": "Sample",
     "description": "Specify the sample state (e.g. Single Crystal, Thin-film )",
     "units": "",
-    "placeholder": "SingleCrystal"
+    "placeholder": "SingleCrystal",
+    "value": [
+      "",
+      "Powder ",
+      "ThinFilm",
+      "SingleCrystal",
+      "Foil",
+      "Solution"
+    ]
   },
   {
     "key": "sample_preparation_date",
@@ -467,7 +587,8 @@
     "section": "Sample",
     "description": "Is the sample hazardous?",
     "units": "",
-    "placeholder": "Yes/No"
+    "placeholder": "Yes/No",
+    "value": false
   },
   {
     "key": "holder_label",

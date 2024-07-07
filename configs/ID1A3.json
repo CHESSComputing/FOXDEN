@@ -67,7 +67,17 @@
     "section": "User",
     "description": "Specify beamline",
     "units": "",
-    "placeholder": "1A3"
+    "placeholder": "1A3",
+    "value": [
+      "",
+      "1A3",
+      "2A",
+      "3A",
+      "3B",
+      "4B",
+      "7A",
+      "7B2"
+    ]
   },
   {
     "key": "staff_scientist",
@@ -77,7 +87,15 @@
     "section": "User",
     "description": "List staff scientists",
     "units": "",
-    "placeholder": "KoJYP, NygrenKE, DasA"
+    "placeholder": "KoJYP, NygrenKE, DasA",
+    "value": [
+      "",
+      "KoJYP",
+      "NygrenKE",
+      "DasA",
+      "GustafsonSE",
+      "ShanksKS"
+    ]
   },
   {
     "key": "beamline_funding_partner",
@@ -87,7 +105,14 @@
     "section": "User",
     "description": "Select a funding partner",
     "units": "",
-    "placeholder": "MSNC_AFRL"
+    "placeholder": "MSNC_AFRL",
+    "value": [
+      "",
+      "CHEXS_NSF",
+      "MSNC_AFRL",
+      "MACCHESS_NSF_NIH",
+      "CHESSInternal"
+    ]
   },
   {
     "key": "affiliation",
@@ -97,7 +122,17 @@
     "section": "User",
     "description": "Select affiliation",
     "units": "",
-    "placeholder": "AirForce"
+    "placeholder": "AirForce",
+    "value": [
+      "",
+      "AirForce",
+      "Army",
+      "Navy",
+      "OtherGov",
+      "Basic",
+      "Industry",
+      "Development"
+    ]
   },
   {
     "key": "data_location_raw",
@@ -157,7 +192,12 @@
     "section": "Alignment",
     "description": "Are scans related to alignment?",
     "units": "",
-    "placeholder": "false"
+    "placeholder": "false",
+    "value": [
+      "",
+      "true",
+      "false"
+    ]
   },
   {
     "key": "energy_scan",
@@ -167,7 +207,12 @@
     "section": "Alignment",
     "description": "Are scans related to energy scans?",
     "units": "",
-    "placeholder": "false"
+    "placeholder": "false",
+    "value": [
+      "",
+      "true",
+      "false"
+    ]
   },
   {
     "key": "energy_scan_document",
@@ -357,7 +402,13 @@
     "section": "Beam",
     "description": "CESR bunch mode",
     "units": "",
-    "placeholder": ""
+    "placeholder": "",
+    "value": [
+      "",
+      "9BunchMode",
+      "21BunchMode",
+      "9x5BunchMode"
+    ]
   },
   {
     "key": "insertion_device",
@@ -367,7 +418,12 @@
     "section": "Beam",
     "description": "Insertion device",
     "units": "",
-    "placeholder": "Wiggler"
+    "placeholder": "Wiggler",
+    "value": [
+      "",
+      "CCU",
+      "Wiggler"
+    ]
   },
   {
     "key": "monochromator",
@@ -377,7 +433,15 @@
     "section": "Beam",
     "description": "Specify monochromator",
     "units": "",
-    "placeholder": "SiLaueMono"
+    "placeholder": "SiLaueMono",
+    "value": [
+      "",
+      "MultiLayer",
+      "DoubleCrystalMono",
+      "SiLaueMono",
+      "DiamondLaue",
+      "DiamondBragg"
+    ]
   },
   {
     "key": "focusing",
@@ -387,7 +451,16 @@
     "section": "Beam",
     "description": "Sagittal",
     "units": "",
-    "placeholder": "Sagittal"
+    "placeholder": "Sagittal",
+    "value": [
+      "",
+      "Collimator",
+      "CRL",
+      "KB",
+      "Capillary",
+      "Sagittal",
+      "None"
+    ]
   },
   {
     "key": "beam_mode",
@@ -397,7 +470,12 @@
     "section": "Beam",
     "description": "Beam mode",
     "units": "",
-    "placeholder": "White"
+    "placeholder": "White",
+    "value": [
+      "",
+      "White",
+      "Mono"
+    ]
   },
   {
     "key": "beam_energy",
@@ -406,7 +484,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Beam energy",
-    "units": "keV",
+    "units": "",
     "placeholder": "80.725"
   },
   {
@@ -417,7 +495,12 @@
     "section": "Beam",
     "description": "List of attenuator materials used",
     "units": "",
-    "placeholder": "Steel"
+    "placeholder": "Steel",
+    "value": [
+      "",
+      "Steel",
+      "Aluminum"
+    ]
   },
   {
     "key": "atten_thickness",
@@ -426,7 +509,7 @@
     "multiple": true,
     "section": "Beam",
     "description": "Thickness [mm] of attenuator(s) - enter one value for each attenutor material",
-    "units": "mm",
+    "units": "",
     "placeholder": "3.25"
   },
   {
@@ -437,7 +520,25 @@
     "section": "Beam",
     "description": "Energy foil used, if any",
     "units": "",
-    "placeholder": "Pr"
+    "placeholder": "Pr",
+    "value": [
+      "",
+      "scrn",
+      "blank1",
+      "Au",
+      "Pt",
+      "Ir",
+      "W",
+      "Hf",
+      "Yb",
+      "Ho",
+      "Tb",
+      "Sm",
+      "Pr",
+      "Sn",
+      "blank2",
+      "Other"
+    ]
   },
   {
     "key": "beamline_setup_document",
@@ -457,7 +558,24 @@
     "section": "Experiment",
     "description": "Indicate detector(s) being used",
     "units": "",
-    "placeholder": "GE2"
+    "placeholder": "GE2",
+    "value": [
+      "",
+      "Eiger500",
+      "Vortex",
+      "Pilatus6M",
+      "DualDexelas",
+      "GE2",
+      "Manta",
+      "Retiga",
+      "Eiger16M",
+      "Eiger1M",
+      "Pilatus200K",
+      "Pilatus300K",
+      "CanberraSingleElement",
+      "CanberraMultielement",
+      "Other"
+    ]
   },
   {
     "key": "experiment_type",
@@ -467,7 +585,15 @@
     "section": "Experiment",
     "description": "Specify experiment type",
     "units": "",
-    "placeholder": "Scattering/Diffraction"
+    "placeholder": "Scattering/Diffraction",
+    "value": [
+      "",
+      "Scattering/Diffraction",
+      "Imaging",
+      "Spectroscopy",
+      "Crystallography",
+      "Other"
+    ]
   },
   {
     "key": "technique",
@@ -477,7 +603,24 @@
     "section": "Experiment",
     "description": "Specify technique",
     "units": "",
-    "placeholder": "EDD"
+    "placeholder": "EDD",
+    "value": [
+      "",
+      "SingleCrystalDiffraction",
+      "HighEnergyDiffractionMicroscopyNearField",
+      "HighEnergyDiffractionMicroscopyFarField",
+      "HighEnergyDiffractionMicroscopyMidField",
+      "PowderDiffraction",
+      "ResonantElasticX-rayScattering",
+      "3DPDF",
+      "DiffuseScattering",
+      "SAXS+WAXS",
+      "SAXS",
+      "XRayFluorescence",
+      "Tomography",
+      "EDD",
+      "Other"
+    ]
   },
   {
     "key": "in_situ",
@@ -487,7 +630,12 @@
     "section": "Experiment",
     "description": "In situ experiments?",
     "units": "",
-    "placeholder": "false"
+    "placeholder": "false",
+    "value": [
+      "",
+      "true",
+      "false"
+    ]
   },
   {
     "key": "mechanical_test",
@@ -497,7 +645,12 @@
     "section": "Experiment",
     "description": "Do scans contain mechanical tests?",
     "units": "",
-    "placeholder": "false"
+    "placeholder": "false",
+    "value": [
+      "",
+      "true",
+      "false"
+    ]
   },
   {
     "key": "mechanical_test_type",
@@ -507,7 +660,17 @@
     "section": "Experiment",
     "description": "What kind of mechnical test?",
     "units": "",
-    "placeholder": "Tension"
+    "placeholder": "Tension",
+    "value": [
+      "",
+      "Tension",
+      "Compression",
+      "Cyclic",
+      "Torsion",
+      "4PtBend",
+      "3PtBend",
+      "LinkamTensile"
+    ]
   },
   {
     "key": "mechanical_load_frame",
@@ -517,7 +680,15 @@
     "section": "Experiment",
     "description": "Specify load frame",
     "units": "",
-    "placeholder": "RAMSIV"
+    "placeholder": "RAMSIV",
+    "value": [
+      "",
+      "RAMSII",
+      "RAMSIV",
+      "Bose",
+      "CCLF",
+      "Other"
+    ]
   },
   {
     "key": "mechanical_grips",
@@ -527,7 +698,14 @@
     "section": "Experiment",
     "description": "Specify grips",
     "units": "",
-    "placeholder": "Wedge"
+    "placeholder": "Wedge",
+    "value": [
+      "",
+      "Wedge",
+      "RAMS",
+      "PinGrips",
+      "Other"
+    ]
   },
   {
     "key": "supplementary_technique",
@@ -537,7 +715,13 @@
     "section": "Experiment",
     "description": "Specify supplimentary techniques, if applicable",
     "units": "",
-    "placeholder": "DigitalImageCorrelation"
+    "placeholder": "DigitalImageCorrelation",
+    "value": [
+      "",
+      "DigitalImageCorrelation",
+      "Raman",
+      "OpticalImaging"
+    ]
   },
   {
     "key": "furnace",
@@ -547,7 +731,14 @@
     "section": "Experiment",
     "description": "Specify furnace",
     "units": "",
-    "placeholder": ""
+    "placeholder": "",
+    "value": [
+      "",
+      "RAMSII",
+      "RAMSIV",
+      "LinkamHFS600",
+      "Other"
+    ]
   },
   {
     "key": "calibration",
@@ -557,7 +748,12 @@
     "section": "Sample",
     "description": "Are scans related to calibration?",
     "units": "",
-    "placeholder": "false"
+    "placeholder": "false",
+    "value": [
+      "",
+      "true",
+      "false"
+    ]
   },
   {
     "key": "calibration_document",
@@ -597,7 +793,8 @@
     "section": "Sample",
     "description": "Chemical formula of sample",
     "units": "",
-    "placeholder": "Ti6Al4V"
+    "placeholder": "Ti6Al4V",
+    "value": "freetext"
   },
   {
     "key": "sample_space_group",
@@ -657,7 +854,12 @@
     "section": "Sample",
     "description": "Hazardous sample?",
     "units": "",
-    "placeholder": ""
+    "placeholder": "",
+    "value": [
+      "",
+      "true",
+      "false"
+    ]
   },
   {
     "key": "sample_state",
@@ -667,6 +869,14 @@
     "section": "Sample",
     "description": "Sample state",
     "units": "",
-    "placeholder": ""
+    "placeholder": "",
+    "value": [
+      "",
+      "Powder",
+      "ThinFilm",
+      "SingleCrystal",
+      "Foil",
+      "Solution"
+    ]
   }
 ]
