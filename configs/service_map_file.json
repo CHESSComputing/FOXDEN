@@ -177,11 +177,12 @@
 {"service": "MetaData", "key": "sample_preparation_date", "description": "Provide the sample preparation date", "units": "", "type": "string", "schema": "ID4B"},
 {"service": "MetaData", "key": "material_safety_hazardous_samples", "description": "Is the sample hazardous?", "units": "", "type": "bool", "schema": "ID4B"},
 {"service": "MetaData", "key": "holder_label", "description": "Does the sample holder have a label? Iinsert N/A if none", "units": "", "type": "string", "schema": "ID4B"},
-{"service":"SpecScans", "key":"did", "description":"dataset id", "type":"string"},
-{"service":"SpecScans", "key":"motor_name", "description":"motor name", "units": "degree or mm", "type":"string"},
-{"service":"SpecScans", "key":"motor_position", "description":"motor position","units":"units of motor name", "type":"string"},
-{"service":"Provenance", "key":"version", "description":"sofware version", "type":"string"},
-{"service":"Provenance", "key":"file", "description":"file name", "type":"string"},
-{"service":"Provenance", "key":"did", "description":"dataset id", "type":"string"},
-{"service":"DataManagement", "key":"storage", "description":"storage bucket name", "type":"string"}
+{"service": "SpecScans", "key": "did", "description":"dataset id", "type":"string"},
+{"service": "SpecScans", "key": "btr", "description": "BTR ID", "units": "", "type": "string"},
+{"service": "SpecScans", "key": "scan_number", "description":"scan number", "units": "", "type":"int64"},
+{"service": "SpecScans", "key": "motors", "description":"motors query", "units": "", "type":"string"},
+{"service": "Provenance", "key": "version", "description":"sofware version", "type":"string"},
+{"service": "Provenance", "key": "file", "description":"file name", "type":"string"},
+{"service": "Provenance", "key": "did", "description":"dataset id", "type":"string"},
+{"service": "DataManagement", "key": "storage", "description":"storage bucket name", "type":"string"}
 ]
