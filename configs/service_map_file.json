@@ -175,7 +175,7 @@
 {"service": "SpecScans", "key": "status", "description": "Scan status (running, completed, aborted, or n/a)", "units": "", "type": "string", "db": "mongo"},
 {"service": "SpecScans", "key": "comments", "description": "Comment line from the SPEC data file", "units": "", "type": "list_str", "db": "mongo"},
 {"service": "SpecScans", "key": "spec_version", "description": "SPEC version identifier", "units": "", "type": "string", "db": "mongo"},
-{"service": "SpecScans", "key": "epics_pvs", "description": "EPICS PV values", "units": "", "type": "dict", "db": "mongo"},
+{"service": "SpecScans", "key": "variables", "description": "Values of variables from EPICS, SPEC, or other", "units": "", "type": "dict", "db": "mongo"},
 {"service": "SpecScans", "key": "motors", "description": "Static motor position values for all configured motors at the start of the scan", "units": "", "type": "dict", "db": "sql"},
 {"service":"Provenance", "key":"version", "description":"sofware version", "type":"string"},
 {"service":"Provenance", "key":"file", "description":"file name", "type":"string"},
