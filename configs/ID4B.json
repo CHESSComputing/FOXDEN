@@ -25,9 +25,9 @@
     "optional": false,
     "multiple": false,
     "section": "User",
-    "description": "YYYY-\u003ccycle_number\u003e",
+    "description": "YYYY-cycle_number",
     "units": "",
-    "placeholder": "2022-3"
+    "placeholder": "2024-3"
   },
   {
     "key": "pi",
@@ -47,7 +47,7 @@
     "section": "User",
     "description": "Beamtime request ID",
     "units": "",
-    "placeholder": "sarker-1800-A"
+    "placeholder": "sarker-0000-a"
   },
   {
     "key": "experimenters",
@@ -108,39 +108,6 @@
     ]
   },
   {
-    "key": "alignment",
-    "type": "bool",
-    "optional": false,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "Do you have final alignment?",
-    "units": "",
-    "placeholder": "Yes/No",
-    "value": true
-  },
-  {
-    "key": "energy_scan",
-    "type": "bool",
-    "optional": false,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "Do you have energy scan?",
-    "units": "",
-    "placeholder": "Yes/No",
-    "value": true
-  },
-  {
-    "key": "undulator_scan",
-    "type": "bool",
-    "optional": false,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "Do you have the undulator scan?",
-    "units": "",
-    "placeholder": "Yes/No",
-    "value": true
-  },
-  {
     "key": "spot_size",
     "type": "string",
     "optional": false,
@@ -158,7 +125,7 @@
     "section": "DataLocations",
     "description": "Location of the raw data",
     "units": "",
-    "placeholder": "/nfs/chess/id4b/2021-3/ruff-2972-d/samplename"
+    "placeholder": "/nfs/chess/id4b/2024-3/sarker-0000-a/samplename"
   },
   {
     "key": "data_location_meta",
@@ -168,7 +135,7 @@
     "section": "DataLocations",
     "description": "Location of the metadata",
     "units": "",
-    "placeholder": "/nfs/chess/id4b/2021-3/ruff-2972-d/samplename"
+    "placeholder": "/nfs/chess/id4baux/2024-3/sarker-0000-a/samplename"
   },
   {
     "key": "data_location_reduced",
@@ -178,7 +145,7 @@
     "section": "DataLocations",
     "description": "Location of the reduced data",
     "units": "",
-    "placeholder": "/nfs/chess/id4baux/2021-3/ruff-2972-d/sample1"
+    "placeholder": "/nfs/chess/id4baux/2024-3/sarker-0000-a/samplename"
   },
   {
     "key": "data_location_beamtime_notes",
@@ -188,7 +155,7 @@
     "section": "DataLocations",
     "description": "Location of the beamline notes",
     "units": "",
-    "placeholder": "/nfs/chess/id4b/2021-3/ruff-2972-d/samplename"
+    "placeholder": "/nfs/chess/id4baux/2024-3/sarker-0000-a/samplename"
   },
   {
     "key": "data_location_scientific_data",
@@ -196,7 +163,7 @@
     "optional": true,
     "multiple": false,
     "section": "DataLocations",
-    "description": "Link for the other scientific data related to your research (if you want to share related papers/ calculations etc), insert N/A if None",
+    "description": "google drive link, link for the other scientific data related to your research (if you want to share related papers/ calculations etc), insert N/A if None",
     "units": "",
     "placeholder": "Insert the link"
   },
@@ -222,9 +189,9 @@
     "optional": false,
     "multiple": false,
     "section": "Beam",
-    "description": "What is beam energy (e.g. 58 KeV )?",
-    "units": "",
-    "placeholder": "58 KeV"
+    "description": "What is beam energy (e.g. 50 keV )?",
+    "units": "keV",
+    "placeholder": "50 KeV"
   },
   {
     "key": "insertion_device",
@@ -239,7 +206,7 @@
       "",
       "CCU",
       "Wiggler",
-      "CCU"
+      "sCCU"
     ]
   },
   {
@@ -261,31 +228,6 @@
     ]
   },
   {
-    "key": "energy_foil",
-    "type": "list_str",
-    "optional": true,
-    "multiple": true,
-    "section": "Beam",
-    "description": "Are you using any energy foil?",
-    "units": "",
-    "placeholder": "blank1",
-    "value": [
-      "",
-      "scrn",
-      "blank1",
-      "Au",
-      "Pt",
-      "Ir",
-      "W",
-      "Hf",
-      "Yb",
-      "Ho",
-      "Tb",
-      "Sm",
-      "Pr"
-    ]
-  },
-  {
     "key": "detectors",
     "type": "list_str",
     "optional": false,
@@ -296,36 +238,9 @@
     "placeholder": "Pilatus6M",
     "value": [
       "",
-      "Eiger500",
       "Vortex",
       "Pilatus6M",
-      "DualDexelas",
-      "GE2",
-      "Manta",
-      "Retiga",
-      "Eiger216M",
-      "Eiger1M",
-      "Pilatus200K",
-      "Pilatus300K",
-      "CanberraSingleElement",
       "Pilatus 100K"
-    ]
-  },
-  {
-    "key": "experiment_type",
-    "type": "list_str",
-    "optional": false,
-    "multiple": true,
-    "section": "Experiment",
-    "description": "Experiment type(s) (e.g. scattering,diffraction)",
-    "units": "",
-    "placeholder": "Diffraction",
-    "value": [
-      "",
-      "Scattering/Diffraction",
-      "Imaging",
-      "Spectroscopy",
-      "Crystallography"
     ]
   },
   {
@@ -354,44 +269,9 @@
       "ResonantElasticX-rayScattering",
       "3DPDF",
       "DiffuseScattering",
-      "HighEnergyDiffractionMicroscopyNearField",
-      "HighEnergyDiffractionMicroscopyFarField",
-      "HighEnergyDiffractionMicroscopyMidField",
-      "SAXS+WAXS",
-      "SAXS",
-      "XRayFluorescence",
-      "Tomography"
+      "SingleCrystalDiffraction",
+      "1DPDF"
     ]
-  },
-  {
-    "key": "cryo_cooler",
-    "type": "bool",
-    "optional": false,
-    "multiple": false,
-    "section": "Experiment",
-    "description": "Are you using cryocooler?",
-    "units": "",
-    "placeholder": "Yes/No"
-  },
-  {
-    "key": "cryostreami_11k_to_500k",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "Experiment",
-    "description": "Please provide the temperatures of the experiment (e.g. 298.15K)",
-    "units": "",
-    "placeholder": "50K, 100K, 323K"
-  },
-  {
-    "key": "cryostat_3k_to_300k",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "Experiment",
-    "description": "Please provide the temperatures of the experiment or N/A",
-    "units": "",
-    "placeholder": "5K, 10K, 25K"
   },
   {
     "key": "scan_edge_k",
@@ -429,45 +309,12 @@
     ]
   },
   {
-    "key": "reference_calibrant_sample_name",
-    "type": "string",
-    "optional": true,
-    "multiple": false,
-    "section": "Sample",
-    "description": "If this is not a calibration sample: enter the sample name (used in new sample) for the relevant calibration sample dataset",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "sample_type",
-    "type": "list_str",
-    "optional": false,
-    "multiple": true,
-    "section": "Sample",
-    "description": "Specify the type of sample",
-    "units": "",
-    "placeholder": "sample",
-    "value": [
-      "",
-      "sample",
-      "sample+can",
-      "can",
-      "sample+butter",
-      "buffer",
-      "calibration sample",
-      "normalisation sample",
-      "simulated data",
-      "none",
-      "sample environment"
-    ]
-  },
-  {
     "key": "sample_name",
     "type": "string",
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Common name of sample material (e,g Kagome superconductor)",
+    "description": "Common name of sample material (e,g Kagome superconductor, nickelates, battery materials, thermoelectric materials)",
     "units": "",
     "placeholder": "Kagome superconductor"
   },
@@ -482,44 +329,32 @@
     "placeholder": "AV3Sb5"
   },
   {
-    "key": "sample_thermal_gradient",
-    "type": "bool",
-    "optional": true,
+    "key": "sample_state",
+    "type": "list_str",
+    "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Are you using thermal gradient?",
+    "description": "Specify the sample state (e.g. Single Crystal, Thin-film )",
     "units": "",
-    "placeholder": "Yes/No"
+    "placeholder": "SingleCrystal",
+    "value": [
+      "",
+      "powder ",
+      "thin_film",
+      "single_crystal",
+      "foil",
+      "solution"
+    ]
   },
   {
-    "key": "sample_unit_cell",
+    "key": "crystal_system_rt",
     "type": "string",
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Unit cell dimensions (Angstrom)",
+    "description": "Provide room temperature sample crystal system (e.g. cubic, orthorohombic )",
     "units": "",
-    "placeholder": "a = 5.43, b = 5.43, c = 4.34, alpha = 90, beta = 90, gamma = 90"
-  },
-  {
-    "key": "sample_d_spacing",
-    "type": "float64",
-    "optional": false,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Provide the sample d spacing (nm)",
-    "units": "",
-    "placeholder": "0.132"
-  },
-  {
-    "key": "sample_mass",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Provide the sample mass in  ",
-    "units": "",
-    "placeholder": "5 gm"
+    "placeholder": "cubic"
   },
   {
     "key": "sample_space_group",
@@ -532,52 +367,34 @@
     "placeholder": "F-43m"
   },
   {
-    "key": "sample_mat_ped_heat_treatment",
+    "key": "sample_space_group_number",
     "type": "string",
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Sample heat-treated (if any)? insert \"N/A\" if none",
+    "description": "Provide the sample space group number",
+    "units": "",
+    "placeholder": "225"
+  },
+  {
+    "key": "sample_unit_cell",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Unit cell dimensions ",
+    "units": "angstrom",
+    "placeholder": "a = 5.43, b = 5.43, c = 4.34, alpha = 90, beta = 90, gamma = 90"
+  },
+  {
+    "key": "phase_transition",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Will the sample undergo a phase transition during the experiment? If yes,what are the temperature and space group?",
     "units": "",
     "placeholder": ""
-  },
-  {
-    "key": "sample_mat_ped_processing_route",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Write down shortly the sample synthesis route ",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "sample_state",
-    "type": "list_str",
-    "optional": false,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Specify the sample state (e.g. Single Crystal, Thin-film )",
-    "units": "",
-    "placeholder": "SingleCrystal",
-    "value": [
-      "",
-      "Powder ",
-      "ThinFilm",
-      "SingleCrystal",
-      "Foil",
-      "Solution"
-    ]
-  },
-  {
-    "key": "sample_preparation_date",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Provide the sample preparation date",
-    "units": "",
-    "placeholder": "YYYY-MM-DD"
   },
   {
     "key": "material_safety_hazardous_samples",
@@ -589,15 +406,5 @@
     "units": "",
     "placeholder": "Yes/No",
     "value": false
-  },
-  {
-    "key": "holder_label",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Does the sample holder have a label? Iinsert \"N/A\" if none",
-    "units": "",
-    "placeholder": ""
   }
 ]
