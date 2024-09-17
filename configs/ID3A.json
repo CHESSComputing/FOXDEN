@@ -150,21 +150,6 @@
     ]
   },
   {
-    "key": "energy_scan",
-    "type": "bool",
-    "optional": false,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "Is this an energy scan?",
-    "units": "",
-    "placeholder": "false",
-    "value": [
-      "",
-      "true",
-      "false"
-    ]
-  },
-  {
     "key": "energy_scan_document",
     "type": "string",
     "optional": true,
@@ -175,139 +160,14 @@
     "placeholder": "/"
   },
   {
-    "key": "undulator_scan",
-    "type": "bool",
-    "optional": false,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "Is this an undulator scan?",
-    "units": "",
-    "placeholder": "false",
-    "value": [
-      "",
-      "true",
-      "false"
-    ]
-  },
-  {
-    "key": "pre_slit_horizontal_size",
-    "type": "float64",
+    "key": "undulator_scan_document",
+    "type": "string",
     "optional": true,
     "multiple": false,
     "section": "Alignment",
-    "description": "horizontal pre-slit size - skip if this metadata record is for multiple scans with different slit sizes",
+    "description": "Undulator scan document location",
     "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "pre_slit_vertical_size",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "vertical pre-slit size - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "pre_slit_horizontal_position",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "horizontal pre-slit position - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "pre_slit_vertical_position",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "vertical pre-slit position - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "beam_slit_horizontal_size",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "horizontal beam-defining slit size - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "beam_slit_vertical_size",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "vertical beam-defining slit size - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "beam_slit_horizontal_position",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "horizontal beam-defining slit position - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "beam_slit_vertical_position",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "vertical beam-defining slit position - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "guard_slit_horizontal_size",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "horizontal guard slit size - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "guard_slit_vertical_size",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "vertical guard slit size - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "guard_slit_horizontal_position",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "horizontal guard slit position - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
-  },
-  {
-    "key": "guard_slit_vertical_position",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "verticall guard slit position - skip if this metadata record is for multiple scans with different slit sizes",
-    "units": "",
-    "placeholder": ""
+    "placeholder": "/"
   },
   {
     "key": "data_location_raw",
@@ -435,31 +295,6 @@
     "description": "Beam energy [keV]",
     "units": "",
     "placeholder": "41.991"
-  },
-  {
-    "key": "atten_material",
-    "type": "list_str",
-    "optional": true,
-    "multiple": true,
-    "section": "Beam",
-    "description": "List of attenuator materials used - skip this field if this metadata record is for multiple scans with different attenuators",
-    "units": "",
-    "placeholder": "Steel",
-    "value": [
-      "",
-      "Steel",
-      "Aluminum"
-    ]
-  },
-  {
-    "key": "atten_thickness",
-    "type": "float64",
-    "optional": true,
-    "multiple": true,
-    "section": "Beam",
-    "description": "Thickness [mm] of attenuator(s) - enter one value for each attenutor material -  skip this field if this metadata record is for multiple scans with different attenuators",
-    "units": "",
-    "placeholder": "3.25"
   },
   {
     "key": "energy_foil",
@@ -841,8 +676,10 @@
       "Powder",
       "ThinFilm",
       "SingleCrystal",
+      "PolyCrystal",
       "Foil",
-      "Solution"
+      "Solution",
+      "Other"
     ]
   }
 ]
