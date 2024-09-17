@@ -526,7 +526,7 @@
     ]
   },
   {
-    "key": "processing",
+    "key": "processing_environment",
     "type": "list_str",
     "optional": true,
     "multiple": false,
