@@ -111,7 +111,7 @@
       "CHEXS_NSF",
       "MSNC_AFRL",
       "MACCHESS_NSF_NIH",
-      "CHESSInternal"
+      "CHESS_internal"
     ]
   },
   {
@@ -227,12 +227,14 @@
     "section": "Beam",
     "description": "CESR fill pattern",
     "units": "",
-    "placeholder": "9x5BunchMode",
+    "placeholder": "9x5_bunch_mode",
     "value": [
       "",
-      "9BunchMode",
-      "21BunchMode",
-      "9x5BunchMode"
+      "9_bunch_mode",
+      "21_bunch_mode",
+      "9x5_bunch_mode",
+      "13_bunch_mode",
+      "other"
     ]
   },
   {
@@ -258,13 +260,13 @@
     "section": "Beam",
     "description": "Monochromator type used",
     "units": "",
-    "placeholder": "DoubleCrystalMonochromator",
+    "placeholder": "double_crystal_bragg_si111",
     "value": [
       "",
-      "MultiLayer15HE",
-      "MultiLayer30LE",
-      "DoubleCrystalBraggSi111",
-      "DoubleCrystalBraggSi220"
+      "multilayer_15A",
+      "multilayer_30A",
+      "double_crystal_bragg_si111",
+      "double_crystal_bragg_si220"
     ]
   },
   {
@@ -342,25 +344,25 @@
     "section": "Experiment",
     "description": "Detectors used",
     "units": "",
-    "placeholder": "DualDexelas",
+    "placeholder": "dual_dexelas",
     "value": [
       "",
-      "Eiger500",
-      "Vortex",
-      "Pilatus6M",
-      "DualDexelas",
+      "eiger_500k",
+      "vortex",
+      "pilatus_6M",
+      "dual_dexelas",
       "GE2",
-      "Manta",
-      "Retiga",
-      "Eiger216M",
-      "Eiger1M",
-      "Pilatus200K",
-      "Pilatus300K",
-      "CanberraSingleElement",
-      "CanberraMultielement",
+      "manta",
+      "retiga",
+      "eiger2_16M",
+      "eiger_1M",
+      "pilatus_200K",
+      "pilatus_300K",
+      "canberra_single_element",
+      "canberra_multi_element",
       "value",
-      "Pilatus100K",
-      "Other"
+      "pilatus_100K",
+      "other"
     ]
   },
   {
@@ -371,14 +373,14 @@
     "section": "Experiment",
     "description": "Experiment type(s) (e.g. scattering, imaging)",
     "units": "",
-    "placeholder": "Scattering/Diffraction",
+    "placeholder": "scattering/diffraction",
     "value": [
       "",
-      "Scattering/Diffraction",
-      "Imaging",
-      "Spectroscopy",
-      "Crystallography",
-      "Other"
+      "scattering/diffraction",
+      "imaging",
+      "spectroscopy",
+      "crystallography",
+      "other"
     ]
   },
   {
@@ -392,19 +394,19 @@
     "placeholder": "Tomography",
     "value": [
       "",
-      "SingleCrystalDiffraction",
-      "HighEnergyDiffractionMicroscopyNearField",
-      "HighEnergyDiffractionMicroscopyFarField",
-      "HighEnergyDiffractionMicroscopyMidField",
-      "PowderDiffraction",
-      "ResonantElasticX-rayScattering",
+      "single_crystal_diffraction",
+      "high_energy_diffraction_microscopy_near_field",
+      "high_energy_diffraction_microscopy_far_field",
+      "high_energy_diffraction_microscopy_mid_field",
+      "powder_diffraction",
+      "resonant_elastic_xray_scattering",
       "3DPDF",
-      "DiffuseScattering",
+      "diffuse_scattering",
       "SAXS+WAXS",
       "SAXS",
-      "XRayFluorescence",
-      "Tomography",
-      "Other"
+      "xray_fluorescence",
+      "tomography",
+      "other"
     ]
   },
   {
@@ -445,16 +447,16 @@
     "section": "Experiment",
     "description": "Type of mechanical test",
     "units": "",
-    "placeholder": "Tension",
+    "placeholder": "tension",
     "value": [
       "",
-      "Tension",
-      "Compression",
-      "Cyclic",
-      "Torsion",
-      "4PtBend",
-      "3PtBend",
-      "LinkamTensile"
+      "tension",
+      "compression",
+      "cyclic",
+      "torsion",
+      "4pt_bend",
+      "3pt_bend",
+      "linkam_tensile"
     ]
   },
   {
@@ -486,10 +488,10 @@
     "placeholder": "RAMS",
     "value": [
       "",
-      "Wedge",
+      "wedge",
       "RAMS",
-      "PinGrips",
-      "Other"
+      "pin_grips",
+      "other"
     ]
   },
   {
@@ -503,9 +505,9 @@
     "placeholder": "DigitalImageCorrelation",
     "value": [
       "",
-      "DigitalImageCorrelation",
-      "Raman",
-      "OpticalImaging"
+      "digital_image_correlation",
+      "raman",
+      "optical_imaging"
     ]
   },
   {
@@ -522,7 +524,7 @@
       "RAMSII",
       "RAMSIV",
       "LinkamHFS600",
-      "Other"
+      "other"
     ]
   },
   {
@@ -536,9 +538,9 @@
     "placeholder": "",
     "value": [
       "",
-      "NISTTestBed",
-      "Stratasys3DPrinter",
-      "Other"
+      "NIST_test_bed",
+      "stratasys_3D_printer",
+      "other"
     ]
   },
   {
@@ -673,13 +675,13 @@
     "placeholder": "",
     "value": [
       "",
-      "Powder",
-      "ThinFilm",
-      "SingleCrystal",
-      "PolyCrystal",
-      "Foil",
-      "Solution",
-      "Other"
+      "powder",
+      "thin_film",
+      "single_crystal",
+      "poly_crystal",
+      "foil",
+      "solution",
+      "other"
     ]
   }
 ]
