@@ -1,5 +1,15 @@
 [
   {
+    "key": "measurement_type",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Measurement type",
+    "units": "",
+    "placeholder": "Detector test"
+  },
+  {
     "key": "did",
     "type": "string",
     "optional": true,

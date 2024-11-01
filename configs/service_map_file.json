@@ -163,6 +163,7 @@
 {"service": "MetaData", "key": "sample_unit_cell", "description": "Unit cell dimensions ", "units": "angstrom", "type": "string", "schema": "ID4B"},
 {"service": "MetaData", "key": "phase_transition", "description": "Will the sample undergo a phase transition during the experiment? If yes,what are the temperature and space group?", "units": "", "type": "string", "schema": "ID4B"},
 {"service": "MetaData", "key": "material_safety_hazardous_samples", "description": "Is the sample hazardous?", "units": "", "type": "bool", "schema": "ID4B"},
+{"service": "MetaData", "key": "measurement_type", "description": "Measurement Type", "units": "", "type": "string", "schema": "PIP"},
 {"service": "MetaData", "key": "did", "description": "Dataset IDentifier", "units": "", "type": "string", "schema": "PIP"},
 {"service": "MetaData", "key": "facility", "description": "Facility where the experiment to be performed, e.g. CHESS", "units": "", "type": "string", "schema": "PIP"},
 {"service": "MetaData", "key": "cycle", "description": "YYYY-cycle_number", "units": "", "type": "string", "schema": "PIP"},
