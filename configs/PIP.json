@@ -1,0 +1,435 @@
+[
+  {
+    "key": "did",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "facility",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Facility where the experiment to be performed, e.g. CHESS",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "cycle",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "YYYY-cycle_number",
+    "units": "",
+    "placeholder": "2024-3"
+  },
+  {
+    "key": "pi",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Last name of the Principle Investigator",
+    "units": "",
+    "placeholder": "Kinigstein"
+  },
+  {
+    "key": "btr",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Beamtime request ID",
+    "units": "",
+    "placeholder": "Kinigstein-4149-a"
+  },
+  {
+    "key": "experimenters",
+    "type": "string",
+    "optional": true,
+    "multiple": true,
+    "section": "User",
+    "description": "Include all the names who are collecting the data in the beamline",
+    "units": "",
+    "placeholder": "fullname1, fullname2, ....."
+  },
+  {
+    "key": "beamline",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify beamline",
+    "units": "",
+    "placeholder": "4B",
+    "value": [
+      "",
+      "1A3",
+      "2A",
+      "3A",
+      "3B",
+      "4B",
+      "7A",
+      "7B2"
+    ]
+  },
+  {
+    "key": "staff_scientist",
+    "type": "string",
+    "optional": false,
+    "multiple": true,
+    "section": "User",
+    "description": "List of staff scientists",
+    "units": "",
+    "placeholder": "Fullname1, Fullname2,"
+  },
+  {
+    "key": "beamline_funding_partner",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Select a funding partner",
+    "units": "",
+    "placeholder": "CHEXS_NSF",
+    "value": [
+      "",
+      "CHEXS_NSF",
+      "MSNC_AFRL",
+      "MACCHESS_NSF_NIH",
+      "CHESS_internal",
+      "CHEXS_NSF"
+    ]
+  },
+  {
+    "key": "spot_size",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Alignment",
+    "description": "What is the spot size of the sample?",
+    "units": "",
+    "placeholder": "200 micron X 500 micron"
+  },
+  {
+    "key": "raw_waveform_data_location",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Location of the raw data",
+    "units": "",
+    "placeholder": "/nfs/chess/id4b/2024-3/sarker-0000-a/samplename"
+  },
+  {
+    "key": "spec_scan_data_location",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Location of the metadata",
+    "units": "",
+    "placeholder": "/nfs/chess/id4baux/2024-3/sarker-0000-a/samplename"
+  },
+  {
+    "key": "data_location_beamtime_notes",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Location of the beamline notes",
+    "units": "",
+    "placeholder": "/nfs/chess/id4baux/2024-3/sarker-0000-a/samplename"
+  },
+  {
+    "key": "cesr_conditions",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "CESR bunch mode",
+    "units": "",
+    "placeholder": "9x5BunchMode",
+    "value": [
+      "",
+      "9BunchMode",
+      "21BunchMode",
+      "9x5BunchMode"
+    ]
+  },
+  {
+    "key": "beam_energy",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "What is beam energy (e.g. 15 keV)?",
+    "units": "keV",
+    "placeholder": "15"
+  },
+
+  {
+    "key": "beam_polarization",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beam Polarization",
+    "units": "",
+    "placeholder": "H",
+    "value": [
+      "H",
+      "V",
+      "Linear at anlge",
+      "LCP",
+      "RCP"
+    ]
+  },
+
+  {
+    "key": "linear_beam_polarization_angle",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "angle of linear relative to horizontal",
+    "units": "degrees",
+    "placeholder": "0"
+
+  },
+
+  {
+    "key": "insertion_device",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Include the insertion device ",
+    "units": "",
+    "placeholder": "CCU",
+    "value": [
+      "",
+      "CCU",
+      "Wiggler",
+      "sCCU"
+    ]
+  },
+  {
+    "key": "monochromator",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Include the monochromator",
+    "units": "",
+    "placeholder": "DoubleCrystalMono",
+    "value": [
+      "",
+      "MultiLayer",
+      "DoubleCrystalMono",
+      "SiLaueMono",
+      "DiamondLaue",
+      "DiamondBragg"
+    ]
+  },
+ {
+    "key": "scope_channel_1",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "The detector measured on scope channel 1",
+    "units": "",
+    "placeholder": "Excelitas_APD_V1_Det_1",
+    "value": [
+      "",
+      "Excelitas_APD_V1_Det_1",
+      "Excelitas_APD_V1_Det_2",
+      "Hamamatsu_PIN_s14605_V1",
+      "Hamamatsu_PIN_s5971_V1",
+      "Hamamatsu_PIN_s5821_V1",
+      "OSI S4V 1",
+      "OSI S4V 2",
+      "OSI S4V 3",
+      "OSI S4V 4",
+      "Ion Chamber"
+    ]
+  },
+ {
+    "key": "scope_channel_2",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "The detector measured on scope channel 2",
+    "units": "",
+    "placeholder": "Excelitas_APD_V1_Det_2",
+    "value": [
+      "",
+      "Excelitas_APD_V1_Det_1",
+      "Excelitas_APD_V1_Det_2",
+      "Hamamatsu_PIN_s14605_V1",
+      "Hamamatsu_PIN_s5971_V1",
+      "Hamamatsu_PIN_s5821_V1",
+      "OSI S4V 1",
+      "OSI S4V 2",
+      "OSI S4V 3",
+      "OSI S4V 4",
+      "Ion Chamber"
+    ]
+  },
+ {
+    "key": "scope_channel_3",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "The type of detector on the scope channel 3",
+    "units": "",
+    "placeholder": "Hamamatsu_PIN_s14605_V1",
+    "value": [
+      "",
+      "Excelitas_APD_V1_Det_1",
+      "Excelitas_APD_V1_Det_2",
+      "Hamamatsu_PIN_s14605_V1",
+      "Hamamatsu_PIN_s5971_V1",
+      "Hamamatsu_PIN_s5821_V1",
+      "OSI S4V 1",
+      "OSI S4V 2",
+      "OSI S4V 3",
+      "OSI S4V 4",
+      "Ion Chamber"
+    ]
+  },
+ {
+    "key": "scope_channel_4",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "The type of detector on the scope channel 4",
+    "units": "",
+    "placeholder": "Ion Chamber",
+    "value": [
+      "",
+      "Excelitas_APD_V1_Det_1",
+      "Excelitas_APD_V1_Det_2",
+      "Hamamatsu_PIN_s14605_V1",
+      "Hamamatsu_PIN_s5971_V1",
+      "Hamamatsu_PIN_s5821_V1",
+      "OSI S4V 1",
+      "OSI S4V 2",
+      "OSI S4V 3",
+      "OSI S4V 4",
+      "Ion Chamber"
+
+    ]
+  },
+ {
+    "key": "scattering_source",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "The source of scattered photons in the PIP detector",
+    "units": "",
+    "placeholder": "Excelitas_APD_V1",
+    "value": [
+      "",
+      "Air",
+      "Kapton 25.4 micron",
+      "Kapton 50.8 micron",
+      "Kapton 127 micron"
+    ]
+  },
+ {
+    "key": "apd_1_distance",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "APD detector 1 distance from scattering source",
+    "units": "mm",
+    "placeholder": "42"
+  },
+   {
+    "key": "apd_2_distance",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "APD detector 2 distance from scattering source",
+    "units": "mm",
+    "placeholder": "42"
+  },
+
+   {
+    "key": "apd_detector_1_bias",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "APD detector 1 bias voltage",
+    "units": "V",
+    "placeholder": "-350"
+  },
+
+   {
+    "key": "apd_detector_2_bias",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "APD detector 2 bias voltage",
+    "units": "V",
+    "placeholder": "-350"
+  },
+   {
+    "key": "pin_detector_bias",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "PIN diode beamstop detector voltage",
+    "units": "V",
+    "placeholder": "20"
+  },
+  {
+    "key": "apd_detector_1_modification",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Modification to APD 1 detector circuit",
+    "units": "",
+    "placeholder": "None"
+  },
+
+   {
+    "key": "apd_detector_2_modification",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Modification to APD 2 detector circuit",
+    "units": "",
+    "placeholder": "None"
+  },
+   {
+    "key": "pin_detector_modification",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Modification to APD 2 detector circuit",
+    "units": "",
+    "placeholder": "None"
+  }
+
+]
