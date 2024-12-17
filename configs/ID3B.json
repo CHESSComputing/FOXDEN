@@ -120,7 +120,7 @@
     "section": "DataLocations",
     "description": "Location of the reduced data",
     "units": "",
-    "placeholder": "/nfs/chess/aux/cycles/2022-3/id3a/wilson-1234-a/reduced"
+    "placeholder": "/"
   },
   {
     "key": "cesr_conditions",
