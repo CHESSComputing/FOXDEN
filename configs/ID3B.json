@@ -20,36 +20,6 @@
     "placeholder": "CHESS"
   },
   {
-    "key": "cycle",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "User",
-    "description": "Specify the run cycle (e.g. 2025-1)",
-    "units": "",
-    "placeholder": "2025-1"
-  },
-  {
-    "key": "pi",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "User",
-    "description": "Last name of principle investigator",
-    "units": "",
-    "placeholder": "wilson"
-  },
-  {
-    "key": "btr",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "User",
-    "description": "Beamtime request ID",
-    "units": "",
-    "placeholder": "wilson-1234-a"
-  },
-  {
     "key": "beamline",
     "type": "list_str",
     "optional": false,
@@ -67,39 +37,6 @@
       "4B",
       "7A",
       "7B2"
-    ]
-  },
-  {
-    "key": "staff_scientist",
-    "type": "list_str",
-    "optional": false,
-    "multiple": true,
-    "section": "User",
-    "description": "Please list the staff scientist(s) supporting this experiment",
-    "units": "",
-    "placeholder": "KoJYP, WollAR, PageKA, SmieskaLM",
-    "value": [
-      "",
-      "KoJYP",
-      "WollAR",
-      "PageKA"
-    ]
-  },
-  {
-    "key": "beamline_funding_partner",
-    "type": "list_str",
-    "optional": false,
-    "multiple": false,
-    "section": "User",
-    "description": "Please list the beamline funding partner",
-    "units": "",
-    "placeholder": "MSNC_AFRL",
-    "value": [
-      "",
-      "CHEXS_NSF",
-      "MSNC_AFRL",
-      "MACCHESS_NSF_NIH",
-      "CHESS_internal"
     ]
   },
   {
@@ -121,122 +58,5 @@
     "description": "Location of the reduced data",
     "units": "",
     "placeholder": "/"
-  },
-  {
-    "key": "cesr_conditions",
-    "type": "list_str",
-    "optional": false,
-    "multiple": false,
-    "section": "Beam",
-    "description": "CESR fill pattern",
-    "units": "",
-    "placeholder": "9x5_bunch_mode",
-    "value": [
-      "",
-      "9_bunch_mode",
-      "21_bunch_mode",
-      "9x5_bunch_mode",
-      "13_bunch_mode",
-      "other"
-    ]
-  },
-  {
-    "key": "insertion_device",
-    "type": "list_str",
-    "optional": false,
-    "multiple": false,
-    "section": "Beam",
-    "description": "Insertion device",
-    "units": "",
-    "placeholder": "CCU",
-    "value": [
-      "",
-      "CCU",
-      "Wiggler"
-    ]
-  },
-  {
-    "key": "monochromator",
-    "type": "list_str",
-    "optional": false,
-    "multiple": false,
-    "section": "Beam",
-    "description": "Monochromator type used",
-    "units": "",
-    "placeholder": "diamond111",
-    "value": [
-      "",
-      "diamond111",
-      "diamond220",
-      "diamond311",
-      "diamond400"
-    ]
-  },
-  {
-    "key": "focusing",
-    "type": "list_str",
-    "optional": true,
-    "multiple": false,
-    "section": "Beam",
-    "description": "Focusing optic used, if any",
-    "units": "",
-    "placeholder": "CRL",
-    "value": [
-      "",    
-      "CRL",
-      "None"
-    ]
-  },
-  {
-    "key": "beam_energy",
-    "type": "float64",
-    "optional": false,
-    "multiple": false,
-    "section": "Beam",
-    "description": "Beam energy [keV]",
-    "units": "",
-    "placeholder": "9.7"
-  },
-
-  {
-    "key": "detectors",
-    "type": "list_str",
-    "optional": false,
-    "multiple": true,
-    "section": "Experiment",
-    "description": "Detectors used",
-    "units": "",
-    "placeholder": "pilatus_300K",
-    "value": [
-      "",
-      "andor",
-      "eiger_500k",
-      "vortex",
-      "pilatus_6M",
-      "dual_dexelas",
-      "GE2",
-      "manta",
-      "retiga",
-      "eiger2_16M",
-      "eiger_1M",
-      "pilatus_200K",
-      "pilatus_300K",
-      "canberra_single_element",
-      "canberra_multi_element",
-      "value",
-      "pilatus_100K",
-      "other"
-    ]
-  },
-
-  {
-    "key": "sample_name",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Sample name/ID that you used in newsample",
-    "units": "",
-    "placeholder": "ti64-1"
   }
 ]
