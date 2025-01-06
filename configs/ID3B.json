@@ -40,6 +40,26 @@
     ]
   },
   {
+    "key": "cycle",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify the run cycle (e.g. 2025-1)",
+    "units": "",
+    "placeholder": "2025-1"
+  },
+  {
+    "key": "btr",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Beamtime request ID",
+    "units": "",
+    "placeholder": "wilson-1234-a"
+  },
+  {
     "key": "data_location_raw",
     "type": "string",
     "optional": false,
