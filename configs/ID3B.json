@@ -48,15 +48,5 @@
     "description": "Location of the raw data ",
     "units": "",
     "placeholder": "/"
-  },
-  {
-    "key": "data_location_reduced",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "DataLocations",
-    "description": "Location of the reduced data",
-    "units": "",
-    "placeholder": "/"
   }
 ]
