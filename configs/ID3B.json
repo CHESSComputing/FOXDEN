@@ -65,7 +65,7 @@
     "optional": false,
     "multiple": false,
     "section": "DataLocations",
-    "description": "Location of the raw data ",
+    "description": "Location of the spec data file",
     "units": "",
     "placeholder": "/"
   }
