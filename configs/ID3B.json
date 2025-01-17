@@ -60,13 +60,24 @@
     "placeholder": "wilson-1234-a"
   },
   {
-    "key": "data_location_raw",
+    "key": "btr_location_raw",
     "type": "string",
     "optional": false,
     "multiple": false,
     "section": "DataLocations",
-    "description": "Location of the spec data file, including the spec data file name",
+    "description": "The path corresponding to root to the raw BTR directory",
     "units": "",
     "placeholder": "/"
-  }
+  },
+  {
+    "key": "spec_datafile_location",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "The relative path from the raw BTR directory to the spec file, including the spec file name",
+    "units": "",
+    "placeholder": "/"
+  }   
+  
 ]
