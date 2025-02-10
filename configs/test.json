@@ -1,5 +1,15 @@
 [
     {
+        "key": "did",
+        "type": "string",
+        "optional": true,
+        "multiple": false,
+        "section": "User",
+        "description": "Dataset IDentifier",
+        "units": "",
+        "placeholder": "/aaa=123/bbb=234"
+    },
+    {
         "key": "StringKey",
         "type": "string",
         "optional": false,
