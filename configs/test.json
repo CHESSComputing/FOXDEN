@@ -2,7 +2,7 @@
     {
         "key": "did",
         "type": "string",
-        "optional": true,
+        "optional": false,
         "multiple": false,
         "section": "User",
         "description": "Dataset IDentifier",
