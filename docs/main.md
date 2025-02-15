@@ -13,6 +13,7 @@
   - [Publication service](publication.md)
   - [SpecScan service](specscan.md)
   - [MLHub](mlhub.md)
+  - [CHAP](chap.md)
   - [CHAP Notebook](notebook.md)
 - [Web interface](web.md)
 - [CLI tool](cli.md)
