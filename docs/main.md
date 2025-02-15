@@ -29,4 +29,5 @@
   - [Integration guidelines](integration.md)
   - [Trusted clients](trusted.md)
 - [Dataset IDentifier (DID)](did.md)
+- [CHESS Analysis Pipeline (CHAP)](chap.md)
 - [References](references.md)
