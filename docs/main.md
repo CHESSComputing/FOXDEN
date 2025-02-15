@@ -9,7 +9,6 @@
   - [Data Discovery service](discovery.md)
   - [MetaData service](metadata.md)
   - [Provenance service](provenance.md)
-  - [Provenance service](provenance.md)
   - [Data Management service](datamgt.md)
   - [Publication service](publication.md)
   - [SpecScan service](specscan.md)
