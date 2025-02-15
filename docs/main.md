@@ -1,19 +1,7 @@
 # FOXDEN Documentation
+- [Introduction](introduction.md)
+- [Current system](current-system.md)
 - [Quick start guide](quickstart.md)
-- [Web interface](web.md)
-- [CLI tool](cli.md)
-- Tutorials:
-  - [foxden cli tutorial](FOXDEN_CLI.pdf)
-  - [foxden commands demo](https://gist.github.com/vkuznet/d8788b89d9073340369bb2b079f1e7e1)
-  - [foxden doi demo](https://gist.github.com/vkuznet/66793033b8d384d0bb8487fb07a4e42d)
-  - [curl client tutorial](curl.md)
-- [Integration guidelines](integration.md)
-- [Dataset IDentifier (DID)](did.md)
-- [Apis](apis.md)
-- [Architecture](architecture.md)
-- [Infrastructure](infrastructure.md).
-- [Implementation](implementation.md)
-- [Trusted clients](trusted.md)
 - FOXDEN services:
   - [AI/ML](aiml.md)
   - [Analysis](analysis.md)
@@ -23,4 +11,18 @@
   - [Provenance](provenance.md)
   - [Notebook](notebooke.md)
   - [Data visualization](vis.md)
+- [Web interface](web.md)
+- [CLI tool](cli.md)
+- [Architecture](architecture.md)
+- [Infrastructure](infrastructure.md).
+- [Implementation](implementation.md)
+- [Apis](apis.md)
+- Tutorials:
+  - [foxden cli tutorial](foxden-cli.pdf)
+  - [foxden commands demo](https://gist.github.com/vkuznet/d8788b89d9073340369bb2b079f1e7e1)
+  - [foxden doi demo](https://gist.github.com/vkuznet/66793033b8d384d0bb8487fb07a4e42d)
+  - [curl client tutorial](curl.md)
+  - [Integration guidelines](integration.md)
+  - [Trusted clients](trusted.md)
+- [Dataset IDentifier (DID)](did.md)
 - [References](references.md)
