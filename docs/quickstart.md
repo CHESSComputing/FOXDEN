@@ -1,41 +1,47 @@
-# FOXDEN quick start guide
+# FOXDEN Quickstart Guide
 
-### Introduction
+## Introduction
 
-FOXDEN is composed by loosely coupled services [0]:
-- Frontend: provides web UI to all service
-- Authz service: serves authentication and authorization
-- MetaData service: meta-data service for storing and querying meta-data
-- Provenance service: data bookkeeping service for managing provenance information
-- SpecScan service: dedicated service to manage spec scans (CHESS specific)
-- Discovery service: data discovery service which finds data across (MetaData, Provenance, and SpecScan)
-- Publication service: for publishing your data via DOI providers
-- Data Management service: initial draft of data management service
-- CHAPBook: notebook service for CHAP
-- MLHub service: proxy service for managing ML models
-The architecture of FOXDEN and its implementation can be found here [1]
+FOXDEN is composed of loosely coupled [services](https://github.com/orgs/CHESSComputing/repositories):  
+- **Frontend**: Provides a web UI for searching and accessing contents of all services below.  
+- **Authz Service**: Manages authentication and authorization.  
+- **Metadata Service**: Manages dataset metadata.
+- **Provenance Service**: Manages provenance information for data bookkeeping.
+- **SpecScan Service**: Manages metadata for spec scans (CHESS-specific).  
+- **Discovery Service**: Finds data across Metadata, Provenance, and SpecScan services.  
+- **Publication Service**: Publishes data via DOI providers.  
+- **Data Management Service**: Initial draft for data organization.  
+- **CHAPBook**: Notebook service for composing CHESS Analysis Pipeline (CHAP) workflows.  
+- **MLHub service**: Proxy for managing ML models.  
 
-### web and CLI setup
-To communicate with FOXDEN you may use either web UI, the FOXDEN frontend, or
-CLI (Command Line Interface), see tools/foxden executable in [2].
+For more details, refer to the [FOXDEN architecture documentation](/docs/infrastructure.md).  
 
-To start with web interface go to
-https://foxden-dev.classe.cornell.edu:8344/
-You may explore different services at
-https://foxden-dev.classe.cornell.edu:8344/services
-for example, meta-data interface is located at
-https://foxden-dev.classe.cornell.edu:8344/meta
+## **Getting Started**
+To use FOXDEN at CHESS, you will need a [CLASSE computer account](https://wiki.classe.cornell.edu/Computing/WebHome).
 
-The preferred way (and currently used in CHESS) is to use CLI for data
-injection and use web UI for data-lookup, even though both provides
-identical interfaces.
+You may access FOXDEN via:
+- Web interface
+- Command-line interface (CLI)
 
-To use `foxden` CLI you need the following:
-- account on lnxXXX node
-- setup your kerberos ticket and/or have valid foxden token
-- explore `foxden --help` options to get familiar with CLI tool
-- FOXDEN configuration file to work with our dev instanace:
-```
+The recommended way to use FOXDEN is via the CLI for data injection and the web UI for data lookup.
+
+## **Web Interface** 
+1. Connect to the [CLASSE VPN](https://wiki.classe.cornell.edu/Computing/ClasseVPN) using your CLASSE credentials
+2. Browse to the [FOXDEN development instance](https://foxden-dev.classe.cornell.edu:8344)
+3. Click `services` to explore the available services
+
+#### **Metadata Service**
+To test the Metadata Service:
+1. Browse to the [Metadata Service web interface](https://foxden-dev.classe.cornell.edu:8344/meta)
+2. Select **test** schema from dropdown BEAMLINES menu
+    - The test schema is defined [here](https://github.com/CHESSComputing/FOXDEN/blob/main/configs/test.json)
+4. Fill out some values and submit the record
+5. Try to find your record either at main page (table view) or use [the search interface](https://foxden-dev.classe.cornell.edu:8344/search).
+
+## **Command-line Interface (CLI)**
+1. [Connect to lnx201.classe.cornell.edu](https://wiki.classe.cornell.edu/Computing/LinuxSupport) and log in with your CLASSE credentials
+2. Create a FOXDEN configuration file at `$HOME/.foxden-dev.yaml` and copy and paste the configuration below:
+```yaml
 Services:
   FrontendUrl: https://foxden-dev.classe.cornell.edu:8344
   DiscoveryUrl: https://foxden-dev.classe.cornell.edu:8320
@@ -49,54 +55,53 @@ Services:
   CHAPBookUrl: http://chapbook.classe.cornell.edu:8181/
 Kerberos:
   Realm: CLASSE.CORNELL.EDU
-  Krb5Conf:  /etc/krb5.conf
+  Krb5Conf: /etc/krb5.conf
 Authz:
   ClientId: client_id
 ```
-
-Here are just few examples how to start using foxden CLI:
-```
-# the foxden tool is located in /nfs/chess/sw/chessdata/foxden, to simplify
-# you setup just setup your PATH accordingly
+3. Run the following commands on the command line:
+```sh
+# Add FOXDEN CLI to your PATH
 export PATH=$PATH:/nfs/chess/sw/chessdata
 
-# setup FOXDEN configuration file
+# Set up FOXDEN configuration file
 export FOXDEN_CONFIG=$HOME/.foxden-dev.yaml
 
-# obtain kerberos ticket
+# Obtain a Kerberos ticket
 export KRB5CCNAME=FILE:$HOME/krb5cc_ccache
 kinit
-
-# obtain FOXDEN tokens, read or write or both
+```
+4. Now, you can run FOXDEN commands:
+```sh
+# Obtain FOXDEN tokens (read, write, or both)
 foxden token create read
 
-# view your tokens
+# View available FOXDEN tokens
 foxden token view
 
-# foxden token examples
+# Token management help
 foxden token --help
 
-# manage your meta-data records, see examples in
+# Manage metadata records
 foxden meta --help
 
-# look-up back data from FOXDEN, see examples in
+# Search for data in FOXDEN
 foxden search --help
 
-# manage your provenance info, see examples in 
+# Manage provenance records
 foxden prov --help
 ```
 
-### Real case scenario
-You may use one of the existing schemas, e.g. 3A and construct your meta-data,
-provenance records and inject them into FOXDEN and then look them up, see
-examples in [4] and [5].
+## **Request your own Metadata schema**
+1. Please read the [integration instructions](/docs/integration.md)
+2. View the available [schemas](/configs) (e.g. [ID1A3.json](/configs/ID1A3.json), [ID3A.json](/configs/ID3A.json), etc.)
+3. Fork the [FOXDEN repo](/) and check in a new .json file with your schema to the /configs directory
+4. Submit a pull request
+    - After the pull request is merged into the main branch, your new schema will be available in both web and command-line interfaces
 
-Best regards,
-Valentin.
+## **Real-Case Scenario**  
+You can use an existing schema (e.g., **3A**) to construct metadata and provenance records, inject them into FOXDEN, and later retrieve them.  
 
-[0] https://github.com/orgs/CHESSComputing/repositories
-[1] https://foxden-dev.classe.cornell.edu:8344/docs/infrastructure.md
-[2] https://github.com/CHESSComputing/gotools/releases/tag/v0.2.0d
-[3] https://github.com/CHESSComputing/FOXDEN/tree/main/configs
-[4] https://github.com/CHESSComputing/gotools/blob/main/foxden/test/demo.sh
-[5] https://github.com/CHESSComputing/gotools/blob/main/foxden/test/run.sh
+For detailed examples, see:  
+- [Demo script](https://github.com/CHESSComputing/gotools/blob/main/foxden/test/demo.sh)  
+- [Integration test script](https://github.com/CHESSComputing/gotools/blob/main/foxden/test/run.sh)  
