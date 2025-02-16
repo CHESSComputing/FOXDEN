@@ -45,4 +45,4 @@ FOXDEN [configuration](configuration.md).
 ### CHESS integration
 The FOXDEN services are deployed to CHESS and cover the
 following workflow
-![Architecture](images/foxden-prototype.png)
+![CHESS architecture](images/foxden-chess.png)
