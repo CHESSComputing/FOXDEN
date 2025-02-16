@@ -19,18 +19,17 @@ JSON payload. For instance, a client can inject new data or user
 can look-up some information from FOXDEN via HTTP request.
 
 Currently the following services are implemented:
-- [Frontend service: web interface](web.md)
+- [Frontend service: web interface](web.md), deployed on port 8344
 - [Command line (CLI) tool](cli.md)
-- [Authentication and authorization service](authz.md)
-- [Data Discovery service](discovery.md)
-- [MetaData service](metadata.md)
-- [Provenance service](provenance.md)
-- [Provenance service](provenance.md)
-- [Data Management service](datamgt.md)
-- [Publication service](publication.md)
-- [SpecScan service](specscan.md)
-- [MLHub](mlhub.md)
-- [CHAP Notebook](notebook.md)
+- [Authentication and authorization service](authz.md), deployed on port 8380
+- [Data Discovery service](discovery.md), deployed on port 8320
+- [MetaData service](metadata.md), deployed on port 8300
+- [Provenance service](provenance.md), deployed on port 8310
+- [Data Management service](datamgt.md), deployed on port 8340
+- [Publication service](publication.md), deployed on port 8355
+- [SpecScan service](specscan.md), deployed on port 8390
+- [MLHub](mlhub.md), deployed on port 8350
+- [CHAP Notebook](notebook.md), deployed on port 8181
 
 Please see the following diagram how these services are
 integrated with each other:

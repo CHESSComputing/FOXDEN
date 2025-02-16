@@ -14,7 +14,7 @@ transformed to user's `scope` carried within bearer token.
 
 ### Example
 ```
-# obtain kerberos ticket and put it into JSON
+# obtain kerberos ticket and compose user's record
 
 cat record.json
 {
@@ -23,7 +23,8 @@ cat record.json
     "scope": <read|write>
 }
 
-# create JSON payload
+# authorize used with his/her record credentials
+# and receive aiuthorization token (default expiration 1h)
 curl -X POST -H "Content-type: application/json" \
     -d./record.json http://localhost:8380/oath/authorize
 ```
