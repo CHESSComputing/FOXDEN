@@ -4,7 +4,7 @@
 FAIR Open-Science Extensible Data Exchange Network (FOXDEN) consists of the following components:
 
 ### Core services:
-- **Data Management Service:** S3 compliant data management service for accessing raw and derived datasets
+- **Data Management Service:** for accessing raw and derived datasets
 - **Data Discovery Service:** allows users to search for meta and provenance data
 - **Metadata Service:** store and manage meta-data information
 - **Provenance Service:** store and manage provenance information about datasets
