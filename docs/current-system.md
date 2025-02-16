@@ -1,6 +1,6 @@
 # FOXDEN current system
 FOXDEN infrastructure is based on loosely couple services, see
-![Implemenation](Implementation.png)
+![Implemenation](images/Implementation.png)
 
 A user communicate through a secure channel with all of them
 either view web UI or CLI interfaces. Initially, each user
