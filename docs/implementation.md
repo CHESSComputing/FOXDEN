@@ -1,4 +1,4 @@
-# FOXDEN Data Management implementation 
+# FOXDEN implementation 
 ![Implementation](images/Implementation.png)
 
 ---
