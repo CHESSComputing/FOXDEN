@@ -2,6 +2,7 @@
 - [Introduction](introduction.md)
 - [Current system](current-system.md)
 - [Quick start guide](quickstart.md)
+- [Deployment](deployment.md)
 - FOXDEN services:
   - [Frontend service: web interface](web.md)
   - [Command line (CLI) tool](cli.md)
