@@ -1,0 +1,52 @@
+[
+  {
+    "key": "did",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier",
+    "units": "",
+    "placeholder": "/beamline=demo/facility=test/energy=123"
+  },
+  {
+    "key": "facility",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "beamline",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Specify beamline",
+    "units": "",
+    "placeholder": "3B",
+    "value": [
+      "",
+      "1A3",
+      "2A",
+      "3A",
+      "3B",
+      "4B",
+      "7A",
+      "7B2"
+    ]
+  },
+  {
+    "key": "beam_energy",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beam energy [keV]",
+    "units": "",
+    "placeholder": "41.991"
+  }
+]

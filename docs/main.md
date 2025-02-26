@@ -18,6 +18,7 @@
   - [CHAP Notebook](notebook.md)
 - [Web interface](web.md)
 - [CLI tool](cli.md)
+- [Demo](demo.md)
 - [Configuration](configuration.md)
 - [Architecture](architecture.md)
 - [Infrastructure](infrastructure.md).
