@@ -7,7 +7,7 @@
     "section": "User",
     "description": "Dataset IDentifier",
     "units": "",
-    "placeholder": "/beamline=demo/facility=test/energy=123"
+    "placeholder": "/beamline=demo/btr=user-123/cycle=bla/sample_name=foo"
   },
   {
     "key": "facility",
@@ -36,8 +36,40 @@
       "3B",
       "4B",
       "7A",
-      "7B2"
+      "7B2",
+      "demo",
+      "test"
     ]
+  },
+  {
+    "key": "btr",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Beamtime request ID",
+    "units": "",
+    "placeholder": "wilson-1234-a"
+  },
+  {
+    "key": "cycle",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify the run cycle (e.g. 2022-3)",
+    "units": "",
+    "placeholder": "2022-3"
+  },
+  {
+    "key": "sample_name",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Sample name/ID that you used in newsample",
+    "units": "",
+    "placeholder": "ti64-1"
   },
   {
     "key": "beam_energy",
