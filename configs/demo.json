@@ -72,6 +72,16 @@
     "placeholder": "ti64-1"
   },
   {
+    "key": "data_location_raw",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Location of the raw data ",
+    "units": "",
+    "placeholder": "/tmp"
+  },
+  {
     "key": "beam_energy",
     "type": "float64",
     "optional": false,
