@@ -1,6 +1,6 @@
-# FOXDEN Documentation
-- [Introduction](docs/introduction.md)
-- [Current system](docs/current-system.md)
+# FOXDEN Documentation from index
+- [Introduction](/docs/introduction.md)
+- [Current system](/docs/current-system.md)
 - [Quick start guide](quickstart.md)
 - [Deployment](deployment.md)
 - FOXDEN services:
