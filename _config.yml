@@ -1,0 +1,7 @@
+theme: jekyll-theme-cayman
+title: FOXDEN
+description: A Flexible and Federated Cyberinfrastructure for Data-Intensive Science
+
+relative_links:
+  enabled:     true
+  collections: false
