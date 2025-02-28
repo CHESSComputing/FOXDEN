@@ -14,7 +14,8 @@ export PATH=$PATH:/nfs/chess/sw/chessdata
 foxden token create read
 foxden token view
 ```
-- search for foxden records
+
+### search for foxden records
 ```
 # search CHESS data using query language, e.g. empty query match all records
 foxden search {}
@@ -33,3 +34,4 @@ foxden search pi:name
 # same as above but provide output in JSON data-format:
 foxden search pi:name --json
 ```
+
