@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.site-header {
+    background-color: #CBC9A8;
+}
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+code, pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    font-family: "Courier New", monospace;
+    padding: 5px;
+    border-radius: 5px;
+}
