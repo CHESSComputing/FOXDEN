@@ -17,9 +17,10 @@
 }
 #project_tagline {
     color: #000;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     background: none;
+    text-shadow: none;
 }
 #project_title {
     margin: 0;
@@ -27,8 +28,16 @@
     font-size: 42px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: none;
 }
 #forkme_banner {
+    color: #000;
     background: none;
     box-shadow: none;
+}
+footer p {
+    color: #000;
+}
+footer a {
+    color: none;
 }
