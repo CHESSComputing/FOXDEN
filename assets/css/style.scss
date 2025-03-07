@@ -1,6 +1,32 @@
 ---
 ---
+
 @import "{{ site.theme }}";
+
+.inner {
+    position: relative;
+    max-width: 800px;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+#project_tagline {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    background: none;
+    text-shadow: #111 0px 0px 10px;
+}
+#header_wrap {
+    background-color: #CBC9A8;
+}
+#project_title {
+    margin: 0;
+    color: #000;
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: #111 0px 0px 10px;
+}
+/*
 .site-header {
     background-color: #CBC9A8;
 }
@@ -15,3 +41,4 @@ code, pre {
     padding: 5px;
     border-radius: 5px;
 }
+*/
