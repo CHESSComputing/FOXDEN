@@ -1,11 +1,11 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
 #header_wrap {
     background-color: #CBC9A8;
 }
+@import "{{ site.theme }}";
+
 #project_tagline {
     color: #fff;
     font-size: 20px;
@@ -25,8 +25,4 @@
     max-width: 800px;
     padding: 20px 10px;
     margin: 0 auto;
-}
-
-.page-header {
-    background-color: #CBC9A8;
 }
