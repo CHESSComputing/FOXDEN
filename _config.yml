@@ -7,3 +7,6 @@ description: A Flexible and Federated Cyberinfrastructure for Data-Intensive Sci
 relative_links:
   enabled:     true
   collections: false
+
+sass:
+  style: compressed
