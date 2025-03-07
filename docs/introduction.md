@@ -1,6 +1,4 @@
-# FOXDEN: A Flexible and Federated Cyberinfrastructure for Data-Intensive Science
-
-## Introduction
+# Introduction
 
 **FOXDEN** is a system of **cyberinfrastructure (CI) building blocks** designed
 to support high-impact, data-intensive science through **heterogeneity,

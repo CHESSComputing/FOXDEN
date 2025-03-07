@@ -1,4 +1,4 @@
-# FOXDEB web interface
+# Web interface
 The FOXDEN web interface is simple and intuitive. Here we'll walk you through
 its main components.
 

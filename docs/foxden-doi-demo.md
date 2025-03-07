@@ -1,4 +1,4 @@
-# FOXDEN DOI demo
+# DOI demo
 Here we provide basic shell script demonstrating FOXDEN DOI publication
 steps:
 ```

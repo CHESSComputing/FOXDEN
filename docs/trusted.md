@@ -1,4 +1,4 @@
-# FOXDEN Trusted Users
+# Trusted Users
 
 A trusted foxden user does not need a kerberos ticket in order to obatin a FOXDEN token.
 This is useful because it enables data collection processes to automatically submit FOXDEN records without needing to keep renewing a ticket before making requests.

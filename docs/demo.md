@@ -1,4 +1,4 @@
-# FOXDEN demonstration
+# Demonstration
 In this tutorial we'll use FOXDEN CLI and web UI to demonstrate basic usage of
 FOXDEN.
 

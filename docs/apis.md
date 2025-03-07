@@ -1,4 +1,4 @@
-# FOXDEN API toolkit
+# API toolkit
 Below we provide description of individual FOXDEN services APIs.
 
 ### Frontend service

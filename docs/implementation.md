@@ -1,4 +1,4 @@
-# FOXDEN implementation 
+# Implementation 
 ![Implementation](images/Implementation.png)
 
 ---

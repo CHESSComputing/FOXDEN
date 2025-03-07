@@ -1,4 +1,4 @@
-# FOXDEN Authentication and Authorization service
+# Authentication and Authorization service
 
 FOXDEN [Auth/Authz](https://github.com/CHESSComputing/authz)
 is Authentication and Authorization service responsible

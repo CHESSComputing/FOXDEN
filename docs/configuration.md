@@ -1,4 +1,4 @@
-# FOXDEN configuration
+# Configuration
 FOXDEN configuration follows all Go Language strucs definitions
 from [config.go](https://github.com/CHESSComputing/golib/blob/main/config/config.go)
 file. We use [yaml](https://en.wikipedia.org/wiki/YAML) format

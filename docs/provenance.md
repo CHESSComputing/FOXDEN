@@ -1,4 +1,4 @@
-# FOXDEN Provenance service
+# Provenance service
 FOXDEN provenance service is responsible for keep track of
 provenance information in FOXDEN infrastructure.
 

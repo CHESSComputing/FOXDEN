@@ -1,4 +1,4 @@
-# CHESS/FOXDEN Dataset IDentifier
+# Dataset IDentifier
 The Dataset IDentifier (DID) is a unique identifier for the CHESS/FOXDEN
 dataset. It may be represented in two different forms:
 

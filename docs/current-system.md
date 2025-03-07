@@ -1,4 +1,4 @@
-# FOXDEN current system
+# Current system
 FOXDEN infrastructure is based on loosely couple services, see
 ![Implemenation](images/Implementation.png)
 

@@ -1,4 +1,4 @@
-# FOXDEN Meta Data service
+# Meta Data service
 FOXDEN Meta Data service is responsible for handling meta-data
 records. The meta-data records are stored based on pre-defined
 schema file. An example of schema files you can find

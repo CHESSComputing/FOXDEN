@@ -1,4 +1,4 @@
-# FOXDEN Deployments
+# Deployments
 
 FOXDEN can be deployed in different ways depending on your needs. This guide covers two primary deployment methods:
 

@@ -1,4 +1,4 @@
-### Data discovery
+# Data discovery
 write part about how to discover the data within FOXDEN:
 - explain FOXDEN web UI
 - explain web UI search

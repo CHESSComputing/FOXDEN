@@ -1,4 +1,4 @@
-## FOXDEN integration guidelines
+# Integration guidelines
 This document provides integration guidelines to include new
 beamline (or any other experiment or data set) into FOXDEN.
 
