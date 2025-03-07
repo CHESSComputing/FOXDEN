@@ -1,4 +1,4 @@
-# FOXDEN Documentation
+## Documentation
 - [Introduction](/docs/introduction.md)
 - [Current system](/docs/current-system.md)
 - [Quick start guide](/docs/quickstart.md)

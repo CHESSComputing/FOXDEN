@@ -16,19 +16,19 @@
     background: #CBC9A8;
 }
 #project_tagline {
-    color: #fff;
+    color: #000;
     font-size: 20px;
     font-weight: 300;
     background: none;
-    text-shadow: #111 0px 0px 10px;
 }
 #project_title {
     margin: 0;
-    color: #fff;
+    color: #000;
     font-size: 42px;
     font-weight: 700;
-    text-shadow: #111 0px 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #forkme_banner {
     background: none;
+    box-shadow: none;
 }
