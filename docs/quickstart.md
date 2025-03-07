@@ -41,6 +41,7 @@ To test the Metadata Service:
 ## **Command-line Interface (CLI)**
 1. [Connect to lnx201.classe.cornell.edu](https://wiki.classe.cornell.edu/Computing/LinuxSupport) and log in with your CLASSE credentials
 2. Create a FOXDEN configuration file at `$HOME/.foxden-dev.yaml` and copy and paste the configuration below:
+
 ```yaml
 Services:
   FrontendUrl: https://foxden-dev.classe.cornell.edu:8344
@@ -59,8 +60,10 @@ Kerberos:
 Authz:
   ClientId: client_id
 ```
+
 3. Run the following commands on the command line:
-```sh
+
+```
 # Add FOXDEN CLI to your PATH
 export PATH=$PATH:/nfs/chess/sw/chessdata
 
@@ -71,8 +74,10 @@ export FOXDEN_CONFIG=$HOME/.foxden-dev.yaml
 export KRB5CCNAME=FILE:$HOME/krb5cc_ccache
 kinit
 ```
+
 4. Now, you can run FOXDEN commands:
-```sh
+
+```
 # Obtain FOXDEN tokens (read, write, or both)
 foxden token create read
 
