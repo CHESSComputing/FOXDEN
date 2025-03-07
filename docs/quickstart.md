@@ -1,6 +1,6 @@
-# FOXDEN Quickstart Guide
+# Quickstart Guide
 
-## Introduction
+### Introduction
 
 FOXDEN is composed of loosely coupled [services](https://github.com/orgs/CHESSComputing/repositories):  
 - **Frontend**: Provides a web UI for searching and accessing contents of all services below.  
