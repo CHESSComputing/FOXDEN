@@ -3,11 +3,8 @@
 
 @import "{{ site.theme }}";
 
-.inner {
-    position: relative;
-    max-width: 800px;
-    padding: 20px 10px;
-    margin: 0 auto;
+#header_wrap {
+    background-color: #CBC9A8;
 }
 #project_tagline {
     color: #fff;
@@ -16,29 +13,16 @@
     background: none;
     text-shadow: #111 0px 0px 10px;
 }
-#header_wrap {
-    background-color: #CBC9A8;
-}
 #project_title {
     margin: 0;
-    color: #000;
+    color: #fff;
     font-size: 42px;
     font-weight: 700;
     text-shadow: #111 0px 0px 10px;
 }
-/*
-.site-header {
-    background-color: #CBC9A8;
-}
-.wrapper {
+.inner {
+    position: relative;
     max-width: 800px;
-    margin: auto;
+    padding: 20px 10px;
+    margin: 0 auto;
 }
-code, pre {
-    background-color: #2d2d2d;
-    color: #f8f8f2;
-    font-family: "Courier New", monospace;
-    padding: 5px;
-    border-radius: 5px;
-}
-*/
