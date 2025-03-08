@@ -3,6 +3,9 @@
 
 @import "{{ site.theme }}";
 
+body {
+    background: #CBC9A8;
+}
 .inner {
     position: relative;
     max-width: 800px;
