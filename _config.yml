@@ -2,7 +2,8 @@ remote_theme: pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: FOXDEN
-description: A Flexible and Federated Cyberinfrastructure for Data-Intensive Science
+description: FAIR Open-Science Extensible Data Exchange Network
+#description: A Flexible and Federated Cyberinfrastructure for Data-Intensive Science
 
 relative_links:
   enabled:     true

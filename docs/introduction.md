@@ -1,5 +1,7 @@
 # Introduction
 
+FOXDEN stands for FAIR Open-Science Extensible Data Exchange Network.
+
 **FOXDEN** is a system of **cyberinfrastructure (CI) building blocks** designed
 to support high-impact, data-intensive science through **heterogeneity,
 modularity, and interoperability**. Unlike monolithic data platforms, FOXDEN
