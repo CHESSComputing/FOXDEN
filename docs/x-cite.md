@@ -1,4 +1,14 @@
-# Data discovery
+# Introduction
+This tutorial is designed to walk you through physics analysis workflows
+from time you collect the data to perform a final analysis. 
+
+# FOXDEN
+FOXDEN stands for FAIR Open-Science Extensible Data Exchange Network.
+It is a Flexible and Federated Cyberinfrastructure for Data-Intensive Science.
+Technically speaking it is set of services which will help you
+to organize your data and use it for your analysis.
+
+### Data discovery
 write part about how to discover the data within FOXDEN:
 - explain FOXDEN web UI
 - explain web UI search
@@ -26,3 +36,4 @@ foxden meta add demo-meta.json --schema=demo --config ~/foxden-demo.yaml
 ```
 
 ### Data Analysis
+Explain CHAP and provide examples how to process and analyze the data.
