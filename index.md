@@ -9,6 +9,7 @@
   - [Configuration](/docs/configuration.md)
   - [Deployment](/docs/deployment.md)
   - [Dataset IDentifier (DID)](/docs/did.md)
+  - [DOI support](doi.md)
 
 - **FOXDEN services**
   - [Frontend service (web UI)](/docs/web.md)
@@ -27,7 +28,7 @@
 - **FOXDEN tutorials**
   - [CLI talk (PDF)](/docs/foxden-cli.pdf)
   - [CLI demo](/docs/foxden-cli-demo.md)
-  - [doi demo](/docs/foxden-doi-demo.md)
+<!--  - [doi demo](/docs/foxden-doi-demo.md)-->
   - [curl client](/docs/curl.md)
   - [Integration guidelines](/docs/integration.md)
   - [Trusted clients](/docs/trusted.md)
