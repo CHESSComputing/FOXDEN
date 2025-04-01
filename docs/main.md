@@ -16,18 +16,21 @@
   - [MLHub](mlhub.md)
   - [CHESS Analysis Pipeline (CHAP)](chap.md)
   - [CHAP Notebook](notebook.md)
-- [Web interface](web.md)
-- [CLI tool](cli.md)
-- [Demo](demo.md)
-- [Configuration](configuration.md)
-- [Architecture](architecture.md)
-- [Infrastructure](infrastructure.md).
+- FOXDEN tools
+  - [Web interface](web.md)
+  - [CLI tool](cli.md)
+- FOXDEN concepts:
+  - [Dataset IDentifier (DID)](did.md)
+  - [DOI support](doi.md)
+- FOXDEN overview:
+  - [Demo](demo.md)
+  - [Configuration](configuration.md)
+  - [Architecture](architecture.md)
+  - [Infrastructure](infrastructure.md).
 - FOXDEN tutorials:
   - [CLI talk (PDF)](foxden-cli.pdf)
   - [CLI demo](foxden-cli-demo.md)
-  - [doi demo](foxden-doi-demo.md)
   - [curl client](curl.md)
   - [Integration guidelines](integration.md)
   - [Trusted clients](trusted.md)
-- [Dataset IDentifier (DID)](did.md)
 - [References](references.md)
