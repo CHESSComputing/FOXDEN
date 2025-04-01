@@ -45,3 +45,36 @@ curl -H "Accept: application/json" \
     -H "Authorization: bearer $token" \
     http://localhost:8300/123456789
 ```
+
+### Backends
+The Metadata services supports setup of different backends:
+- [MongoDB](https://www.mongodb.com/): document oriented database used by
+  Metadata service by default. Since it is external project you need to
+  properly install it on your system. In addition we highly recommend to
+  setup the following indexes within MongoDB:
+```
+# In MongoDB it is desired to create individual indexes
+# to speed up data look-up.
+
+# if your database is called foxden.meta, then setup your indexes as following:
+# Step 1: login to your MongoDB
+
+# Step 2: use your desired database, e.g. foxden
+mongo > use foxden
+
+# Step 3: create necessary indexes
+
+# index on did should be unique
+foxden> db.meta.createIndex({did:1}, {unique: true})
+
+# index on doi is not unique as we may have records with no DOI
+foxden> db.meta.createIndex({doi:1})
+
+# verify your indexes
+foxden> db.meta.getIndexes()
+```
+
+- [Badger](https://github.com/hypermodeinc/badger): embedded key-value database
+  developed by [Dgraph](https://github.com/hypermodeinc/dgraph)
+- [Clover](https://github.com/ostafen/clover): a lightweight document-oriented NoSQL database written in pure Golang.
+- [Tiedot](https://github.com/HouzuoGuo/tiedot/): a basic document (NoSQL) database in Go.
