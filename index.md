@@ -9,7 +9,7 @@
   - [Configuration](/docs/configuration.md)
   - [Deployment](/docs/deployment.md)
   - [Dataset IDentifier (DID)](/docs/did.md)
-  - [DOI support](doi.md)
+  - [DOI support](/docs/doi.md)
 
 - **FOXDEN services**
   - [Frontend service (web UI)](/docs/web.md)
