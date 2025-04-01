@@ -6,8 +6,7 @@ FOXDEN provides a **DOIService** for managing and looking up DOI (Digital Object
 
 FOXDEN supports DOI management through both its **web UI** and **CLI**. Users can:
 
-- **Create DOI records** for datasets via the FOXDEN web interface.
-- **Start with a Draft**: By default, new DOI records are created in **Draft** mode and can later be **converted to public**.
+- **Create DOI records** for datasets via the FOXDEN web interface. By default it is created in **Draft** mode and can later be **converted to public**.
 - **Use multiple DOI providers**: FOXDEN integrates with three DOI providers:
   - [DataCite](https://datacite.org/)
   - [Zenodo](https://zenodo.org/)
@@ -20,11 +19,10 @@ FOXDEN supports DOI management through both its **web UI** and **CLI**. Users ca
 
 To create a DOI record for a dataset:
 
-1. Navigate to the **DOIService** section in the FOXDEN web UI.
-2. Select the dataset for which you want to generate a DOI.
-3. Click **"Create DOI"** – this will initially create a **Draft DOI record**.
-4. Once reviewed, convert the Draft record into a **Public DOI**.
-5. The dataset will then be accessible via its permanent DOI link.
+1. Navigate to the FOXDEN web UI and search for your desired dataset
+2. Click **"Create DOI"** button – this will leads you to web form which will create **Draft** or **Public** DOI record
+3. Eventually, you may convert the Draft record into a **Public DOI** too
+4. The dataset will then be accessible via its permanent DOI link.
 
 ---
 
