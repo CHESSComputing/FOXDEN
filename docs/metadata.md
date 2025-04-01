@@ -52,6 +52,7 @@ The Metadata services supports setup of different backends:
   Metadata service by default. Since it is external project you need to
   properly install it on your system. In addition we highly recommend to
   setup the following indexes within MongoDB:
+
 ```
 # In MongoDB it is desired to create individual indexes
 # to speed up data look-up.
