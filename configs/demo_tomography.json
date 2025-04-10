@@ -14,7 +14,7 @@
     "type": "string",
     "optional": false,
     "multiple": false,
-    "section": "Experiment",
+    "section": "User",
     "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF",
     "units": "",
     "placeholder": "CHESS"
@@ -24,10 +24,10 @@
     "type": "list_str",
     "optional": false,
     "multiple": false,
-    "section": "Experiment",
+    "section": "User",
     "description": "Specify beamline",
     "units": "",
-    "placeholder": "3A",
+    "placeholder": "demo",
     "value": [
       "",
       "1A3",
@@ -79,7 +79,17 @@
     "section": "DataLocations",
     "description": "Location of the raw data ",
     "units": "",
-    "placeholder": "/tmp"
+    "placeholder": "/tmp_raw"
+  },
+  {
+    "key": "data_location_reduced",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Location of the reduced data",
+    "units": "",
+    "placeholder": "/tmp_reduced"
   },
   {
     "key": "beam_energy",
@@ -90,5 +100,23 @@
     "description": "Beam energy [keV]",
     "units": "",
     "placeholder": "41.991"
+  },
+  {
+    "key": "experiment_type",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Experiment type(s)",
+    "units": "",
+    "placeholder": "imaging",
+    "value": [
+      "",
+      "scattering/diffraction",
+      "imaging",
+      "spectroscopy",
+      "crystallography",
+      "other"
+    ]
   }
 ]
