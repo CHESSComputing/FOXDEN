@@ -1,0 +1,94 @@
+[
+  {
+    "key": "did",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier",
+    "units": "",
+    "placeholder": "/beamline=demo/btr=user-1234-a/cycle=2025-2/sample_name=test2"
+  },
+  {
+    "key": "facility",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "beamline",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Specify beamline",
+    "units": "",
+    "placeholder": "3A",
+    "value": [
+      "",
+      "1A3",
+      "2A",
+      "3A",
+      "3B",
+      "4B",
+      "7A",
+      "7B2",
+      "demo",
+      "test"
+    ]
+  },
+  {
+    "key": "btr",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Beamtime request ID",
+    "units": "",
+    "placeholder": "user-1234-a"
+  },
+  {
+    "key": "cycle",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify the run cycle (e.g. 2025-2)",
+    "units": "",
+    "placeholder": "2025-2"
+  },
+  {
+    "key": "sample_name",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Sample name/ID that you used in newsample",
+    "units": "",
+    "placeholder": "test2"
+  },
+  {
+    "key": "data_location_raw",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Location of the raw data ",
+    "units": "",
+    "placeholder": "/tmp"
+  },
+  {
+    "key": "beam_energy",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beam energy [keV]",
+    "units": "",
+    "placeholder": "41.991"
+  }
+]
