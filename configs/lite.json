@@ -1,6 +1,6 @@
 [
     {
-        "key": "Facility",
+        "key": "facility",
         "type": "string",
         "optional": false,
         "section": "User",
@@ -10,7 +10,7 @@
         ]
     },
     {
-        "key": "Cycle",
+        "key": "cycle",
         "type": "string",
         "optional": false,
         "section": "User",
@@ -22,7 +22,7 @@
         "value": "2022-2"
     },
     {
-        "key": "PI",
+        "key": "pi",
         "type": "string",
         "optional": false,
         "section": "User",
@@ -30,7 +30,7 @@
         "placeholder": "wilson"
     },
     {
-        "key": "BTR",
+        "key": "btr",
         "type": "string",
         "optional": false,
         "section": "User",
@@ -38,7 +38,7 @@
         "placeholder": "wilson-161-a"
     },
     {
-        "key": "Experimenters",
+        "key": "experimenters",
         "type": "string",
         "optional": true,
         "section": "User",
@@ -46,7 +46,7 @@
         "placeholder": "lastname 1, lastname 2"
     },
     {
-        "key": "Beamline",
+        "key": "beamline",
         "type": "list_str",
         "optional": false,
         "multiple": false,
@@ -65,7 +65,7 @@
         ]
     },
     {
-        "key": "StaffScientist",
+        "key": "staff_scientist",
         "type": "string",
         "optional": false,
         "section": "User",
@@ -73,7 +73,7 @@
         "placeholder": "staffsci-lastname 1, staffsci-lastname 2"
     },
     {
-        "key": "BeamlineFundingPartner",
+        "key": "beamline_funding_partner",
         "type": "list_str",
         "optional": false,
         "section": "User",
@@ -87,7 +87,7 @@
         ]
     },
     {
-        "key": "Alignment",
+        "key": "alignment",
         "type": "bool",
         "optional": false,
         "section": "Alignment",
@@ -100,14 +100,14 @@
         ]
     },
     {
-        "key": "DataLocationRaw",
+        "key": "data_location_raw",
         "type": "string",
         "optional": false,
         "section": "DataLocations",
         "placeholder": "/nfs/chess/raw/2022-3/id1a3/wilson-161-a"
     },
     {
-        "key": "Detectors",
+        "key": "detectors",
         "type": "list_str",
         "optional": false,
         "section": "Experiment",
@@ -128,7 +128,7 @@
         ]
     },
     {
-        "key": "CESRConditions",
+        "key": "cesr_conditions",
         "type": "list_str",
         "optional": false,
         "section": "Beam",
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "key": "ExperimentType",
+        "key": "experimen_type",
         "type": "list_str",
         "optional": false,
         "section": "Experiment",
@@ -154,7 +154,7 @@
         ]
     },
     {
-        "key": "Technique",
+        "key": "technique",
         "type": "list_str",
         "optional": false,
         "section": "Experiment",
@@ -175,7 +175,7 @@
         ]
     },
     {
-        "key": "SampleType",
+        "key": "sample_type",
         "type": "list_str",
         "optional": true,
         "section": "Sample",
@@ -194,14 +194,14 @@
         ]
     },
     {
-        "key": "SampleName",
+        "key": "sample_name",
         "type": "string",
         "optional": true,
         "section": "Sample",
         "placeholder": "TitaniumDioxide-samp2"
     },
     {
-        "key": "Calibration",
+        "key": "calibration",
         "type": "bool",
         "optional": true,
         "section": "Sample",
@@ -213,28 +213,28 @@
         ]
     },
     {
-        "key": "DataLocationMeta",
+        "key": "data_location_meta",
         "type": "string",
         "optional": true,
         "section": "DataLocations",
         "placeholder": "/nfs/chess/metadata/2022-3/id1a3/wilson-161-a"
     },
     {
-        "key": "DataLocationReduced",
+        "key": "data_location_reduced",
         "type": "string",
         "optional": true,
         "section": "DataLocations",
         "placeholder": "/nfs/chess/reduced/2022-3/id1a3/wilson-161-a"
     },
     {
-        "key": "DataLocationScratch",
+        "key": "data_location_scratch",
         "type": "string",
         "optional": true,
         "section": "DataLocations",
         "placeholder": "/nfs/chess/scratch/2022-3/id1a3/wilson-161-a"
     },
     {
-        "key": "DataLocationBeamtimeNotes",
+        "key": "data_location_beamtime_notes",
         "type": "string",
         "optional": true,
         "section": "DataLocations",
