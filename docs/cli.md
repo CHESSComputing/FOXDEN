@@ -25,7 +25,7 @@ foxden search {} --json
 
 # search using query language,
 # provide valid JSON use single quotes around it and double quotes for key:value pairs
-foxden search '{"PI":"name"}'
+foxden search '{"pi":"name"}'
 
 # search using key:value pairs, e.g. pi:name where 'pi' is record key and 'name' would be PI user name
 # keys can be in lower case, e.g. pi instead of PI used in meta-data record
@@ -34,4 +34,6 @@ foxden search pi:name
 # same as above but provide output in JSON data-format:
 foxden search pi:name --json
 ```
+
+Note: search keys are case insensitive (but values are taken as is)
 
