@@ -1,4 +1,4 @@
-# CLI demo
+# CLI commands
 Here we show basic shell script demonstrating FOXDEN CLI commands.
 Feel free to adapt it for your use-case:
 ```

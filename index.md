@@ -27,7 +27,9 @@
 
 - **FOXDEN tutorials**
   - [CLI talk (PDF)](/docs/foxden-cli.pdf)
-  - [CLI demo](/docs/foxden-cli-demo.md)
+  - [FOXDEN web UI tutorial](/docs/web_tutorial.md)
+  - [FOXDEN CLI tutorial](/docs/cli_tutorial.md)
+  - [CLI commands](/docs/foxden-cli-demo.md)
 <!--  - [doi demo](/docs/foxden-doi-demo.md)-->
   - [curl client](/docs/curl.md)
   - [Integration guidelines](/docs/integration.md)
