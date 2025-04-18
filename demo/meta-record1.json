@@ -1,0 +1,10 @@
+{
+    "did": "/beamline=3a/btr=testbtr/cycle=testcycle/sample_name=testsample/user=test",
+    "facility": "test",
+    "beamline": ["3A", "3B"],
+    "btr": "testbtr",
+    "cycle": "testcycle",
+    "sample_name": "testsample",
+    "data_location_raw": "/tmp",
+    "beam_energy": 123.456
+}
