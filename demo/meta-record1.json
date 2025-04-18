@@ -5,6 +5,6 @@
     "btr": "testbtr",
     "cycle": "testcycle",
     "sample_name": "testsample",
-    "data_location_raw": "/tmp",
+    "data_location_raw": "/nfs/chess/user/x-cite/data",
     "beam_energy": 123.456
 }
