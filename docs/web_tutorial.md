@@ -9,9 +9,11 @@ final physics analysis, including DOI publication.
 FOXDEN provides web UI and Command Line Interface (CLI).
 
 ### FOXDEN web interface
-For our tutorial we will use a demo version of FOXDEN infrustructure which is available
-at https://foxden-demo.classe.cornell.edu:18344 Please navigate to this URL and followin
-these steps:
+For our tutorial we will use a demo version of FOXDEN infrastructure.
+We will also rely on set of pre-populated records available at
+[FOXDEN demo repository](https://github.com/CHESSComputing/FOXDEN/tree/main/demo)
+
+To proceed please navigate to this foxden-demo URL and follow these steps:
 
 #### Authentication page
 First time you access FOXDEN you'll be prompted for your
