@@ -1,10 +1,12 @@
 {
-    "did": "/beamline=3a/btr=testbtr/cycle=testcycle/sample_name=testsample/user=test/child=true",
-    "facility": "test",
+    "did": "/beamline=3a/btr=ttestuser-1234-a/cycle=2025-2/sample_name=sample2/user=test/child=true",
+    "facility": "CHESS",
     "beamline": ["3A"],
-    "btr": "testbtr",
-    "cycle": "testcycle",
-    "sample_name": "testsample",
+    "btr": "testuser-1234-a",
+    "cycle": "2025-2",
+    "sample_name": "sample2",
     "data_location_raw": "/nfs/chess/user/x-cite/data",
-    "beam_energy": 987.654
+    "beam_energy": 41.991,
+    "experiment_type": "imaging",
+    "in_situ": "false"
 }
