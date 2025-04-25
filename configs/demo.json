@@ -90,5 +90,23 @@
     "description": "Beam energy [keV]",
     "units": "",
     "placeholder": "41.991"
+  },
+  {
+    "key": "experiment_type",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Experiment type(s)",
+    "units": "",
+    "placeholder": "scattering/diffraction",
+    "value": [
+      "",
+      "scattering/diffraction",
+      "imaging",
+      "spectroscopy",
+      "crystallography",
+      "other"
+    ]
   }
 ]
