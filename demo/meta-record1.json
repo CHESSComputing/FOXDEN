@@ -1,10 +1,12 @@
 {
-    "did": "/beamline=3a/btr=testbtr/cycle=testcycle/sample_name=testsample/user=test",
-    "facility": "test",
+    "did": "/beamline=3a/btr=user-1234-a/cycle=2025-2/sample_name=testsample/user=test",
+    "facility": "CHESS",
     "beamline": ["3A", "3B"],
-    "btr": "testbtr",
-    "cycle": "testcycle",
+    "btr": "user-1234-a",
+    "cycle": "2025-2",
     "sample_name": "testsample",
     "data_location_raw": "/nfs/chess/user/x-cite/data",
-    "beam_energy": 123.456
+    "beam_energy": 61.332,
+    "experiment_type": "scattering/diffraction",
+    "in_situ": "true"
 }
