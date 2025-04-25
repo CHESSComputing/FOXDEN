@@ -7,7 +7,7 @@
     "section": "User",
     "description": "Dataset IDentifier",
     "units": "",
-    "placeholder": "/beamline=demo/btr=user-123/cycle=bla/sample_name=foo"
+    "placeholder": "/beamline=demo/btr=user-1234-a/cycle=2025-2/sample_name=testsample"
   },
   {
     "key": "facility",
@@ -27,7 +27,7 @@
     "section": "Experiment",
     "description": "Specify beamline",
     "units": "",
-    "placeholder": "3B",
+    "placeholder": "3A",
     "value": [
       "",
       "1A3",
@@ -49,7 +49,7 @@
     "section": "User",
     "description": "Beamtime request ID",
     "units": "",
-    "placeholder": "wilson-1234-a"
+    "placeholder": "user-1234-a"
   },
   {
     "key": "cycle",
@@ -59,7 +59,7 @@
     "section": "User",
     "description": "Specify the run cycle (e.g. 2022-3)",
     "units": "",
-    "placeholder": "2022-3"
+    "placeholder": "2025-2"
   },
   {
     "key": "sample_name",
@@ -69,7 +69,7 @@
     "section": "Sample",
     "description": "Sample name/ID that you used in newsample",
     "units": "",
-    "placeholder": "ti64-1"
+    "placeholder": "testsample"
   },
   {
     "key": "data_location_raw",
