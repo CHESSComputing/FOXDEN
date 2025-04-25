@@ -1,8 +1,8 @@
 {
-    "did": "/beamline=3a/btr=user-1234-a/cycle=2025-2/sample_name=sample1/user=test",
+    "did": "/beamline=3a/btr=user-1234-a/cycle=2025-2/sample_name=sample1/user=testuser",
     "facility": "CHESS",
     "beamline": ["3A", "3B"],
-    "btr": "user-1234-a",
+    "btr": "testuser-1234-a",
     "cycle": "2025-2",
     "sample_name": "sample1",
     "data_location_raw": "/nfs/chess/user/x-cite/data",
