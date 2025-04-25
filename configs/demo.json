@@ -108,5 +108,20 @@
       "crystallography",
       "other"
     ]
+  },
+  {
+    "key": "in_situ",
+    "type": "bool",
+    "optional": false,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Is this an in-situ experiment?",
+    "units": "",
+    "placeholder": "false",
+    "value": [
+      "",
+      "true",
+      "false"
+    ]
   }
 ]
