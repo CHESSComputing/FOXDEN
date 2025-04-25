@@ -1,5 +1,5 @@
 {
-    "did": "/beamline=3a/btr=ttestuser-1234-a/cycle=2025-2/sample_name=sample2/user=test/child=true",
+    "did": "/beamline=3a/btr=ttestuser-1234-a/cycle=2025-2/sample_name=sample2/user=testuser/child=true",
     "facility": "CHESS",
     "beamline": ["3A"],
     "btr": "testuser-1234-a",
