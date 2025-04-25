@@ -1,0 +1,10 @@
+{
+    "did": "/beamline=3a/btr=testbtr/cycle=testcycle/sample_name=testsample/user=test/child=true",
+    "facility": "test",
+    "beamline": ["3A"],
+    "btr": "testbtr",
+    "cycle": "testcycle",
+    "sample_name": "testsample",
+    "data_location_raw": "/nfs/chess/user/x-cite/data",
+    "beam_energy": 987.654
+}

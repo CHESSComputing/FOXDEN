@@ -1,0 +1,28 @@
+{
+  "buckets": [],
+  "input_files": [
+    {"name": "/tmp/file1.png"},
+    {"name": "/tmp/file2.png"}
+  ],
+  "output_files": [
+    {"name": "/tmp/file3.png"}
+  ],
+  "parent_did": "/beamline=3a/btr=testbtr/cycle=testcycle/sample_name=testsample/user=test",
+  "did": "/beamline=3a/btr=testbtr/cycle=testcycle/sample_name=testsample/user=test/child=true",
+  "processing": "glibc",
+  "osinfo": {"name": "linux-cc7", "kernel": "1-2-3", "version": "cc7-123"},
+  "environments": [
+      {"name": "conda-123", "version": "version", "details": "details",
+          "parent_environment": null, "os_name": "linux-cc7",
+          "packages": [
+              {"name": "numpy", "version": "123"},
+              {"name": "matplotlib", "version": "987"}
+          ]
+      }
+  ],
+  "scripts": [
+      {"name": "myscript", "options": "-m -p", "parent_script": null, "order_idx": 1},
+      {"name": "chap", "options": "-chap_options", "parent_script": "myscript", "order_idx": 2}
+  ],
+  "site": "Cornell"
+}

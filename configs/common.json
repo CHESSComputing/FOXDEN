@@ -1,14 +1,14 @@
 
 [
   {
-        "key": "Facility",
+        "key": "facility",
         "type": "string",
         "optional": false,
         "section": "User",
         "placeholder": "CHESS"
     },
     {
-        "key": "Cycle",
+        "key": "cycle",
         "type": "string",
         "optional": false,
         "section": "User",
@@ -16,7 +16,7 @@
         "value": ["2022-3"]
     },
 {
-        "key": "PI",
+        "key": "pi",
         "type": "string",
         "optional": false,
         "section": "User",
@@ -24,7 +24,7 @@
         "placeholder": "wilson"
     },
   {
-        "key": "BTR",
+        "key": "btr",
         "type": "string",
         "optional": false,
         "section": "User",
@@ -32,7 +32,7 @@
         "placeholder": "wilson-161-a"
     },
   {
-        "key": "Experimenters",
+        "key": "experimenters",
         "type": "string",
         "optional": true,
         "section": "User",
@@ -40,14 +40,14 @@
         "placeholder": "lastname 1, lastname 2"
     },
   {
-        "key": "Beamline",
+        "key": "beamline",
         "type": "list_str",
         "optional": false,
         "section": "User",
         "value": ["2A", "3A", "3B", "4B", "7A", "7B2"]
     },
 {
-        "key": "StaffScientist",
+        "key": "staff_scientist",
         "type": "string",
         "optional": false,
         "section": "User",
@@ -55,97 +55,97 @@
         "placeholder": "staffsci-lastname 1, staffsci-lastname 2"
     },
 {
-        "key": "BeamlineFundingPartner",
+        "key": "beamline_funding_partner",
         "type": "list_str",
         "optional": false,
         "section": "User",
         "value": ["MSNC_AFRL", "MACCHESS_NSF_NIH", "CHESS_internal", "CHEXS_NSF"]
     },
 {
-        "key": "Alignment",
+        "key": "alignment",
         "type": "bool",
         "optional": false,
         "section": "Alignment",
         "description": "Is this data collection part of an alignment series?"
     },
   {
-        "key": "DataLocationRaw",
+        "key": "data_location_raw",
         "type": "string",
         "optional": false,
         "section": "DataLocations",
         "placeholder": "/nfs/chess/raw/2022-3/id1a3/wilson-161-a"
     },
 {
-        "key": "Detectors",
+        "key": "detectors",
         "type": "list_str",
         "optional": false,
         "section": "Experiment",
         "value": ["Vortex", "Pilatus6M", "DualDexelas", "GE2", "Manta", "Retiga", "Eiger216M", "Eiger1M", "Pilatus200K", "Pilatus300K", "CanberraSingleElement"]
     },
 {
-        "key": "CESRConditions",
+        "key": "cesr_conditions",
         "type": "list_str",
         "optional": false,
         "section": "Beam",
         "value": ["21BunchMode", "9x5BunchMode"]
     },
 {
-        "key": "ExperimentType",
+        "key": "experiment_type",
         "type": "list_str",
         "optional": false,
         "section": "Experiment",
         "value": ["Imaging", "Spectroscopy", "Crystallography", "Scattering/Diffraction"]
     },
 {
-        "key": "Technique",
+        "key": "technique",
         "type": "list_str",
         "optional": false,
         "section": "Experiment",
         "value": ["HighEnergyDiffractionMicroscopyNearField", "HighEnergyDiffractionMicroscopyFarField", "HighEnergyDiffractionMicroscopyMidField", "PowderDiffraction", "ResonantElasticX-rayScattering", "3DPDF", "DiffuseScattering", "SAXS+WAXS", "SAXS", "XRayFluorescence", "Tomography"]
     },
 {
-        "key": "SampleType",
+        "key": "sample_type",
         "type": "list_str",
         "optional": true,
         "section": "Sample",
         "value": ["sample+can", "can", "sample+butter", "buffer", "calibration sample", "normalisation sample", "simulated data", "none", "sample environment"]
     },
 {
-        "key": "SampleName",
+        "key": "sample_name",
         "type": "string",
         "optional": true,
         "section": "Sample",
         "placeholder": "TitaniumDioxide-samp2"
     },
 {
-        "key": "Calibration",
+        "key": "calibration",
         "type": "bool",
         "optional": true,
         "section": "Sample"
     },
 {
-        "key": "DataLocationMeta",
+        "key": "data_location_meta",
         "type": "string",
         "optional": true,
         "section": "DataLocations",
         "placeholder": "/nfs/chess/metadata/2022-3/id1a3/wilson-161-a"
     },
 {
-        "key": "DataLocationReduced",
+        "key": "data_location_reduced",
         "type": "string",
         "optional": true,
         "section": "DataLocations",
         "placeholder": "/nfs/chess/reduced/2022-3/id1a3/wilson-161-a"
     },
 {
-        "key": "DataLocationScratch",
+        "key": "data_location_scratch",
         "type": "string",
         "optional": true,
         "section": "DataLocations",
         "placeholder": "/nfs/chess/scratch/2022-3/id1a3/wilson-161-a"
     },
 {
-        "key": "DataLocationBeamtimeNotes",
+        "key": "data_location_beamtime_notes",
         "type": "string",
         "optional": true,
         "section": "DataLocations",
