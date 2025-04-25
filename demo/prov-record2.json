@@ -7,8 +7,8 @@
   "output_files": [
     {"name": "/tmp/file3.png"}
   ],
-  "parent_did": "/beamline=3a/btr=testbtr/cycle=testcycle/sample_name=testsample/user=test",
-  "did": "/beamline=3a/btr=testbtr/cycle=testcycle/sample_name=testsample/user=test/child=true",
+  "parent_did": "/beamline=3a/btr=testuser-1234-a/cycle=2025-2/sample_name=sample1/user=testuser",
+  "did": "/beamline=3a/btr=ttestuser-1234-a/cycle=2025-2/sample_name=sample2/user=testuser/child=true",
   "processing": "glibc",
   "osinfo": {"name": "linux-cc7", "kernel": "1-2-3", "version": "cc7-123"},
   "environments": [
