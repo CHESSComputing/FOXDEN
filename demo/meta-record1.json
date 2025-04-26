@@ -8,5 +8,5 @@
     "data_location_raw": "/nfs/chess/user/x-cite/data",
     "beam_energy": 61.332,
     "experiment_type": ["scattering/diffraction"],
-    "in_situ": "true"
+    "in_situ": true
 }
