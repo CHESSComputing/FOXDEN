@@ -1,0 +1,46 @@
+[
+  {
+    "beamline": "3A",
+    "btr": "testuser-1234-a",
+    "command": "ascan",
+    "comments": [
+    ],
+    "cycle": "2025-2",
+    "did": "/beamline=3a/btr=testuser-1234-a/cycle=2025-2/sample_name=sample1/user=testuser",
+    "motors": {
+      "chi": -1.38282775785648E-8,
+      "phi": 1.38282775785648E-8,
+      "samy": -0.000143981285290806,
+      "samz": -6.86645513781059E-8,
+      "saxx": -6.99999804687501,
+      "saxz": -32.0000012817383
+    },
+    "scan_number": 1,
+    "spec_file": "/tmp/sample1",
+    "spec_version": "n/a",
+    "start_time": 1.745688811e+09,
+    "status": "n/a",
+    "variables": {}
+  },
+  {
+    "beamline": "3A",
+    "btr": "testuser-1234-a",
+    "command": "ascan",
+    "comments": [
+    ],
+    "cycle": "2025-2",
+    "did": "/beamline=3a/btr=testuser-1234-a/cycle=2025-2/sample_name=sample1/user=testuser",
+    "motors": {
+      "ramsx": 0,
+      "ramsxr": 9.72407422303722,
+      "ramsyr": 10.0402681688693,
+      "ramsz": -3.40000091552734
+    },
+    "scan_number": 2,
+    "spec_file": "/tmp/sample1",
+    "spec_version": "n/a",
+    "start_time": 1.745688821e+09,
+    "status": "n/a",
+    "variables": {}
+  }
+]

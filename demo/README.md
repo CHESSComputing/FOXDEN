@@ -16,4 +16,7 @@ foxden meta add meta-record2.json --schema=demo --config ~/foxden-demo.yaml
 # inject provenance records
 foxden prov add prov-record1.json --config ~/foxden-demo.yaml
 foxden prov add prov-record2.json --config ~/foxden-demo.yaml
+
+# inject spec scan records
+foxden spec add scan-records.json --config ~/foxden-demo.yaml
 ```
