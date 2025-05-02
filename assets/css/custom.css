@@ -1,3 +1,20 @@
+#img_title {
+    margin: 0;
+    color: #000;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: none;
+
+    display: flex;
+    align-items: flex-end; /* Align items at the bottom */
+    gap: 10px; /* Space between image and text */
+}
+#img_title img {
+    max-height: 60px;
+    height: auto;
+}
+
 .header-container {
     text-align: center;
     margin-bottom: 20px;
@@ -11,8 +28,8 @@
     display: inline-block;
 /*    margin: 10px;*/
 /*    padding: 8px 16px;*/
-    background-color: #D6D6D6;
-    color: #fff;
+/*    background-color: #D6D6D6;*/
+/*    color: #fff;*/
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
