@@ -1,3 +1,5 @@
+![FOXDEN Logo](/assets/foxden-logo.png)
+
 ## Documentation
 - [Introduction](/docs/introduction.md)
 - [Current system](/docs/current-system.md)

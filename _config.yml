@@ -8,3 +8,13 @@ description: FAIR Open-Science Extensible Data Exchange Network
 relative_links:
   enabled:     true
   collections: false
+
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      css: "assets/css/custom.css"

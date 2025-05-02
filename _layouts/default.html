@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    {{ site.stylesheets }}
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="{{ '/' | relative_url }}" class="home-button">Home</a>
+        <div class="logo-container">
+          <img src="{{ '/assets/foxden-logo.png' | relative_url }}" alt="FOXDEN Logo">
+        </div>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    </footer>
+  </body>
+</html>
