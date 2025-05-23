@@ -5,7 +5,7 @@ code modules that are inserted into pre-defined workflows.
 
 It is accessible from FOXDEN services page (see Notebook link):
 
-![FOXDEN Services](images/foxden_services_page.png)
+![FOXDEN Services](images/FOXDEN_services_page.png)
 
 and it consists of login page where user should proceed with his/her Github
 account:
