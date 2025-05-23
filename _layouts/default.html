@@ -60,17 +60,17 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner footer-flex">
-        <img src="/assets/cornell_logo.png" alt="Cornell Logo" class="footer-img">
+        <img src="{{ '/assets/cornell_logo.png' | relative_url }}" alt="Cornell Logo" class="footer-img">
 
-         <p style="text-align: center;justify-content: center;align-items: center;">
+        <p style="footer-text">
             © {{ site.time | date: "%Y" }}
             <a href="https://chesscomputing.github.io/FOXDEN/">FOXDEN</a> | 
             <a href="https://www.cornell.edu/">Cornell University</a> |
             <a href="https://www.classe.cornell.edu/">CLASSE</a> |
             <a href="https://www.chess.cornell.edu/">CHESS</a>
-         </p>
+        </p>
 
-         <img src="/assets/nsf_logo.png" alt="NSF Logo" class="footer-img">
+        <img src="{{ '/assets/nsf_logo.png' | relative_url }}" alt="NSF Logo" class="footer-img">
       </footer>
     </div>
   </body>
