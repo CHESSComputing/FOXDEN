@@ -1,26 +1,5 @@
 # References
 
----
-
-
-### MinIO resources
-OreCase DataManagement layer is based on [MinIO](https://min.io/) framework.
-Here is helpful list of resources:
-- [MinIO for developers](https://www.youtube.com/watch?v=gY090GEDdu8&list=PLFOIsHSSYIK37B3VtACkNksUw8_puUuAC&pp=iAQB)
-- [Data redundancy and availability with MinIO](https://www.youtube.com/watch?v=QniHMNNmbfI)
-- [Replace file system with MinIO](https://medium.com/cloud-native-daily/replace-filesystem-with-minio-golang-3148c61f2d28)
-
-
----
-
-
-### JavaScript resources
-FOXDEN web UI is based on [JS superkube](https://imperavi.com/superkube/)
-
-
----
-
-
 ### GoLang resources
 FOXDEN backend implementation is based on [Gin](https://gin-gonic.com/) framework.
 Here we provide a useful list of resources used in FOXDEN development:
@@ -36,3 +15,22 @@ Here we provide a useful list of resources used in FOXDEN development:
 - [Go Auth](https://www.jetbrains.com/go/guide/tutorials/authentication-for-go-apps/auth/)
 - [Go OAuth2](https://github.com/go-oauth2/oauth2)
 - [Go security, JWT, auth, middleware and crypto](https://www.squash.io/golang-security-jwt-authentication-middleware-and-crypto-packages-in-gin/)
+---
+
+### MinIO resources
+OreCase DataManagement layer is based on [MinIO](https://min.io/) framework.
+Here is helpful list of resources:
+- [MinIO for developers](https://www.youtube.com/watch?v=gY090GEDdu8&list=PLFOIsHSSYIK37B3VtACkNksUw8_puUuAC&pp=iAQB)
+- [Data redundancy and availability with MinIO](https://www.youtube.com/watch?v=QniHMNNmbfI)
+- [Replace file system with MinIO](https://medium.com/cloud-native-daily/replace-filesystem-with-minio-golang-3148c61f2d28)
+
+
+---
+
+### JavaScript resources
+FOXDEN web UI is based on [JS superkube](https://imperavi.com/superkube/)
+
+
+---
+
+
