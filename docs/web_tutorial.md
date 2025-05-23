@@ -1,7 +1,7 @@
 ## FOXDEN web tutorial
 In this tutorial we will walk through
 [FOXDEN infrastructure](https://chesscomputing.github.io/FOXDEN/docs/introduction.html).
-[Current system](https://chesscomputing.github.io/FOXDEN/docs/current-system.html)
+The [current system](https://chesscomputing.github.io/FOXDEN/docs/current-system.html)
 consists of loosely coupled services which helps you organize your (meta-) data
 and provide traceability of your analysis workflows from acquiring the data to
 final physics analysis, including DOI publication.
