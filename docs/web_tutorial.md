@@ -40,13 +40,13 @@ form to inject your metadata record:
 ![FOXDEN_meta_web_page](images/FOXDEN_meta_web_page.png)
 
 Once we'll inject the metadata record you'll be given
-either *success* or *failure* pages
+either *success* or *failure* pages. 
+
+Here is an example of success page(s) where you can see your record details:
 
 ![FOXDEN_meta_success2](images/FOXDEN_meta_success2.png)
 
-On success page you can see your record details
-
-![FOXDEN_meta_success_page](FOXDEN_meta_success_page.png)
+![FOXDEN_meta_success_page](images/FOXDEN_meta_success_page.png)
 
 On failure page you'll be given some details of failed injection
 
