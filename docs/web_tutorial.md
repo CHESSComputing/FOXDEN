@@ -44,9 +44,9 @@ either *success* or *failure* pages.
 
 Here is an example of success page(s) where you can see your record details:
 
-![FOXDEN_meta_success2](images/FOXDEN_meta_success2.png)
-
 ![FOXDEN_meta_success_page](images/FOXDEN_meta_success_page.png)
+
+![FOXDEN_meta_success2](images/FOXDEN_meta_success2.png)
 
 On failure page you'll be given some details of failed injection
 
