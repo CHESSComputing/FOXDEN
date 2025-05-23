@@ -1,5 +1,7 @@
 # FOXDEN services
-FOXDEN infrastructure is based on loosely couple services, see
+FOXDEN infrastructure is based on loosely couple services, and properly
+layered/insulated as shown in the following diagram:
+
 ![Implemenation](images/Implementation.png)
 
 A user communicate through a secure channel with all of them
