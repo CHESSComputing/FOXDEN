@@ -41,7 +41,7 @@
 
 <!--          <h1 id="project_title">-->
           <h1 id="img_title">
-              <img src="{{ '/assets/foxden-logo.png' | relative_url }}" alt="FOXDEN Logo">
+              <img src="{{ '/assets/foxden-logo.png' | relative_url }}" alt="FOXDEN Logo" style="margin:0;border:0;box-shadow:0;">
               FOXDEN
           </h1>
           <h2 id="project_tagline">FAIR Open-Science Extensible Data Exchange Network</h2>
@@ -60,17 +60,24 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner footer-flex">
-        <img src="{{ '/assets/cornell_logo.png' | relative_url }}" alt="Cornell Logo" style="width:50px">
-
-        <p style="footer-text">
-            © {{ site.time | date: "%Y" }}
-            <a href="https://chesscomputing.github.io/FOXDEN/">FOXDEN</a> | 
-            <a href="https://www.cornell.edu/">Cornell University</a> |
-            <a href="https://www.classe.cornell.edu/">CLASSE</a> |
-            <a href="https://www.chess.cornell.edu/">CHESS</a>
-        </p>
-
-        <img src="{{ '/assets/nsf_logo.png' | relative_url }}" alt="NSF Logo" style="width:50px">
+        <table>
+          <tr>
+            <td>
+              <img src="{{ '/assets/cornell_logo.png' | relative_url }}" alt="Cornell Logo" style="width:50px;margin:0;border:0;box-shadow:0;">
+            </td>
+            <td>
+              <p style="footer-text">
+                  © {{ site.time | date: "%Y" }}
+                  <a href="https://chesscomputing.github.io/FOXDEN/">FOXDEN</a> | 
+                  <a href="https://www.cornell.edu/">Cornell University</a> |
+                  <a href="https://www.classe.cornell.edu/">CLASSE</a> |
+                  <a href="https://www.chess.cornell.edu/">CHESS</a>
+              </p>
+            </td>
+            <td>
+              <img src="{{ '/assets/nsf_logo.png' | relative_url }}" alt="NSF Logo" style="width:50px;margin:0;border:0;box-shadow:0;">
+            </td>
+          </tr>
       </footer>
     </div>
   </body>
