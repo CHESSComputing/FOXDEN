@@ -5,7 +5,7 @@
 
 - **FOXDEN internals**
   - [Architecture](/docs/architecture.md)
-  - [Infrastructure](/docs/infrastructure.md).
+  - [Infrastructure](/docs/infrastructure.md)
   - [Configuration](/docs/configuration.md)
   - [Deployment](/docs/deployment.md)
   - [Dataset IDentifier (DID)](/docs/did.md)
