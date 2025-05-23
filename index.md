@@ -30,10 +30,10 @@
 - [FOXDEN CLI tutorial](/docs/cli_tutorial.md)
 - [CLI commands](/docs/foxden-cli-demo.md)
 <!--  - [doi demo](/docs/foxden-doi-demo.md)-->
-- [CLI talk (PDF)](/docs/foxden-cli.pdf)
 - [curl client](/docs/curl.md)
 - [Integration guidelines](/docs/integration.md)
 - [Trusted clients](/docs/trusted.md)
 
-### [References]
+### References
 - [Technical links](/docs/references.md)
+- [CLI talk (PDF)](/docs/foxden-cli.pdf)
