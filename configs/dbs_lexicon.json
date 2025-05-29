@@ -2,13 +2,15 @@
   {
     "name": "file",
     "patterns": [
-      "^/([A-Za-z0-9._\\-/])+/([A-Za-z0-9._\\-])+(.root|.png|.tiff|.tif|.jpeg|jpg|.dat|.txt|.dlog|.mcs|.json|.nx(.xz){0,1})$"
+      "^/([A-Za-z0-9._\\-/])+/([A-Za-z0-9._\\-])+(.root|.png|.tiff|.tif|.jpeg|jpg|.dat|.txt|.dlog|.mcs|.json|.nx(.xz){0,1})$",
+      "^/([A-Za-z0-9._\-/]+)+/?([A-Za-z0-9._\-]+)?(\.[A-Za-z0-9]+)?$"
     ],
     "length": 500
   },
   {
     "name": "did",
     "patterns": [
+      "^/[a-z_]+=[a-z0-9\\,\\-\\._]+(/[a-z_]+=[a-z0-9\\-\\._]+)+",
       "^/[a-z]+=[a-zA-Z0-9\\-\\._\\,]+(/[a-z]+=[a-zA-Z0-9\\-\\._\\,]+)+",
       ".*unittest.*"
     ],
