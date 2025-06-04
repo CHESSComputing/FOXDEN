@@ -24,8 +24,8 @@ ssh -L LOCAL_PORT:foxden-dev:REMOTE_PORT USER@lnx201.classe.cornell.edu
 please replace `USER` with your lab user name, and use any number for 
 LOCAL_PORT, e.g. 9001. The `REMOTE_PORT` you will need to know.
 
-You may use a [CLASS VPN](https://wiki.classe.cornell.edu/Computing/ClasseVPN)
-instead.
+You may use a [CLASSE VPN](https://wiki.classe.cornell.edu/Computing/ClasseVPN)
+instead or any other VPN software of your choice to access CLASSE nodes.
 
 #### Authentication page
 First time you access FOXDEN you'll be prompted for your
