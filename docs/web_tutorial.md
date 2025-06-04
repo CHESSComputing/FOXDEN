@@ -15,6 +15,18 @@ We will also rely on set of pre-populated records available at
 
 To proceed please navigate to this foxden-demo URL and follow these steps:
 
+#### Setup VPM or SSH tunnel for remote access
+If you reside outside of lab network you may need to run VPN or ssh tunnel.
+Here is a simple command you need to use from your terminal
+```
+ssh -L LOCAL_PORT:foxden-dev:REMOTE_PORT USER@lnx201.classe.cornell.edu
+```
+please replace `USER` with your lab user name, and use any number for 
+LOCAL_PORT, e.g. 9001. The `REMOTE_PORT` you will need to know.
+
+You may use a [CLASS VPN](https://wiki.classe.cornell.edu/Computing/ClasseVPN)
+instead.
+
 #### Authentication page
 First time you access FOXDEN you'll be prompted for your
 CLASSE credential via FOXDEN authentication page:
