@@ -406,6 +406,7 @@
       "SAXS",
       "xray_fluorescence",
       "tomography",
+      "radiography",
       "other"
     ]
   },
@@ -615,7 +616,7 @@
     "optional": true,
     "multiple": false,
     "section": "Sample",
-    "description": "Sample space group",
+    "description": "Sample space group (IUCR convention)",
     "units": "",
     "placeholder": "194"
   },
