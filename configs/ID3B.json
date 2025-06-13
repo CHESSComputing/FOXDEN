@@ -78,6 +78,84 @@
     "description": "The relative path from the raw BTR directory to the spec file, including the spec file name",
     "units": "",
     "placeholder": "/"
-  }   
-  
+  },  
+  {
+    "key": "monochromator",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Monochromator type used",
+    "units": "",
+    "placeholder": "diamond111",
+    "value": [
+      "",      
+      "diamond111",
+      "diamond220",
+      "diamond311",
+      "diamond400",
+      "diamond333"
+    ]
+  },
+  {
+    "key": "beam_energy",
+    "type": "list_float",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beam energy [keV]",
+    "units": "keV",
+    "placeholder": "9.7, 15.9, 18.65, 22,5, 29.1"
+  },  
+  {
+    "key": "mirror",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Mirror position",
+    "units": "",
+    "placeholder": "In",
+    "value": [
+      "",
+      "in",
+      "out"
+    ]
+  },
+  {
+    "key": "beam_mode",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Focusing optic used, if any",
+    "units": "",
+    "placeholder": "Bulk",
+    "value": [
+      "",
+      "bulk",
+      "CRL"
+    ]
+  },
+  {
+    "key": "detectors",
+    "type": "list_str",
+    "optional": true,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Detectors used",
+    "units": "",
+    "placeholder": "pilatus_300K_pil5",
+    "value": [
+      "",
+      "pilatus_300K_pil5",
+      "pilatus_200K_pil9",
+      "pilatus_200K_pil11",      
+      "eiger_1M",
+      "andor2",
+      "vortex",            
+      "manta",
+      "other"
+    ]
+  }  
 ]
