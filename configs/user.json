@@ -1,0 +1,22 @@
+[
+  {
+    "key": "did",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "application",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Analysis application",
+    "units": "",
+    "placeholder": "CHAP"
+  }
+]
