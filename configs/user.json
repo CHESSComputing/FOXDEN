@@ -1,5 +1,15 @@
 [
   {
+    "key": "parent_did",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier of parent dataset",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
     "key": "did",
     "type": "string",
     "optional": true,
@@ -10,12 +20,92 @@
     "placeholder": "CHESS"
   },
   {
+    "key": "beamline",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset beameline",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "btr",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset btr",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "cycle",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset cycle",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "sample_name",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "sample name",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
     "key": "application",
     "type": "string",
     "optional": true,
     "multiple": false,
     "section": "User",
-    "description": "Analysis application",
+    "description": "application",
+    "units": "",
+    "placeholder": "CHAP"
+  },
+  {
+    "key": "processing",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "processing string",
+    "units": "",
+    "placeholder": "CHAP"
+  },
+  {
+    "key": "input_files",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "input files",
+    "units": "",
+    "placeholder": "CHAP"
+  },
+  {
+    "key": "output_files",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "output files",
+    "units": "",
+    "placeholder": "CHAP"
+  },
+  {
+    "key": "user_metadata",
+    "type": "any",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "User metadata",
     "units": "",
     "placeholder": "CHAP"
   }
