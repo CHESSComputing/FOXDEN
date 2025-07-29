@@ -1,10 +1,13 @@
 # FOXDEN Tools
-Users may user CHESS Data Management system in many ways
+FOXDEN users may access and use FOXDEN infrastructure in many different ways.
+For direct access of FOXDEN services please refer to the following materials:
 - web UI, please visit [home](/) page
 - [curl](https://curl.se/) client: [curl usage](/docs/curl.md)
 - Command line tool: [client](/docs/client.md)
 
-The Foxden tools are designed to help users to use and easily navigate
+----
+
+We also provides set of specialized tools to help users to use and easily navigate
 FOXDEN infrastructure and services. Below is a brief overview of
 each tool:
 
