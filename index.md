@@ -13,6 +13,7 @@
 
 ### FOXDEN services
 - [Frontend service (web UI)](/docs/web.md)
+- [FOXDEN tools](/docs/tools.md)
 - [Command line (CLI) tool](/docs/cli.md) and [demo](/docs/demo.md)
 - [Authentication and authorization service](/docs/authz.md)
 - [Data Discovery service](/docs/discovery.md)
