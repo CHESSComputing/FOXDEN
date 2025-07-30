@@ -8,6 +8,7 @@
 - [Infrastructure](/docs/infrastructure.md)
 - [Configuration](/docs/configuration.md)
 - [Deployment](/docs/deployment.md)
+- [Schemas](/docs/schemas.md)
 - [Dataset IDentifier (DID)](/docs/did.md)
 - [DOI support](/docs/doi.md)
 
