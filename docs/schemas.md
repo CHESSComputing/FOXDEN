@@ -53,6 +53,9 @@ For example, here is a schema definition file:
 ]
 ```
 
+Concrete CHESS beamline schemas can be found in FOXDEN configuration repository
+over [here](https://github.com/CHESSComputing/FOXDEN/tree/main/configs).
+
 ### FOXDEN Provenance Schemas
 To manage provenance information, we rely on a relational database and thus use
 a relational schema for data provenance. The provenance attributes include:
