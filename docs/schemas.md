@@ -12,7 +12,15 @@ A schema file is a JSON list of records, where each record should provide the
 following attributes:
 
 - `key`: Defines the metadata key
-- `type`: Specifies the data type of the metadata key (e.g., string, int, float). List data types such as "list_str" are also supported
+- `type`: Specifies the data type of the metadata key. The supported data-types are the following:
+   - bool for boolean data-type
+   - int, int8, int16, int32, int64 for integer data-types of different
+     precisions
+   - float32, float64 for float data types of different precisions
+   - string for string data types
+   - list_str, list_int, list_float for differnet list types
+   - any provides support of user defined data-structures, e.g.
+     dictionaries, yaml, JSON, etc.
 - `optional`: A boolean flag indicating whether the metadata key is optional
 - `multiple`: Indicates if the metadata key can have multiple values
 - `section`: Defines the placement of the key within the web UI section
@@ -20,6 +28,7 @@ following attributes:
 - `units`: Specifies the units used for the metadata key values
 - `placeholder`: Specifies the necessary placeholder string in the web UI
 - `file`: Defines the full path of an embedded schema
+- `value`: Defines default values of the metadata key
 
 For example, here is a schema definition file:
 
