@@ -123,7 +123,7 @@
     ]
   },
   {
-    "key": "beam_mode",
+    "key": "focusing",
     "type": "list_str",
     "optional": true,
     "multiple": false,
@@ -157,5 +157,69 @@
       "manta",
       "other"
     ]
-  }  
+  },
+  {
+    "key": "in_situ",
+    "type": "bool",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Is this an in-situ experiment?",
+    "units": "",
+    "placeholder": "false",
+    "value": [
+      "",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "key": "bed_temperature_set",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Set bed temperature in degC",
+    "units": "degC",
+    "placeholder": ""
+  },
+  {
+    "key": "nozzle_temperature",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Nozzle temperature in degC",
+    "units": "degC",
+    "placeholder": ""
+  },
+  {
+    "key": "nozzle_rate",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Nozzle rate in mm/s",
+    "units": "mm/s",
+    "placeholder": ""
+  },
+  {
+    "key": "bed_rate",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Bed rate in mm/s",
+    "units": "mm/s",
+    "placeholder": ""
+  },  
+  {
+    "key": "feed_rate",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Roller feed rate in mm/s",
+    "units": "mm/s",
+    "placeholder": ""  }    
 ]
