@@ -174,6 +174,15 @@
     ]
   },
   {
+    "key": "polymer_type",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Is this an in-situ experiment?",
+    "placeholder": "PEEK"
+  },
+  {
     "key": "bed_temperature_set",
     "type": "float64",
     "optional": true,
@@ -221,5 +230,6 @@
     "section": "Experiment",
     "description": "Heated print bed: Roller feed rate in mm/s",
     "units": "mm/s",
-    "placeholder": ""  }    
+    "placeholder": ""  
+  }    
 ]
