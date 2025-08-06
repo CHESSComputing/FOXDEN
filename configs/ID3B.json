@@ -80,6 +80,24 @@
     "placeholder": "/"
   },  
   {
+    "key": "cesr_conditions",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "CESR fill pattern",
+    "units": "",
+    "placeholder": "9x5_bunch_mode",
+    "value": [
+      "",
+      "9_bunch_mode",
+      "21_bunch_mode",
+      "9x5_bunch_mode",
+      "13_bunch_mode",
+      "other"
+    ]
+  },   
+  {
     "key": "monochromator",
     "type": "list_str",
     "optional": true,
@@ -179,7 +197,7 @@
     "optional": true,
     "multiple": false,
     "section": "Experiment",
-    "description": "Is this an in-situ experiment?",
+    "description": "Specify polymer type",
     "placeholder": "PEEK"
   },
   {
