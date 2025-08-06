@@ -177,6 +177,26 @@
     ]
   },
   {
+    "key": "technique",
+    "type": "list_str",
+    "optional": true,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Experimental technique(s)",
+    "units": "",
+    "placeholder": "SAXS+WAXS",
+    "value": [
+      "",
+      "SAXS+WAXS",
+      "SAXS",
+      "WAXS",
+      "xray_fluorescence",
+      "tomography",
+      "radiography",
+      "other"
+    ]
+  },
+  {
     "key": "in_situ",
     "type": "bool",
     "optional": true,
@@ -189,6 +209,24 @@
       "",
       "true",
       "false"
+    ]
+  },
+  {
+    "key": "processing_environment",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "In-situ processing environment used, if any",
+    "units": "",
+    "placeholder": "",
+    "value": [
+      "",
+      "heated_print_bed",
+      "linkam_shear",
+      "linkam_tensile",
+      "linkam_heating",
+      "rams4"
     ]
   },
   {
