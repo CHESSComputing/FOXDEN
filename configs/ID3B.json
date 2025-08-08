@@ -117,15 +117,14 @@
   },
   {
     "key": "beam_energy",
-    "type": "list_float",
+    "type": "float64",
     "optional": true,
     "multiple": false,
     "section": "Beam",
-    "description": "Beam energy [keV]",
-    "units": "keV",
+    "description": "Beam energy [KeV]",
+    "units": "KeV",
     "placeholder": "9.7",
-    "value": [
-      "",      
+    "value": [       
       9.7,
       15.9,
       18.65,
@@ -171,7 +170,7 @@
     "section": "Experiment",
     "description": "Detectors used",
     "units": "",
-    "placeholder": "pilatus_300K_pil5",
+    "placeholder": "pilatus_300K_pil5, pilatus_200K_pil9, pilatus_200K_pil11",
     "value": [
       "",
       "pilatus_300K_pil5",
