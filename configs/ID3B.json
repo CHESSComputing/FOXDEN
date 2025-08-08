@@ -234,7 +234,9 @@
       "linkam_shear",
       "linkam_tensile",
       "linkam_heating",
-      "rams4"
+      "ramsiv",
+      "cclf",
+      "bose"
     ]
   },
   {
