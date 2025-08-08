@@ -45,9 +45,9 @@
     "optional": false,
     "multiple": false,
     "section": "User",
-    "description": "Specify the run cycle (e.g. 2025-1)",
+    "description": "Specify the run cycle (e.g. 2025-2)",
     "units": "",
-    "placeholder": "2025-1"
+    "placeholder": "2025-2"
   },
   {
     "key": "btr",
@@ -244,8 +244,8 @@
     "optional": true,
     "multiple": false,
     "section": "Experiment",
-    "description": "Heated print bed: Set bed temperature in degC",
-    "units": "degC",
+    "description": "Heated print bed: Set bed temperature in degrees Celsius",
+    "units": "celsius",
     "placeholder": ""
   },
   {
@@ -254,8 +254,8 @@
     "optional": true,
     "multiple": false,
     "section": "Experiment",
-    "description": "Heated print bed: Nozzle temperature in degC",
-    "units": "degC",
+    "description": "Heated print bed: Nozzle temperature in degrees Celsius",
+    "units": "celsius",
     "placeholder": ""
   },
   {
