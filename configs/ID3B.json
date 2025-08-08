@@ -7,7 +7,7 @@
     "section": "User",
     "description": "Dataset IDentifier",
     "units": "",
-    "placeholder": "CHESS"
+    "placeholder": "/beamline=3b/"
   },
   {
     "key": "facility",
@@ -123,7 +123,15 @@
     "section": "Beam",
     "description": "Beam energy [keV]",
     "units": "keV",
-    "placeholder": "9.7, 15.9, 18.65, 22,5, 29.1"
+    "placeholder": "9.7",
+    "value": [
+      "",      
+      9.7,
+      15.9,
+      18.65,
+      22.5,
+      29.1
+    ]
   },  
   {
     "key": "mirror",
@@ -133,7 +141,7 @@
     "section": "Beam",
     "description": "Mirror position",
     "units": "",
-    "placeholder": "In",
+    "placeholder": "in",
     "value": [
       "",
       "in",
@@ -148,7 +156,7 @@
     "section": "Beam",
     "description": "Focusing optic used, if any",
     "units": "",
-    "placeholder": "Bulk",
+    "placeholder": "CRL",
     "value": [
       "",
       "bulk",
@@ -259,27 +267,37 @@
     "placeholder": ""
   },
   {
-    "key": "nozzle_rate",
+    "key": "nozzle_scan_speed",
     "type": "float64",
     "optional": true,
     "multiple": false,
     "section": "Experiment",
-    "description": "Heated print bed: Nozzle rate in mm/s",
+    "description": "Heated print bed: Nozzle scan speed in mm/s",
     "units": "mm/s",
     "placeholder": ""
   },
   {
-    "key": "bed_rate",
+    "key": "bed_scan_speed",
     "type": "float64",
     "optional": true,
     "multiple": false,
     "section": "Experiment",
-    "description": "Heated print bed: Bed rate in mm/s",
+    "description": "Heated print bed: Bed scan speed in mm/s",
     "units": "mm/s",
     "placeholder": ""
-  },  
+  },
   {
-    "key": "feed_rate",
+    "key": "print_speed",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Print speed in mm/s",
+    "units": "mm/s",
+    "placeholder": ""
+  },
+  {
+    "key": "roller_feed_rate",
     "type": "float64",
     "optional": true,
     "multiple": false,
