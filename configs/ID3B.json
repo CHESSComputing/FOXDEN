@@ -7,7 +7,7 @@
     "section": "User",
     "description": "Dataset IDentifier",
     "units": "",
-    "placeholder": "/beamline=3b/"
+    "placeholder": "/"
   },
   {
     "key": "facility",
