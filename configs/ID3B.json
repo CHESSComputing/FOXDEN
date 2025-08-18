@@ -7,7 +7,7 @@
     "section": "User",
     "description": "Dataset IDentifier",
     "units": "",
-    "placeholder": "CHESS"
+    "placeholder": "/"
   },
   {
     "key": "facility",
@@ -45,9 +45,9 @@
     "optional": false,
     "multiple": false,
     "section": "User",
-    "description": "Specify the run cycle (e.g. 2025-1)",
+    "description": "Specify the run cycle (e.g. 2025-2)",
     "units": "",
-    "placeholder": "2025-1"
+    "placeholder": "2025-2"
   },
   {
     "key": "btr",
@@ -78,6 +78,233 @@
     "description": "The relative path from the raw BTR directory to the spec file, including the spec file name",
     "units": "",
     "placeholder": "/"
-  }   
-  
+  },  
+  {
+    "key": "cesr_conditions",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "CESR fill pattern",
+    "units": "",
+    "placeholder": "9x5_bunch_mode",
+    "value": [
+      "",
+      "9_bunch_mode",
+      "21_bunch_mode",
+      "9x5_bunch_mode",
+      "13_bunch_mode",
+      "other"
+    ]
+  },   
+  {
+    "key": "monochromator",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Monochromator type used",
+    "units": "",
+    "placeholder": "diamond111",
+    "value": [
+      "",      
+      "diamond111",
+      "diamond220",
+      "diamond311",
+      "diamond400",
+      "diamond333"
+    ]
+  },
+  {
+    "key": "beam_energy",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beam energy [KeV]",
+    "units": "KeV",
+    "placeholder": "9.7",
+    "value": [       
+      9.7,
+      15.9,
+      18.65,
+      22.5,
+      29.1
+    ]
+  },  
+  {
+    "key": "mirror",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Mirror position",
+    "units": "",
+    "placeholder": "in",
+    "value": [
+      "",
+      "in",
+      "out"
+    ]
+  },
+  {
+    "key": "focusing",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Focusing optic used, if any",
+    "units": "",
+    "placeholder": "CRL",
+    "value": [
+      "",
+      "bulk",
+      "CRL"
+    ]
+  },
+  {
+    "key": "detectors",
+    "type": "list_str",
+    "optional": true,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Detectors used",
+    "units": "",
+    "placeholder": "pilatus_300K_pil5, pilatus_200K_pil9, pilatus_200K_pil11",
+    "value": [
+      "",
+      "pilatus_300K_pil5",
+      "pilatus_200K_pil9",
+      "pilatus_200K_pil11",      
+      "eiger_1M",
+      "andor2",
+      "vortex",            
+      "manta",
+      "other"
+    ]
+  },
+  {
+    "key": "technique",
+    "type": "list_str",
+    "optional": true,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Experimental technique(s)",
+    "units": "",
+    "placeholder": "SAXS+WAXS",
+    "value": [
+      "",
+      "SAXS+WAXS",
+      "SAXS",
+      "WAXS",
+      "xray_fluorescence",
+      "tomography",
+      "radiography",
+      "other"
+    ]
+  },
+  {
+    "key": "in_situ",
+    "type": "bool",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Is this an in-situ experiment?",
+    "units": "",
+    "placeholder": "false",
+    "value": [
+      "",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "key": "processing_environment",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "In-situ processing environment used, if any",
+    "units": "",
+    "placeholder": "",
+    "value": [
+      "",
+      "heated_print_bed",
+      "linkam_shear",
+      "linkam_tensile",
+      "linkam_heating",
+      "ramsiv",
+      "cclf",
+      "bose"
+    ]
+  },
+  {
+    "key": "polymer_type",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Specify polymer type",
+    "placeholder": "PEEK"
+  },
+  {
+    "key": "bed_temperature_set",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Set bed temperature in degrees Celsius",
+    "units": "celsius",
+    "placeholder": ""
+  },
+  {
+    "key": "nozzle_temperature",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Nozzle temperature in degrees Celsius",
+    "units": "celsius",
+    "placeholder": ""
+  },
+  {
+    "key": "nozzle_scan_speed",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Nozzle scan speed in mm/s",
+    "units": "mm/s",
+    "placeholder": ""
+  },
+  {
+    "key": "bed_scan_speed",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Bed scan speed in mm/s",
+    "units": "mm/s",
+    "placeholder": ""
+  },
+  {
+    "key": "print_speed",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Print speed in mm/s",
+    "units": "mm/s",
+    "placeholder": ""
+  },
+  {
+    "key": "roller_feed_rate",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Heated print bed: Roller feed rate in mm/s",
+    "units": "mm/s",
+    "placeholder": ""  
+  }    
 ]
