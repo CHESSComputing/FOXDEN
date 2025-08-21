@@ -35,6 +35,7 @@
 - [curl client](/docs/curl.md)
 - [Integration guidelines](/docs/integration.md)
 - [Trusted clients](/docs/trusted.md)
+- [FOXDEN cleanup](/docs/cleanup.md)
 
 ### References
 - [Technical links](/docs/references.md)
