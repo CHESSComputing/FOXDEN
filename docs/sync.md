@@ -5,6 +5,12 @@ is designed to sync FOXDEN records between distributed FOXDEN instances.
 Its logic is based on individual synching of metadata and provenance records
 between instances.
 
+## Web interface
+Sync web interface consiste of submission form 
+![sync form](images/sync_form.png)
+and status dashboard
+![sync form](images/sync_dashboard.png)
+
 ## APIs
 - GET methods
   - `/records` to fetch all sycn records
