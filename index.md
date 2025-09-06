@@ -18,6 +18,7 @@
 - [Command line (CLI) tool](/docs/cli.md) and [demo](/docs/demo.md)
 - [Authentication and authorization service](/docs/authz.md)
 - [Data Discovery service](/docs/discovery.md)
+- [DOI service](/docs/doi.md)
 - [MetaData service](/docs/metadata.md)
 - [Provenance service](/docs/provenance.md)
 - [Data Management service](/docs/datamgt.md)

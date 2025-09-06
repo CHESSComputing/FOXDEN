@@ -1,4 +1,4 @@
-# DOI Publication in FOXDEN
+# DOI support in FOXDEN
 
 FOXDEN provides a **DOIService** for managing and looking up DOI (Digital Object Identifier) records associated with datasets. This service enables researchers to **publish, track, and reference datasets** using persistent identifiers.
 
