@@ -23,6 +23,7 @@
 - [Data Management service](/docs/datamgt.md)
 - [Publication service](/docs/publication.md)
 - [SpecScan service](/docs/specscan.md)
+- [Sync service](/docs/sync.md)
 - [MLHub service](/docs/mlhub.md)
 - [CHESS Analysis Pipeline (CHAP) framework](/docs/chap.md)
 - [CHAP Notebook](/docs/notebook.md)
