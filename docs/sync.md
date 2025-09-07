@@ -14,13 +14,13 @@ and status dashboard
 ## APIs
 - GET methods
   - `/records` to fetch all sycn records
-  - `/request/*record` to fetch individual sync record
+  - `/record/:uuid` to fetch individual sync record
 - POST methods:
-  - `/request` to add new sync record
+  - `/record` to add new sync record
 - PUT methods:
-  - `/request/*record` to amend already existing sync record
+  - `/record/:uuid` to amend already existing sync record
 - DELETE methods:
-  - `/request/*record` to delete sync record
+  - `/record/:uuid` to delete sync record
 
 ### Example uses
 - Add new records:
@@ -29,12 +29,26 @@ and status dashboard
     -H "Content-type: application/json" \
     -H "Authorization: Bearer $token" \
     -d '{"source_token":"token", "target_token":"token", "source_url": "https://foxden...", "target_url": "http://localhost:8344"}"
-    http://localhost:8388/request
+    http://localhost:8388/record
   ```
 - Fetch all sync records:
   ```
   curl \
     -H "Content-type: application/json" \
     -H "Authorization: bearer $token" \
-    http://localhost:8390/records
+    http://localhost:8388/records
+  ```
+- Update sync record
+  ```
+  curl -X PUT \
+    -H "Content-type: application/json" \
+    -H "Authorization: bearer $token" \
+    http://localhost:8388/record/<uuid>
+  ```
+- Delete sync record
+  ```
+  curl -X DELETE \
+    -H "Content-type: application/json" \
+    -H "Authorization: bearer $token" \
+    http://localhost:8388/record/<uuid>
   ```
