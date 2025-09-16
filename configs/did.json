@@ -1,0 +1,12 @@
+[
+  {
+    "key": "did",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier",
+    "units": "",
+    "placeholder": "/beamline=.../btr=.../cycle=.../sample_name=..."
+  }
+]
