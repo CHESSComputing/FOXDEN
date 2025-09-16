@@ -2,7 +2,7 @@
   {
     "key": "did",
     "type": "string",
-    "optional": true,
+    "optional": false,
     "multiple": false,
     "section": "User",
     "description": "Dataset IDentifier",
@@ -12,11 +12,21 @@
   {
     "key": "application",
     "type": "string",
-    "optional": true,
+    "optional": false,
     "multiple": false,
     "section": "User",
     "description": "Analysis application",
     "units": "",
     "placeholder": "CHAP"
+  },
+  {
+    "key": "btr",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Beamtime request ID",
+    "units": "",
+    "placeholder": "wilson-1234-a"
   }
 ]
