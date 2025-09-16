@@ -1,0 +1,92 @@
+[
+  {
+    "key": "doi",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "DOI",
+    "description": "DOI identifier",
+    "units": "",
+    "placeholder": ""
+  },
+  {
+    "key": "doi_user",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "DOI",
+    "description": "DOI user name",
+    "units": "",
+    "placeholder": ""
+  },
+  {
+    "key": "doi_access_metadata",
+    "type": "bool",
+    "optional": true,
+    "multiple": false,
+    "section": "DOI",
+    "description": "DOI access flag",
+    "units": "",
+    "placeholder": ""
+  },
+  {
+    "key": "doi_provider",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "DOI",
+    "description": "DOI provider",
+    "units": "",
+    "placeholder": ""
+  },
+  {
+    "key": "doi_url",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "DOI",
+    "description": "DOI url",
+    "units": "",
+    "placeholder": ""
+  },
+  {
+    "key": "doi_public",
+    "type": "bool",
+    "optional": true,
+    "multiple": false,
+    "section": "DOI",
+    "description": "DOI public flag",
+    "units": "",
+    "placeholder": ""
+  },
+  {
+    "key": "doi_created_at",
+    "type": "strign",
+    "optional": true,
+    "multiple": false,
+    "section": "DOI",
+    "description": "DOI creation timestamp",
+    "units": "",
+    "placeholder": ""
+  },
+  {
+    "key": "doi_parents_dids",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "DOI",
+    "description": "DOI parents dids",
+    "units": "",
+    "placeholder": ""
+  },
+  {
+    "key": "doi_foxden_url",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "DOI",
+    "description": "DOI FOXDEN url",
+    "units": "",
+    "placeholder": ""
+  }
+]
