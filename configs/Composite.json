@@ -1,0 +1,22 @@
+[
+  {
+    "key": "did",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "parent_dids",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "User",
+    "description": "Parent Dataset IDentifiers",
+    "units": "",
+    "placeholder": "did1, did2"
+  }
+]
