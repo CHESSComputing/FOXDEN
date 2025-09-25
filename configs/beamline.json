@@ -1,5 +1,5 @@
 [
-  "file": "did.json",
+  {"file": "did.json"},
   {
     "key": "facility",
     "type": "string",
