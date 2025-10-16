@@ -252,7 +252,7 @@
     "description": "Is the experiment an in-situ test?",
     "units": "",
     "placeholder": "Yes/No",
-    "value": false
+    "value": [false, true]
   },
   {
     "key": "technique",
@@ -339,7 +339,7 @@
     "placeholder": "SingleCrystal",
     "value": [
       "",
-      "powder ",
+      "powder",
       "thin_film",
       "single_crystal",
       "foil",
@@ -405,6 +405,6 @@
     "description": "Is the sample hazardous?",
     "units": "",
     "placeholder": "Yes/No",
-    "value": false
+    "value": [false, true]
   }
 ]

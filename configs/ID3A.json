@@ -143,11 +143,7 @@
     "description": "Is this data collection part of an alignment series?",
     "units": "",
     "placeholder": "false",
-    "value": [
-      "",
-      "true",
-      "false"
-    ]
+    "value": [false, true]
   },
   {
     "key": "energy_scan_document",
@@ -419,11 +415,7 @@
     "description": "Is this an in-situ experiment?",
     "units": "",
     "placeholder": "false",
-    "value": [
-      "",
-      "true",
-      "false"
-    ]
+    "value": [false, true]
   },
   {
     "key": "mechanical_test",
@@ -434,11 +426,7 @@
     "description": "Is this a mechanical test?",
     "units": "",
     "placeholder": "false",
-    "value": [
-      "",
-      "true",
-      "false"
-    ]
+    "value": [false, true]
   },
   {
     "key": "mechanical_test_type",
@@ -553,11 +541,7 @@
     "description": "Is this a calibration sample (e.g. CeO2, multiruby)?",
     "units": "",
     "placeholder": "false",
-    "value": [
-      "",
-      "true",
-      "false"
-    ]
+    "value": [false, true]
   },
   {
     "key": "calibration_document",
@@ -658,11 +642,7 @@
     "description": "Is the sample hazardous?",
     "units": "",
     "placeholder": "false",
-    "value": [
-      "",
-      "true",
-      "false"
-    ]
+    "value": [false, true]
   },
   {
     "key": "sample_state",

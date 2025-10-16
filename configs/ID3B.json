@@ -78,7 +78,7 @@
     "description": "The relative path from the raw BTR directory to the spec file, including the spec file name",
     "units": "",
     "placeholder": "/"
-  },  
+  },
   {
     "key": "cesr_conditions",
     "type": "list_str",
@@ -96,7 +96,7 @@
       "13_bunch_mode",
       "other"
     ]
-  },   
+  },
   {
     "key": "monochromator",
     "type": "list_str",
@@ -107,7 +107,7 @@
     "units": "",
     "placeholder": "diamond111",
     "value": [
-      "",      
+      "",
       "diamond111",
       "diamond220",
       "diamond311",
@@ -124,14 +124,14 @@
     "description": "Beam energy [KeV]",
     "units": "KeV",
     "placeholder": "9.7",
-    "value": [       
+    "value": [
       9.7,
       15.9,
       18.65,
       22.5,
       29.1
     ]
-  },  
+  },
   {
     "key": "mirror",
     "type": "list_str",
@@ -175,10 +175,10 @@
       "",
       "pilatus_300K_pil5",
       "pilatus_200K_pil9",
-      "pilatus_200K_pil11",      
+      "pilatus_200K_pil11",
       "eiger_1M",
       "andor2",
-      "vortex",            
+      "vortex",
       "manta",
       "other"
     ]
@@ -212,11 +212,7 @@
     "description": "Is this an in-situ experiment?",
     "units": "",
     "placeholder": "false",
-    "value": [
-      "",
-      "true",
-      "false"
-    ]
+    "value": [false, true]
   },
   {
     "key": "processing_environment",
@@ -305,6 +301,6 @@
     "section": "Experiment",
     "description": "Heated print bed: Roller feed rate in mm/s",
     "units": "mm/s",
-    "placeholder": ""  
-  }    
+    "placeholder": ""
+  }
 ]
