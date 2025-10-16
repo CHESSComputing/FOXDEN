@@ -597,8 +597,7 @@
     "section": "Sample",
     "description": "Chemical formula of sample",
     "units": "",
-    "placeholder": "Ti6Al4V",
-    "value": "freetext"
+    "placeholder": "Ti6Al4V"
   },
   {
     "key": "sample_unit_cell",
