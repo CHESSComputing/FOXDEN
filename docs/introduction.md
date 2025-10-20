@@ -1,38 +1,20 @@
 # Introduction
 
-FOXDEN stands for FAIR Open-Science Extensible Data Exchange Network.
+The **FAIR Open-Science eXtensible Data Exchange Network (FOXDEN)** is a set of cyberinfrastructure (CI) building blocks developed at the [Cornell High Energy Synchrotron Source (CHESS)](https://www.chess.cornell.edu/) for managing research artifacts, such as metadata and provenance for raw/reduced/analyzed datasets, data analysis code, visualizations, and AI/ML models. Unlike many existing data solutions, FOXDEN is specifically designed for large, unportable datasets and heterogenous use cases. It also lets researchers easily publish their research artifacts with Digital Object Identifiers (DOIs) for compliance with [FAIR principles](https://www.go-fair.org/fair-principles/).
 
-**FOXDEN** is a system of **cyberinfrastructure (CI) building blocks** designed
-to support high-impact, data-intensive science through **heterogeneity,
-modularity, and interoperability**. Unlike monolithic data platforms, FOXDEN
-offers **loosely coupled services** that can be selectively deployed, ensuring
-seamless integration with existing infrastructures and workflows. It is highly
-**portable**, supporting diverse hardware architectures (AMD, ARM, Power8,
-RISC) and operating systems (Linux, macOS, Windows), making it deployable at
-scales ranging from personal workstations to high-performance computing (HPC)
-facilities.
+FOXDEN is not itself a data acquisition system or a data repository. It is not a workflow orchestration system, nor does it execute any part of the research workflow. Instead, it is a system of **loosely coupled services** that can be selectively deployed, shadowing the existing data acquisition systems and data processing workflows at CHESS and augmenting them with record-keeping capabilities.
 
 ## Key Features
 
-FOXDEN is designed to facilitate **collaborative reuse of datasets**, starting
-with exemplary datasets and workflows at CHESS. Researchers can use FOXDEN to
-**search for datasets, retrieve missing metadata, and analyze data locally or
-remotely**, enabling efficient cross-facility collaboration. The system
-supports **adaptive workflows**, accommodating future use cases by integrating
-diverse data storage solutions and federating CI resources.
+FOXDEN is designed to facilitate **collaborative reuse of scientific data**. Its design prioritizes the heterogeneity needed for high-impact, data-intensive science. Researchers can use FOXDEN to search for datasets, retrieve metadata, and analyze data locally or remotely, enabling streamlined cross-facility collaboration. FOXDEN supports customizable workflows and can be integrated with diverse data storage solutions and federated CI resources.
 
-FOXDEN is structured around three interdependent components:
+![ResearchWorkflow](images/foxden-chess.png)
 
-1. **FOXDEN Services and Workflows** – A suite of **FAIR-compliant** services
-   for data collection, visualization, processing, publication, and management.  
-2. **FOXDEN Federated Storage Network (FFSN)** – A distributed storage
-   federation connecting partner facilities, community portals, and research
-   groups, modeled after the NSF-funded **National Science Data Fabric (NSDF)**.  
-3. **FOXDEN Community Building** – A comprehensive program for **education,
-   training, and workforce development**, fostering an engaged community of
-   users and developers for long-term sustainability.  
+The figure above shows the actions performed in a typical research workflow at CHESS, along with the FOXDEN services invoked at each step. During an experiment, the X-ray data acquisition (DAQ) system writes the raw dataset to the CHESS-DAQ filesystem while inserting corresponding metadata and scan log records into the Metadata Service and Scan Log Service. These records contain information (e.g. motor positions) that is automatically extracted from the DAQ, although some (e.g., specimen descriptions) is entered by researchers when prompted. When raw data is processed into a reduced dataset, the job script inserts corresponding metadata and provenance records into the Metadata Service and Provenance Service to identify and link the parent (raw) and child (reduced) datasets. Similarly, when the reduced dataset is further analyzed, additional metadata and provenance records are added to the chain of FOXDEN records. FOXDEN metadata and provenance records are cross-referenced through common dataset identifiers (DID) stored in each record.
 
-This repository contains documentation of **FOXDEN Services and Workflows**.
+These workflow steps can be repeated or iterated as desired, and new metadata and provenance records will be created to document each step. When a step is repeated, the linear chain of FOXDEN records bifurcates into a branching tree structure, with multiple child records attached to a single parent record.
+
+FOXDEN's DOI Publication Service allows users to publish any or all of the metadata and provenance records associated with a particular DID. For example, users may choose to publish only a single dataset in the tree, a single branch of the tree, or the whole tree in its entirety under a single DOI. The DOI Publication Service mints DOIs for FOXDEN records using a variety of common DOI providers, such as [DataCite](https://datacite.org/), [Zenodo](https://zenodo.org/), and [Materials Commons](https://materialscommons.org/). Note that, because of their size, the CHESS datasets themselves are not uploaded to the DOI providers. Rather, the published metadata records point to the locations of data stored persistently at CHESS.
 
 ## Technical Design
 
