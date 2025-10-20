@@ -1,4 +1,5 @@
 # FOXDEN
+![ResearchWorkflow](docs/images/foxden-logo.png)
 The **FAIR Open-Science eXtensible Data Exchange Network (FOXDEN)** is a set of cyberinfrastructure (CI)
 building blocks developed at the [Cornell High Energy Synchrotron Source (CHESS)](https://www.chess.cornell.edu/)
 for managing research artifacts, such as metadata and provenance for raw/reduced/analyzed datasets, data analysis
@@ -14,7 +15,7 @@ User interfaces:
 FAIR data services:
 - [Metadata Service](https://github.com/CHESSComputing/MetaData)
 - [SpecScans Service](https://github.com/CHESSComputing/SpecScansService)
-- [Data Bookkeeping Service](https://github.com/CHESSComputing/DataBookkeeping)
+- [Provenance Service](https://github.com/CHESSComputing/DataBookkeeping)
 - [Data Management Service](https://github.com/CHESSComputing/DataManagement)
 - [Data Discovery Service](https://github.com/CHESSComputing/DataDiscovery)
 - [DOI Publication Service](https://github.com/CHESSComputing/DOIService)
