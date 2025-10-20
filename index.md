@@ -1,11 +1,11 @@
 ### FOXDEN documentation
 - [Introduction](/docs/introduction.md)
-- [Current system](/docs/current-system.md)
+<!-- - [Current system](/docs/current-system.md)-->
 - [Quick start guide](/docs/quickstart.md)
 
 ### FOXDEN internals
 - [Architecture](/docs/architecture.md)
-- [Infrastructure](/docs/infrastructure.md)
+<!-- - [Infrastructure](/docs/infrastructure.md)-->
 - [Configuration](/docs/configuration.md)
 - [Deployment](/docs/deployment.md)
 - [Schemas](/docs/schemas.md)
