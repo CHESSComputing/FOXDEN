@@ -1,5 +1,5 @@
-# Architecture
-## FOXDEN services
+# FOXDEN Architecture
+## Services
 FOXDEN infrastructure is based on loosely coupled services, and properly
 layered/insulated as shown in the following diagram:
 
@@ -34,7 +34,7 @@ Currently the following services are implemented:
 - [AI/ML Service](mlhub.md): AI/ML workflow management system
 - [Notebook Service](notebook.md): Jupyter-like coding environment and repository for data analysis modules
 
-## FOXDEN configuration
+## Configuration
 All services share a single file as FOXDEN configuration
 which organizes everything in corresponding blocks. Each
 configuration block is responsible for individual FOXDEN
