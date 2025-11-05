@@ -14,7 +14,7 @@ FOXDEN is composed of loosely coupled [services](https://github.com/orgs/CHESSCo
 - **CHAPBook**: Notebook service for composing CHESS Analysis Pipeline (CHAP) workflows.  
 - **MLHub service**: Proxy for managing ML models.  
 
-For more details, refer to the [FOXDEN architecture documentation](/docs/infrastructure.md).  
+For more details, refer to the [FOXDEN architecture documentation](/docs/infrastructure.html).  
 
 ## **Getting Started**
 To use FOXDEN at CHESS, you will need a [CLASSE computer account](https://wiki.classe.cornell.edu/Computing/WebHome).
@@ -98,7 +98,7 @@ foxden prov --help
 ```
 
 ## **Request your own Metadata schema**
-1. Please read the [integration instructions](/docs/integration.md)
+1. Please read the [integration instructions](/docs/integration.html)
 2. View the available [schemas](/configs) (e.g. [ID1A3.json](/configs/ID1A3.json), [ID3A.json](/configs/ID3A.json), etc.)
 3. Fork the [FOXDEN repo](/) and check in a new .json file with your schema to the /configs directory
 4. Submit a pull request
