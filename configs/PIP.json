@@ -440,6 +440,15 @@
     "description": "Modification to APD 2 detector circuit",
     "units": "",
     "placeholder": "None"
+  },
+  {
+    "key": "globus_link",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Globus link",
+    "units": "",
+    "placeholder": "globus link"
   }
-
 ]

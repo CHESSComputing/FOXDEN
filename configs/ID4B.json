@@ -406,5 +406,15 @@
     "units": "",
     "placeholder": "Yes/No",
     "value": [false, true]
+  },
+  {
+    "key": "globus_link",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Globus link",
+    "units": "",
+    "placeholder": "globus link"
   }
 ]
