@@ -1,8 +1,8 @@
 # Introduction
 
-The **FAIR Open-Science eXtensible Data Exchange Network (FOXDEN)** is a set of cyberinfrastructure (CI) building blocks developed at the [Cornell High Energy Synchrotron Source (CHESS)](https://www.chess.cornell.edu/) for managing research artifacts, such as metadata and provenance for raw/reduced/analyzed datasets, data analysis code, visualizations, and AI/ML models. Unlike many existing data solutions, FOXDEN is specifically designed for large, unportable datasets and heterogenous use cases. It also lets researchers easily publish their research artifacts with Digital Object Identifiers (DOIs) for compliance with [FAIR principles](https://www.go-fair.org/fair-principles/).
+The **FAIR Open-Science eXtensible Data Exchange Network (FOXDEN)** is a set of cyberinfrastructure (CI) building blocks developed at the [Cornell High Energy Synchrotron Source (CHESS)](https://www.chess.cornell.edu/) for managing research artifacts, such as metadata and provenance for raw/reduced/analyzed datasets, data analysis code, visualizations, and AI/ML models. FOXDEN is specifically designed to handle large, unportable datasets and heterogenous use cases. It helps scientists turn their research artifacts into annotated, AI-ready datasets and publish them with Digital Object Identifiers (DOIs) for compliance with [FAIR principles](https://www.go-fair.org/fair-principles/).
 
-FOXDEN is not itself a data acquisition system or a data repository. It is not a workflow orchestration system, nor does it execute any part of the research workflow. Instead, it is a system of **loosely coupled services** that can be selectively deployed, shadowing the existing data acquisition systems and data processing workflows at CHESS and augmenting them with record-keeping capabilities.
+FOXDEN does not itself perform data acquisition or workflow orchestration. Instead, it is a system of **loosely coupled services** that shadows the existing data acquisition systems and data processing workflows at CHESS, selectively augmenting them with record-keeping capabilities.
 
 ## Key Features
 
