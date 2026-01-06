@@ -587,7 +587,7 @@
     "key": "sample_unit_cell",
     "type": "list_float",
     "optional": true,
-    "multiple": false,
+    "multiple": true,
     "section": "Sample",
     "description": "Unit cell dimensions a, b, c, alha, beta, gamma; Angstroms and degrees",
     "units": "",
