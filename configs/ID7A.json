@@ -244,7 +244,7 @@
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": Molecule type (protein, lipid, nucleic_acid, muscle, other)",
+    "description": "Molecule type (protein, lipid, nucleic_acid, muscle, other)",
     "units": "",
     "placeholder": "protein",
     "value": [
