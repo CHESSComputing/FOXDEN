@@ -197,6 +197,7 @@
       "SAXS+WAXS",
       "SAXS",
       "WAXS",
+      "GIWAXS",
       "xray_fluorescence",
       "tomography",
       "radiography",
