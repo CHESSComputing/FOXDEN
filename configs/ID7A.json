@@ -25,9 +25,9 @@
     "optional": false,
     "multiple": false,
     "section": "User",
-    "description": "Specify the run cycle (e.g. 2022-3)",
+    "description": "Specify the run cycle (e.g. 2026-1)",
     "units": "",
-    "placeholder": "2022-3"
+    "placeholder": "2026-1"
   },
   {
     "key": "pi",
@@ -57,7 +57,7 @@
     "section": "User",
     "description": "Please list the experimenter(s) who performed this data collection",
     "units": "",
-    "placeholder": "Lastname1Initials, Lastname2Initials"
+    "placeholder": "Lastname1Initials, Lastname2Initials, etc"
   },
   {
     "key": "beamline",
@@ -67,16 +67,9 @@
     "section": "User",
     "description": "Specify beamline",
     "units": "",
-    "placeholder": "7A1",
+    "placeholder": "7A",
     "value": [
-      "",
-      "1A3",
-      "2A",
-      "3A",
-      "3B",
-      "4B",
-      "7A1",
-      "7B2"
+      "7A"
     ]
   },
   {
@@ -89,12 +82,6 @@
     "units": "",
     "placeholder": "YeeEF, HuangQ",
     "value": [
-      "",
-      "ShanksKS",
-      "DasA",
-      "GustafsonSE",
-      "KoJYP",
-      "NygrenKE",
       "YeeEF",
       "HuangQ"
     ]
@@ -109,10 +96,8 @@
     "units": "",
     "placeholder": "MACCHESS_NSF_NIH",
     "value": [
-      "",
-      "CHEXS_NSF",
-      "MSNC_AFRL",
       "MACCHESS_NSF_NIH",
+      "CHEXS_NSF",
       "CHESS_internal"
     ]
   },
@@ -136,22 +121,7 @@
     "units": "",
     "placeholder": "eiger_4M",
     "value": [
-      "",
-      "eiger_500k",
-      "vortex",
-      "pilatus_6M",
-      "dual_dexelas",
-      "GE2",
-      "manta",
-      "retiga",
-      "eiger2_16M",
-      "eiger_1M",
       "eiger_4M",
-      "pilatus_200K",
-      "pilatus_300K",
-      "canberra_single_element",
-      "canberra_multi_element",
-      "value",
       "pilatus_100K",
       "other"
     ]
@@ -166,11 +136,7 @@
     "units": "",
     "placeholder": "scattering/diffraction",
     "value": [
-      "",
       "scattering/diffraction",
-      "imaging",
-      "spectroscopy",
-      "crystallography",
       "other"
     ]
   },
@@ -182,31 +148,15 @@
     "section": "Experiment",
     "description": "Experimental technique(s) (e.g. powder, HEDM)",
     "units": "",
-    "placeholder": "Tomography",
+    "placeholder": "bioSAXS_batch",
     "value": [
-      "",
-      "single_crystal_diffraction",
-      "high_energy_diffraction_microscopy_near_field",
-      "high_energy_diffraction_microscopy_far_field",
-      "high_energy_diffraction_microscopy_mid_field",
-      "powder_diffraction",
-      "resonant_elastic_xray_scattering",
-      "3DPDF",
-      "diffuse_scattering",
-      "SAXS+WAXS",
-      "SAXS",
       "bioSAXS_batch",
       "bioSAXS_anoxic_batch",
-      "bioWAXS_batch",
       "bioSAXS_anoxic_SEC",
       "bioSAXS_SEC",
       "bioSAXS_HP",
-      "bioWAXS_HP",
       "bioSAXS_airgap",
       "myoSAXS",
-      "xray_fluorescence",
-      "tomography",
-      "radiography",
       "other"
     ]
   },
@@ -269,12 +219,12 @@
   {
     "key": "additional_components",
     "type": "string",
-    "optional": false,
+    "optional": true,
     "multiple": false,
     "section": "Sample",
     "description": "Name and concentration of any additional components",
     "units": "",
-    "placeholder": "N/A"
+    "placeholder": ""
   },
   {
     "key": "buffer",
@@ -340,7 +290,7 @@
     "optional": true,
     "multiple": false,
     "section": "User",
-    "description": "Free text field for additional notes",
+    "description": "Text field for additional notes",
     "placeholder": "Your text here"
   },
   {
