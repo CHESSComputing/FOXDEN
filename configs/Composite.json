@@ -10,6 +10,16 @@
     "placeholder": "CHESS"
   },
   {
+    "key": "project",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Project name (can be used to group datasets under one DOI namespace)",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
     "key": "parent_dids",
     "type": "list_str",
     "optional": false,
