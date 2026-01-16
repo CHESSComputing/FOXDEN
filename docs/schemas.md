@@ -88,12 +88,16 @@ To embed this schema into our original one we will use the following record
   {
     "key": "embeded_key",
     "type": "struct",
+    "schema": "ID3A_subschema.json",
     "optional": false
   },
 ```
 
-Please note, you may use `"type": "list_struct"` to allow list of embeded
-records. Using this schema record definition we may have metadata record as
+Please note, we included in our schema record schema file definition
+(`ID3A_subschema.json`). Our embeded record will be a map defined
+this schema file.
+
+Using this schema record definition we may have metadata record as
 following:
 
 
@@ -104,8 +108,21 @@ following:
 }
 ```
 
-or, even more complex with list of embedded records
+To accommodate more complex case let's define a new schema record with list of
+embedded records (here we use `"type": "list_struct"` in a schema record to
+show that we expect our values will be a list of this map records):
 
+```
+  {
+    "key": "embeded_key",
+    "type": "list_struct",
+    "schema": "ID3A_subschema.json",
+    "optional": false
+  },
+```
+
+And, here we provide values of `embeded_key` as a list of `struct` defined in a
+our schema (`ID3A_substructs.json`)
 
 ```
 {
@@ -116,6 +133,8 @@ or, even more complex with list of embedded records
     ]
 }
 ```
+
+---
 
 Concrete CHESS beamline schemas can be found in FOXDEN configuration repository
 over [here](https://github.com/CHESSComputing/FOXDEN/tree/main/configs).
