@@ -19,6 +19,9 @@ following attributes:
    - `float32, float64` for float data types of different precisions
    - `string` for string data types
    - `list_str, list_int, list_float` for differnet list types
+   - `struct` data-type represents another data structure and can be used for
+     embedding another schema, see examples below
+   - `list_struct` for list of embeded `struct` records
    - `any` provides support of user defined data-structures, e.g.
      dictionaries, yaml, JSON, etc.
 - **optional**: A boolean flag indicating whether the metadata key is optional
@@ -29,6 +32,7 @@ following attributes:
 - **placeholder**: Specifies the necessary placeholder string in the web UI
 - **file**: Defines the full path of an embedded schema
 - **value**: Defines default values of the metadata key
+- **schema**: Defines another schema file name to be used with `type=struct`
 
 For example, here is a schema definition file:
 
@@ -60,6 +64,57 @@ For example, here is a schema definition file:
   },
   ...
 ]
+```
+
+### Example of embedded schemas
+Here is an example of schema file we would like to embed
+
+```
+[
+  {
+    "key": "key1",
+    "type": "string"
+  },
+  {
+    "key": "key2",
+    "type": "int"
+  }
+]
+```
+
+To embed this schema into our original one we will use the following record
+
+```
+  {
+    "key": "embeded_key",
+    "type": "struct",
+    "optional": false
+  },
+```
+
+Please note, you may use `"type": "list_struct"` to allow list of embeded
+records. Using this schema record definition we may have metadata record as
+following:
+
+
+```
+{
+    "did": "/beamline=3a/btr=123/...",
+    "embeded_key": {"key1": "some_string_value", "key2": 1}
+}
+```
+
+or, even more complex with list of embedded records
+
+
+```
+{
+    "did": "/beamline=3a/btr=123/...",
+    "embeded_key": [
+        {"key1": "some_string_value1", "key2": 1},
+        {"key1": "some_string_value2", "key2": 2}
+    ]
+}
 ```
 
 Concrete CHESS beamline schemas can be found in FOXDEN configuration repository
