@@ -37,7 +37,7 @@
     "section": "User",
     "description": "Last name of principle investigator",
     "units": "",
-    "placeholder": "wilson"
+    "placeholder": "Wilson"
   },
   {
     "key": "btr",
@@ -55,7 +55,7 @@
     "optional": true,
     "multiple": true,
     "section": "User",
-    "description": "Please list the experimenter(s) who performed this data collection",
+    "description": "List the experimenter(s) who performed this data collection (Lastname1Initials, Lastname2Initials, ...)",
     "units": "",
     "placeholder": "Lastname1Initials, Lastname2Initials"
   },
@@ -85,7 +85,7 @@
     "optional": false,
     "multiple": true,
     "section": "User",
-    "description": "Please list the staff scientist(s) supporting this experiment",
+    "description": "List the staff scientist(s) supporting this experiment (Lastname1Initials, Lastname2Initials, ...)",
     "units": "",
     "placeholder": "ShanksKS, DasA",
     "value": [
@@ -115,26 +115,6 @@
     ]
   },
   {
-    "key": "affiliation",
-    "type": "list_str",
-    "optional": true,
-    "multiple": false,
-    "section": "User",
-    "description": "Select affiliation",
-    "units": "",
-    "placeholder": "Basic",
-    "value": [
-      "",
-      "AirForce",
-      "Army",
-      "Navy",
-      "OtherGov",
-      "Basic",
-      "Industry",
-      "Development"
-    ]
-  },
-  {
     "key": "alignment",
     "type": "bool",
     "optional": false,
@@ -156,22 +136,12 @@
     "placeholder": "/"
   },
   {
-    "key": "undulator_scan_document",
-    "type": "string",
-    "optional": true,
-    "multiple": false,
-    "section": "Alignment",
-    "description": "Undulator scan document location",
-    "units": "",
-    "placeholder": "/"
-  },
-  {
     "key": "data_location_raw",
     "type": "string",
     "optional": false,
     "multiple": false,
     "section": "DataLocations",
-    "description": "Location of the raw data ",
+    "description": "Raw data location",
     "units": "",
     "placeholder": "/nfs/chess/raw/2022-3/id3a/wilson-1234-a"
   },
@@ -181,7 +151,7 @@
     "optional": false,
     "multiple": false,
     "section": "DataLocations",
-    "description": "Location of the metadata",
+    "description": "Metadata folder location",
     "units": "",
     "placeholder": "/nfs/chess/aux/cycles/2022-3/id3a/wilson-1234-a/metadata"
   },
@@ -191,7 +161,7 @@
     "optional": false,
     "multiple": false,
     "section": "DataLocations",
-    "description": "Location of the reduced data",
+    "description": "Reduced data folder location",
     "units": "",
     "placeholder": "/nfs/chess/aux/cycles/2022-3/id3a/wilson-1234-a/reduced"
   },
@@ -201,7 +171,7 @@
     "optional": false,
     "multiple": false,
     "section": "DataLocations",
-    "description": "Location of the scratch data/analysis files",
+    "description": "Scratch folder location",
     "units": "",
     "placeholder": "/nfs/chess/aux/cycles/2022-3/id3a/wilson-1234-a/scratch"
   },
@@ -211,7 +181,7 @@
     "optional": false,
     "multiple": false,
     "section": "DataLocations",
-    "description": "Location of the scratch data/analysis files",
+    "description": "Location of electronic beamtime logbook, if applicable",
     "units": "",
     "placeholder": "/nfs/chess/aux/cycles/2022-3/id3a/wilson-1234-a/beamtime_log.txt"
   },
@@ -281,7 +251,8 @@
       "KB",
       "Capillary",
       "Sagittal",
-      "None"
+      "None",
+      "Other"
     ]
   },
   {
@@ -293,44 +264,6 @@
     "description": "Beam energy [keV]",
     "units": "",
     "placeholder": "41.991"
-  },
-  {
-    "key": "energy_foil",
-    "type": "list_str",
-    "optional": true,
-    "multiple": false,
-    "section": "Beam",
-    "description": "Energy foil used, if any -  skip this field if this metadata record is for multiple scans with different energy foils",
-    "units": "",
-    "placeholder": "Pr",
-    "value": [
-      "",
-      "scrn",
-      "blank1",
-      "Au",
-      "Pt",
-      "Ir",
-      "W",
-      "Hf",
-      "Yb",
-      "Ho",
-      "Tb",
-      "Sm",
-      "Pr",
-      "Sn",
-      "blank2",
-      "Other"
-    ]
-  },
-  {
-    "key": "beamline_setup_document",
-    "type": "string",
-    "optional": true,
-    "multiple": false,
-    "section": "Beam",
-    "description": "Beamline setup document location",
-    "units": "",
-    "placeholder": "/"
   },
   {
     "key": "detectors",
@@ -375,7 +308,6 @@
       "scattering/diffraction",
       "imaging",
       "spectroscopy",
-      "crystallography",
       "other"
     ]
   },
@@ -385,7 +317,7 @@
     "optional": false,
     "multiple": true,
     "section": "Experiment",
-    "description": "Experimental technique(s) (e.g. powder, HEDM)",
+    "description": "X-ray technique(s) used (e.g. powder, HEDM)",
     "units": "",
     "placeholder": "Tomography",
     "value": [
@@ -445,7 +377,8 @@
       "torsion",
       "4pt_bend",
       "3pt_bend",
-      "linkam_tensile"
+      "linkam_tensile",
+      "other"
     ]
   },
   {
@@ -496,7 +429,8 @@
       "",
       "digital_image_correlation",
       "raman",
-      "optical_imaging"
+      "optical_imaging",
+      "other"
     ]
   },
   {
@@ -544,16 +478,6 @@
     "value": [false, true]
   },
   {
-    "key": "calibration_document",
-    "type": "string",
-    "optional": true,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Calibration document location",
-    "units": "",
-    "placeholder": "/"
-  },
-  {
     "key": "sample_name",
     "type": "string",
     "optional": false,
@@ -569,39 +493,25 @@
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Common name of sample material",
+    "description": "Common name of sample material (e.g. stainless steel, Inconel, ...)",
     "units": "",
     "placeholder": "Ti64"
   },
   {
-    "key": "sample_chemical_formula",
+    "key": "sample_composition",
     "type": "string",
     "optional": true,
     "multiple": false,
     "section": "Sample",
-    "description": "Chemical formula of sample",
+    "description": "Sample composition (e.g. Ti6Al4V, Mg-1wt%Y, ...)",
     "units": "",
     "placeholder": "Ti6Al4V"
   },
   {
-    "key": "sample_unit_cell",
-    "type": "list_float",
-    "optional": true,
-    "multiple": true,
-    "section": "Sample",
-    "description": "Unit cell dimensions a, b, c, alha, beta, gamma; Angstroms and degrees",
-    "units": "",
-    "placeholder": "2.511, 2.9511, 4.6843, 90, 90, 120"
-  },
-  {
-    "key": "sample_space_group",
-    "type": "int64",
-    "optional": true,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Sample space group (IUCR convention)",
-    "units": "",
-    "placeholder": "194"
+    "key": "sample_crystallographic_phases",
+    "type": "list_struct",
+    "schema": "ID3A_phases_subschema.json",
+    "optional": true
   },
   {
     "key": "sample_geometry",
@@ -609,9 +519,9 @@
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Sample geometry",
+    "description": "Sample geometry (e.g. RAMSII tensile, button, cylinder, ...)",
     "units": "",
-    "placeholder": "RAMSII tensile sample, button, cylinder"
+    "placeholder": "RAMSII tensile sample"
   },
   {
     "key": "sample_mat_ped_heat_treatment",
@@ -619,7 +529,7 @@
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Sample heat treatment, if any - input \"None\" if none",
+    "description": "Sample heat treatment, if any (e.g. annealed, ...) - input \"None\" if none",
     "units": "",
     "placeholder": "None"
   },
@@ -629,20 +539,9 @@
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Sample processing route, if any - input \"None\" if none",
+    "description": "Sample processing route, if any (e.g. extruded, rolled, ...) - input \"None\" if none",
     "units": "",
     "placeholder": "None"
-  },
-  {
-    "key": "material_safety_hazardous_samples",
-    "type": "bool",
-    "optional": false,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Is the sample hazardous?",
-    "units": "",
-    "placeholder": "false",
-    "value": [false, true]
   },
   {
     "key": "sample_state",
@@ -650,7 +549,7 @@
     "optional": true,
     "multiple": false,
     "section": "Sample",
-    "description": "Sample state",
+    "description": "Sample state (e.g. powder, polycrystal, foil, ...)",
     "units": "",
     "placeholder": "",
     "value": [
