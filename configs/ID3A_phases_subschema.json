@@ -25,5 +25,5 @@
     "description": "Unit cell dimensions a, b, c, alpha, beta, gamma [Angstroms and degrees]",
     "units": "",
     "placeholder": "2.551, 2.9511, 4.6843, 90, 90, 120"
-  },
+  }
 ]
