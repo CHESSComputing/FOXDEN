@@ -1,0 +1,29 @@
+[
+  {
+    "key": "name",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "description": "common name for phase",
+    "units": "",
+    "placeholder": "austenite"
+  },
+  {
+    "key": "space_group",
+    "type": "int64",
+    "optional": false,
+    "multiple": false,
+    "description": "space group (IUCR convention)",
+    "units": "",
+    "placeholder": "194"
+  },
+  {
+    "key": "unit_cell",
+    "type": "list_float",
+    "optional": false,
+    "multiple": false,
+    "description": "Unit cell dimensions a, b, c, alpha, beta, gamma [Angstroms and degrees]",
+    "units": "",
+    "placeholder": "2.551, 2.9511, 4.6843, 90, 90, 120"
+  }
+]

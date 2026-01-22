@@ -1,0 +1,306 @@
+[
+  {
+    "key": "did",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "facility",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "cycle",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify the run cycle (e.g. 2026-1)",
+    "units": "",
+    "placeholder": "2026-1"
+  },
+  {
+    "key": "pi",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Last name of principle investigator",
+    "units": "",
+    "placeholder": "wilson"
+  },
+  {
+    "key": "btr",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Beamtime request ID",
+    "units": "",
+    "placeholder": "wilson-1234-a"
+  },
+  {
+    "key": "experimenters",
+    "type": "string",
+    "optional": true,
+    "multiple": true,
+    "section": "User",
+    "description": "Please list the experimenter(s) who performed this data collection",
+    "units": "",
+    "placeholder": "Lastname1Initials, Lastname2Initials, etc"
+  },
+  {
+    "key": "beamline",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify beamline",
+    "units": "",
+    "placeholder": "7A",
+    "value": [
+      "7A"
+    ]
+  },
+  {
+    "key": "staff_scientist",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "User",
+    "description": "Please list the staff scientist(s) supporting this experiment",
+    "units": "",
+    "placeholder": "YeeEF, HuangQ",
+    "value": [
+      "YeeEF",
+      "HuangQ"
+    ]
+  },
+  {
+    "key": "beamline_funding_partner",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Please list the beamline funding partner",
+    "units": "",
+    "placeholder": "MACCHESS_NSF_NIH",
+    "value": [
+      "MACCHESS_NSF_NIH",
+      "CHEXS_NSF",
+      "CHESS_internal"
+    ]
+  },
+  {
+    "key": "beam_energy",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beam energy [keV]",
+    "units": "",
+    "placeholder": "11.3"
+  },
+  {
+    "key": "detectors",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Detectors used",
+    "units": "",
+    "placeholder": "eiger_4M",
+    "value": [
+      "eiger_4M",
+      "pilatus_100K",
+      "other"
+    ]
+  },
+  {
+    "key": "experiment_type",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Experiment type(s) (e.g. scattering, imaging)",
+    "units": "",
+    "placeholder": "scattering/diffraction",
+    "value": [
+      "scattering/diffraction",
+      "other"
+    ]
+  },
+  {
+    "key": "technique",
+    "type": "list_str",
+    "optional": false,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Experimental technique(s) (e.g. powder, HEDM)",
+    "units": "",
+    "placeholder": "bioSAXS_batch",
+    "value": [
+      "bioSAXS_batch",
+      "bioSAXS_anoxic_batch",
+      "bioSAXS_anoxic_SEC",
+      "bioSAXS_SEC",
+      "bioSAXS_HP",
+      "bioSAXS_airgap",
+      "myoSAXS",
+      "other"
+    ]
+  },
+  {
+    "key": "calibration",
+    "type": "bool",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Is this a calibration sample (e.g., AgBe, LaB6)?",
+    "units": "",
+    "placeholder": "false",
+    "value": [false, true]
+  },
+  {
+    "key": "data_location_raw",
+     "type": "string",
+     "optional": false,
+     "section": "DataLocations",
+     "placeholder": "/nfs/chess/raw/"
+  },
+  {
+    "key": "sample_name",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Name of sample (e.g., protein name)",
+    "units": "",
+    "placeholder": "lysozyme"
+  },
+  {
+    "key": "molecule_type",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Molecule type (protein, lipid, nucleic_acid, muscle, other)",
+    "units": "",
+    "placeholder": "protein",
+    "value": [
+      "",
+      "protein",
+      "lipid",
+      "nucleic_acid",
+      "muscle",
+      "other"
+    ]
+  },
+  {
+    "key": "concentration",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Concentration of primary component. Must include units",
+    "units": "",
+    "placeholder": "0 mg/mL"
+  },
+  {
+    "key": "additional_components",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Name and concentration of any additional components",
+    "units": "",
+    "placeholder": ""
+  },
+  {
+    "key": "buffer",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Composition and pH of buffer",
+    "units": "",
+    "placeholder": "50 mM Hepes, pH 7.5"
+  },
+  {
+    "key": "temperature",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Sample",
+    "description": "Temperature at the sample cell in Celsius",
+    "units": "Celsius",
+    "placeholder": "25"
+  },
+  {
+    "key": "buffer_file",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Batch",
+    "description": "Name of processed buffer file for background subtraction",
+    "placeholder": "A_buffer.dat"
+  },
+  {
+    "key": "column",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Chromatography",
+    "description": "Column type",
+    "placeholder": "Superdex 200 Increase 10/300"
+  },
+  {
+    "key": "flow_rate",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Chromatography",
+    "description": "Column flow rate in mL/min",
+    "units": "mL/min",
+    "placeholder": "0.5"
+  },
+  {
+    "key": "pressure",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Pressure",
+    "description": "Pressure at sample in MPa",
+    "units": "MPa",
+    "placeholder": "0.1"
+  },
+  {
+    "key": "notes",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Text field for additional notes",
+    "placeholder": "Your text here"
+  },
+  {
+    "key": "globus_link",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Globus link",
+    "units": "",
+    "placeholder": "globus link"
+  }
+]
