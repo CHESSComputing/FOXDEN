@@ -66,6 +66,7 @@
       "3A",
       "3B",
       "4B",
+      "5A",
       "7A",
       "7B2"
     ]
@@ -81,11 +82,17 @@
     "placeholder": "ShanksKS, DasA",
     "value": [
       "",
-      "ShanksKS",
       "DasA",
+      "DebefveL",
       "GustafsonSE",
       "KoJYP",
-      "NygrenKE"
+      "NygrenKE",
+      "PollockCJ",
+      "SarkerS",
+      "ShanksKS",
+      "SmieskaL",
+      "WollAR",
+      "YeeE"
     ]
   },
   {
@@ -103,26 +110,6 @@
       "MSNC_AFRL",
       "MACCHESS_NSF_NIH",
       "CHESS_internal"
-    ]
-  },
-  {
-    "key": "affiliation",
-    "type": "list_str",
-    "optional": true,
-    "multiple": false,
-    "section": "User",
-    "description": "Select affiliation",
-    "units": "",
-    "placeholder": "Basic",
-    "value": [
-      "",
-      "AirForce",
-      "Army",
-      "Navy",
-      "OtherGov",
-      "Basic",
-      "Industry",
-      "Development"
     ]
   },
   {
