@@ -10,22 +10,12 @@
     "placeholder": "CHESS"
   },
   {
-    "key": "facility",
-    "type": "string",
-    "optional": false,
-    "multiple": false,
-    "section": "User",
-    "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF",
-    "units": "",
-    "placeholder": "CHESS"
-  },
-  {
     "key": "cycle",
     "type": "string",
     "optional": false,
     "multiple": false,
     "section": "User",
-    "description": "Specify the run cycle (e.g. 2026-1)",
+    "description": "Specify the run cycle (e.g., 2026-1)",
     "units": "",
     "placeholder": "2026-1"
   },
@@ -47,17 +37,7 @@
     "section": "User",
     "description": "Beamtime request ID",
     "units": "",
-    "placeholder": "wilson-1234-a"
-  },
-  {
-    "key": "experimenters",
-    "type": "string",
-    "optional": true,
-    "multiple": true,
-    "section": "User",
-    "description": "Please list the experimenter(s) who performed this data collection",
-    "units": "",
-    "placeholder": "Lastname1Initials, Lastname2Initials, etc"
+    "placeholder": "1234-a"
   },
   {
     "key": "beamline",
@@ -73,20 +53,6 @@
     ]
   },
   {
-    "key": "staff_scientist",
-    "type": "list_str",
-    "optional": false,
-    "multiple": true,
-    "section": "User",
-    "description": "Please list the staff scientist(s) supporting this experiment",
-    "units": "",
-    "placeholder": "YeeEF, HuangQ",
-    "value": [
-      "YeeEF",
-      "HuangQ"
-    ]
-  },
-  {
     "key": "beamline_funding_partner",
     "type": "list_str",
     "optional": false,
@@ -94,12 +60,28 @@
     "section": "User",
     "description": "Please list the beamline funding partner",
     "units": "",
-    "placeholder": "MACCHESS_NSF_NIH",
+    "placeholder": "MACCHESS_CHEXS_NIH_NSF",
     "value": [
-      "MACCHESS_NSF_NIH",
-      "CHEXS_NSF",
+      "MACCHESS_CHEXS_NIH_NSF",
       "CHESS_internal"
     ]
+  },
+  {
+    "key": "data_location_raw",
+     "type": "string",
+     "optional": false,
+     "section": "DataLocations",
+     "placeholder": "/nfs/chess/raw/"
+  },
+  {
+    "key": "globus_link",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "Globus link",
+    "units": "",
+    "placeholder": "globus link"
   },
   {
     "key": "beam_energy",
@@ -112,71 +94,102 @@
     "placeholder": "11.3"
   },
   {
+    "key": "beam_flux",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Unattenuated beam flux at sample [photons/second]",
+    "units": "photons/s",
+    "placeholder": "4e12"
+  },
+  {
+    "key": "beam_size_hor",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Size of beam (horizontal FWHM) at sample [um]",
+    "units": "microns",
+    "placeholder": "100"
+  },
+  {
+    "key": "beam_size_ver",
+    "type": "float64",
+    "optional": false,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Size of beam (vertical FWHM) at sample [um]",
+    "units": "microns",
+    "placeholder": "100"
+  },
+  {
     "key": "detectors",
     "type": "list_str",
     "optional": false,
     "multiple": true,
     "section": "Experiment",
-    "description": "Detectors used",
+    "description": "Detector(s) used",
     "units": "",
     "placeholder": "eiger_4M",
     "value": [
       "eiger_4M",
-      "pilatus_100K",
       "other"
     ]
   },
   {
-    "key": "experiment_type",
+    "key": "sample_det_dist",
+    "type": "float64",
+    "optional": false,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Sample-detector distance [mm]",
+    "units": "mm",
+    "placeholder": "1400",
+  },
+  {
+    "key": "staff_scientist",
     "type": "list_str",
     "optional": false,
     "multiple": true,
     "section": "Experiment",
-    "description": "Experiment type(s) (e.g. scattering, imaging)",
+    "description": "Staff scientist(s) supporting this experiment",
     "units": "",
-    "placeholder": "scattering/diffraction",
+    "placeholder": "YeeEF, HuangQ",
     "value": [
-      "scattering/diffraction",
-      "other"
+      "YeeEF",
+      "HuangQ"
     ]
+  },
+  {
+    "key": "experimenter",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Experiment",
+    "description": "Experimenter who performed this data collection",
+    "units": "",
+    "placeholder": "Lastname1Initials"
   },
   {
     "key": "technique",
     "type": "list_str",
     "optional": false,
-    "multiple": true,
+    "multiple": false,
     "section": "Experiment",
-    "description": "Experimental technique(s) (e.g. powder, HEDM)",
+    "description": "Experimental technique",
     "units": "",
-    "placeholder": "bioSAXS_batch",
+    "placeholder": "batch",
     "value": [
-      "bioSAXS_batch",
-      "bioSAXS_anoxic_batch",
-      "bioSAXS_anoxic_SEC",
-      "bioSAXS_SEC",
-      "bioSAXS_HP",
-      "bioSAXS_airgap",
+      "batch",
+      "size_exclusion_chromatography",
+      "anoxic_batch",
+      "anoxic_size_exclusion_chromatography",
+      "high_pressure",
+      "airgap",
       "myoSAXS",
       "other"
     ]
-  },
-  {
-    "key": "calibration",
-    "type": "bool",
-    "optional": false,
-    "multiple": false,
-    "section": "Sample",
-    "description": "Is this a calibration sample (e.g., AgBe, LaB6)?",
-    "units": "",
-    "placeholder": "false",
-    "value": [false, true]
-  },
-  {
-    "key": "data_location_raw",
-     "type": "string",
-     "optional": false,
-     "section": "DataLocations",
-     "placeholder": "/nfs/chess/raw/"
   },
   {
     "key": "sample_name",
@@ -190,7 +203,7 @@
   },
   {
     "key": "molecule_type",
-    "type": "string",
+    "type": "list_str",
     "optional": false,
     "multiple": false,
     "section": "Sample",
@@ -209,10 +222,10 @@
   {
     "key": "concentration",
     "type": "string",
-    "optional": false,
+    "optional": true,
     "multiple": false,
     "section": "Sample",
-    "description": "Concentration of primary component. Must include units",
+    "description": "Concentration of primary component. Include units",
     "units": "",
     "placeholder": "0 mg/mL"
   },
@@ -229,7 +242,7 @@
   {
     "key": "buffer",
     "type": "string",
-    "optional": false,
+    "optional": true,
     "multiple": false,
     "section": "Sample",
     "description": "Composition and pH of buffer",
@@ -242,7 +255,7 @@
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Temperature at the sample cell in Celsius",
+    "description": "Temperature at the sample cell [Celsius]",
     "units": "Celsius",
     "placeholder": "25"
   },
@@ -252,7 +265,7 @@
     "optional": true,
     "multiple": false,
     "section": "Batch",
-    "description": "Name of processed buffer file for background subtraction",
+    "description": "Name of processed buffer file for background subtraction (batch mode only)",
     "placeholder": "A_buffer.dat"
   },
   {
@@ -261,7 +274,7 @@
     "optional": true,
     "multiple": false,
     "section": "Chromatography",
-    "description": "Column type",
+    "description": "Column type (chromatography modes only)",
     "placeholder": "Superdex 200 Increase 10/300"
   },
   {
@@ -270,9 +283,20 @@
     "optional": true,
     "multiple": false,
     "section": "Chromatography",
-    "description": "Column flow rate in mL/min",
+    "description": "Column flow rate [mL/min]",
     "units": "mL/min",
     "placeholder": "0.5"
+  },
+  {
+    "key": "mals",
+    "type": "bool",
+    "optional": true,
+    "multiple": false,
+    "section": "Chromatography",
+    "description": "Was MALS collected inline [true/false]",
+    "units": "",
+    "placeholder": "false"
+    "Value": [false, true]
   },
   {
     "key": "pressure",
@@ -280,27 +304,8 @@
     "optional": true,
     "multiple": false,
     "section": "Pressure",
-    "description": "Pressure at sample in MPa",
+    "description": "Pressure at sample [MPa] (high pressure mode only)",
     "units": "MPa",
     "placeholder": "0.1"
-  },
-  {
-    "key": "notes",
-    "type": "string",
-    "optional": true,
-    "multiple": false,
-    "section": "User",
-    "description": "Text field for additional notes",
-    "placeholder": "Your text here"
-  },
-  {
-    "key": "globus_link",
-    "type": "string",
-    "optional": true,
-    "multiple": false,
-    "section": "User",
-    "description": "Globus link",
-    "units": "",
-    "placeholder": "globus link"
   }
 ]
