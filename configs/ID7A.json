@@ -145,7 +145,7 @@
     "section": "Experiment",
     "description": "Sample-detector distance [mm]",
     "units": "mm",
-    "placeholder": "1400",
+    "placeholder": "1400"
   },
   {
     "key": "staff_scientist",
@@ -295,7 +295,7 @@
     "section": "Chromatography",
     "description": "Was MALS collected inline [true/false]",
     "units": "",
-    "placeholder": "false"
+    "placeholder": "false",
     "Value": [false, true]
   },
   {
