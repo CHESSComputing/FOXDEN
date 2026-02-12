@@ -145,7 +145,7 @@
     "section": "Experiment",
     "description": "Sample-detector distance [mm]",
     "units": "mm",
-    "placeholder": "1400"
+    "placeholder": "1800"
   },
   {
     "key": "staff_scientist",
@@ -235,7 +235,7 @@
     "optional": true,
     "multiple": false,
     "section": "Sample",
-    "description": "Name and concentration of any additional components",
+    "description": "Describe any additional components",
     "units": "",
     "placeholder": ""
   },
@@ -265,7 +265,7 @@
     "optional": true,
     "multiple": false,
     "section": "Batch",
-    "description": "Name of processed buffer file for background subtraction (batch mode only)",
+    "description": "Name of processed buffer file for background subtraction (batch modes only)",
     "placeholder": "A_buffer.dat"
   },
   {
@@ -293,7 +293,7 @@
     "optional": true,
     "multiple": false,
     "section": "Chromatography",
-    "description": "Was MALS collected inline [true/false]",
+    "description": "MALS/RI is also collected inline?[true/false]",
     "units": "",
     "placeholder": "false",
     "Value": [false, true]
