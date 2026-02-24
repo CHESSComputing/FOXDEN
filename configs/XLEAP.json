@@ -1,0 +1,186 @@
+[
+  {
+    "key": "did",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Dataset IDentifier",
+    "units": "",
+    "placeholder": "/"
+  },
+  {
+    "key": "facility",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Facility where the experiment was performed, e.g. CHESS, APS, ESRF",
+    "units": "",
+    "placeholder": "CHESS"
+  },
+  {
+    "key": "beamline",
+    "type": "list_str",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify beamline",
+    "units": "",
+    "placeholder": "3B",
+    "value": [
+      "",
+      "1A3",
+      "2A",
+      "3A",
+      "3B",
+      "4B",
+      "XLEAP",
+      "7A",
+      "7B2"
+    ]
+  },
+  {
+    "key": "cycle",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Specify the run cycle (e.g. 2025-2)",
+    "units": "",
+    "placeholder": "2025-2"
+  },
+  {
+    "key": "btr",
+    "type": "string",
+    "optional": false,
+    "multiple": false,
+    "section": "User",
+    "description": "Beamtime request ID",
+    "units": "",
+    "placeholder": "wilson-1234-a"
+  },
+  {
+    "key": "cesr_conditions",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "CESR fill pattern",
+    "units": "",
+    "placeholder": "9x5_bunch_mode",
+    "value": [
+      "",
+      "9_bunch_mode",
+      "21_bunch_mode",
+      "9x5_bunch_mode",
+      "13_bunch_mode",
+      "other"
+    ]
+  },
+  {
+    "key": "monochromator",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Monochromator type used",
+    "units": "",
+    "placeholder": "mono_type_1",
+    "value": [
+	"",
+	"mono_type_1",
+	"mono_type_2"
+    ]
+  },
+  {
+    "key": "beam_energy",
+    "type": "float64",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Beam energy [KeV]",
+    "units": "KeV",
+    "placeholder": "5.0",
+    "value": [
+	5.0,
+	70.0
+    ]
+  },
+  {
+    "key": "mirror",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Mirror position",
+    "units": "",
+    "placeholder": "in",
+    "value": [
+      "",
+      "in",
+      "out"
+    ]
+  },
+  {
+    "key": "focusing",
+    "type": "list_str",
+    "optional": true,
+    "multiple": false,
+    "section": "Beam",
+    "description": "Focusing optic used, if any",
+    "units": "",
+    "placeholder": "CRL",
+    "value": [
+      "",
+      "bulk",
+      "CRL"
+    ]
+  },
+  {
+    "key": "detectors",
+    "type": "list_str",
+    "optional": true,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Detectors used",
+    "units": "",
+    "placeholder": "pilatus_300K_pil5, pilatus_200K_pil9, pilatus_200K_pil11",
+    "value": [
+      "",
+      "pilatus_300K_pil5",
+      "pilatus_200K_pil9",
+      "pilatus_200K_pil11",
+      "eiger_1M",
+      "andor2",
+      "vortex",
+      "manta",
+      "other"
+    ]
+  },
+  {
+    "key": "technique",
+    "type": "list_str",
+    "optional": true,
+    "multiple": true,
+    "section": "Experiment",
+    "description": "Experimental technique(s)",
+    "units": "",
+    "placeholder": "xray_fluorescence",
+    "value": [
+      "",
+      "xray_fluorescence",
+      "other"
+    ]
+  },
+  {
+    "key": "globus_link",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "User",
+    "description": "Globus link",
+    "units": "",
+    "placeholder": "globus link"
+  }
+]
