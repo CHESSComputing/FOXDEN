@@ -90,7 +90,7 @@
     "multiple": false,
     "section": "Beam",
     "description": "Beam energy [keV]",
-    "units": "",
+    "units": "keV",
     "placeholder": "11.3"
   },
   {
