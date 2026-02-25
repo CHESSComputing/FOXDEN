@@ -37,7 +37,7 @@
     "section": "User",
     "description": "Beamtime request ID",
     "units": "",
-    "placeholder": "1234-a"
+    "placeholder": "wilson-1234-a"
   },
   {
     "key": "beamline",
