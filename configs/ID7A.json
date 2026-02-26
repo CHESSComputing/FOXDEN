@@ -206,14 +206,16 @@
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Molecule type",
+    "description": "Molecule type of primary component",
     "units": "",
     "placeholder": "",
     "value": [
+      "buffer",
       "protein",
       "lipid",
       "nucleic_acid",
       "muscle",
+      "calibrant",
       "other"
     ]
   },
@@ -233,7 +235,7 @@
     "optional": true,
     "multiple": false,
     "section": "Sample",
-    "description": "Describe any additional sample components",
+    "description": "Describe any additional sample components (ligands, etc)",
     "units": "",
     "placeholder": ""
   },
