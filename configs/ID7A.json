@@ -27,7 +27,7 @@
     "section": "User",
     "description": "Last name of principle investigator",
     "units": "",
-    "placeholder": "wilson"
+    "placeholder": "pi"
   },
   {
     "key": "btr",
@@ -37,7 +37,7 @@
     "section": "User",
     "description": "Beamtime request ID",
     "units": "",
-    "placeholder": "wilson-1234-a"
+    "placeholder": "pi-1234-a"
   },
   {
     "key": "beamline",
@@ -58,7 +58,7 @@
     "optional": false,
     "multiple": false,
     "section": "User",
-    "description": "Please list the beamline funding partner",
+    "description": "Beamline funding partner",
     "units": "",
     "placeholder": "MACCHESS_CHEXS_NIH_NSF",
     "value": [
@@ -109,7 +109,7 @@
     "optional": false,
     "multiple": false,
     "section": "Beam",
-    "description": "Size of beam (horizontal FWHM) at sample [um]",
+    "description": "Beam size (horizontal FWHM) at sample determined by blade scan [um]",
     "units": "microns",
     "placeholder": "100"
   },
@@ -119,7 +119,7 @@
     "optional": false,
     "multiple": false,
     "section": "Beam",
-    "description": "Size of beam (vertical FWHM) at sample [um]",
+    "description": "Beam size (vertical FWHM) at sample determined by blade scan [um]",
     "units": "microns",
     "placeholder": "100"
   },
@@ -133,8 +133,7 @@
     "units": "",
     "placeholder": "eiger_4M",
     "value": [
-      "eiger_4M",
-      "other"
+      "eiger_4M"
     ]
   },
   {
@@ -155,7 +154,7 @@
     "section": "Experiment",
     "description": "Staff scientist(s) supporting this experiment",
     "units": "",
-    "placeholder": "YeeEF, HuangQ",
+    "placeholder": "",
     "value": [
       "YeeEF",
       "HuangQ"
@@ -167,9 +166,9 @@
     "optional": true,
     "multiple": false,
     "section": "Experiment",
-    "description": "Experimenter who performed this data collection",
+    "description": "Experimenter who collected data",
     "units": "",
-    "placeholder": "Lastname1Initials"
+    "placeholder": "LastnameInitials"
   },
   {
     "key": "technique",
@@ -179,7 +178,7 @@
     "section": "Experiment",
     "description": "Experimental technique",
     "units": "",
-    "placeholder": "batch",
+    "placeholder": "",
     "value": [
       "batch",
       "size_exclusion_chromatography",
@@ -207,11 +206,10 @@
     "optional": false,
     "multiple": false,
     "section": "Sample",
-    "description": "Molecule type (protein, lipid, nucleic_acid, muscle, other)",
+    "description": "Molecule type",
     "units": "",
-    "placeholder": "protein",
+    "placeholder": "",
     "value": [
-      "",
       "protein",
       "lipid",
       "nucleic_acid",
@@ -235,7 +233,7 @@
     "optional": true,
     "multiple": false,
     "section": "Sample",
-    "description": "Describe any additional components",
+    "description": "Describe any additional sample components",
     "units": "",
     "placeholder": ""
   },
@@ -265,7 +263,7 @@
     "optional": true,
     "multiple": false,
     "section": "Batch",
-    "description": "Name of processed buffer file for background subtraction (batch modes only)",
+    "description": "Name of processed background subtraction file (batch only)",
     "placeholder": "A_buffer.dat"
   },
   {
@@ -274,7 +272,7 @@
     "optional": true,
     "multiple": false,
     "section": "Chromatography",
-    "description": "Column type (chromatography modes only)",
+    "description": "Column type (chromatography only)",
     "placeholder": "Superdex 200 Increase 10/300"
   },
   {
@@ -293,7 +291,7 @@
     "optional": true,
     "multiple": false,
     "section": "Chromatography",
-    "description": "MALS/RI is also collected inline?[true/false]",
+    "description": "MALS/RI is collected inline? [y/n]",
     "units": "",
     "placeholder": "false",
     "Value": [false, true]
@@ -304,7 +302,7 @@
     "optional": true,
     "multiple": false,
     "section": "Pressure",
-    "description": "Pressure at sample [MPa] (high pressure mode only)",
+    "description": "Pressure at sample [MPa] (high pressure only)",
     "units": "MPa",
     "placeholder": "0.1"
   }
