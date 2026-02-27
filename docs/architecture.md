@@ -3,7 +3,7 @@
 FOXDEN infrastructure is based on loosely coupled services, and properly
 layered/insulated as shown in the following diagram:
 
-![Implemenation](images/Implementation.png)
+![FOXDEN services](images/foxden-services.png)
 
 Users communicate with FOXDEN through secure web UI and CLI interfaces. Each user
 is authenticated and obtains an authorization token from the
