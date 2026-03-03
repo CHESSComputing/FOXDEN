@@ -111,7 +111,7 @@
     "section": "Beam",
     "description": "Beam size (horizontal FWHM) at sample determined by blade scan [um]",
     "units": "microns",
-    "placeholder": "100"
+    "placeholder": "250"
   },
   {
     "key": "beam_size_ver",
@@ -121,7 +121,7 @@
     "section": "Beam",
     "description": "Beam size (vertical FWHM) at sample determined by blade scan [um]",
     "units": "microns",
-    "placeholder": "100"
+    "placeholder": "250"
   },
   {
     "key": "detectors",
@@ -174,7 +174,7 @@
     "key": "technique",
     "type": "list_str",
     "optional": false,
-    "multiple": false,
+    "multiple": true,
     "section": "Experiment",
     "description": "Experimental technique",
     "units": "",
@@ -182,11 +182,11 @@
     "value": [
       "batch",
       "size_exclusion_chromatography",
-      "anoxic_batch",
-      "anoxic_size_exclusion_chromatography",
+      "anoxic",
       "high_pressure",
       "airgap",
       "myoSAXS",
+      "WAXS",
       "other"
     ]
   },
@@ -307,5 +307,15 @@
     "description": "Pressure at sample [MPa] (high pressure only)",
     "units": "MPa",
     "placeholder": "0.1"
+  },
+  {
+    "key": "notes",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "Notes",
+    "description": "Notes about the sample, presence of bubbles, data quality, etc.",
+    "units": "",
+    "placeholder": ""
   }
 ]
