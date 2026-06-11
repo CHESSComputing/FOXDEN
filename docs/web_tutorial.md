@@ -13,9 +13,11 @@ For our tutorial we will use a demo version of FOXDEN infrastructure.
 We will also rely on set of pre-populated records available at
 [FOXDEN demo repository](https://github.com/CHESSComputing/FOXDEN/tree/main/demo)
 
-To proceed please navigate to this foxden-demo URL and follow these steps:
+To proceed please navigate to this
+[foxden-demo URL](https://foxden-demo.classe.cornell.edu:18344/)
+and follow these steps:
 
-#### Setup VPM or SSH tunnel for remote access
+#### Setup VPN or SSH tunnel for remote access
 If you reside outside of lab network you may need to run VPN or ssh tunnel.
 Here is a simple command you need to use from your terminal
 ```
