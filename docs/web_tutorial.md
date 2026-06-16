@@ -13,9 +13,6 @@ For our tutorial we will use a demo version of FOXDEN infrastructure.
 We will also rely on set of pre-populated records available at
 [FOXDEN demo repository](https://github.com/CHESSComputing/FOXDEN/tree/main/demo)
 
-To proceed please navigate to this
-[foxden-demo URL](https://foxden-demo.classe.cornell.edu:18344/)
-
 #### Setup VPN or SSH tunnel for remote access
 If you reside outside of lab network you may need to run VPN or ssh tunnel.
 Here is a simple command you need to use from your terminal
@@ -27,6 +24,10 @@ LOCAL_PORT, e.g. 9001. The `REMOTE_PORT` you will need to know.
 
 You may use a [CLASSE VPN](https://wiki.classe.cornell.edu/Computing/ClasseVPN)
 instead or any other VPN software of your choice to access CLASSE nodes.
+
+#### foxden-demo server
+Please use the following link to access 
+[foxden-demo server](https://foxden-demo.classe.cornell.edu:18344/) server.
 
 #### Authentication page
 First time you access FOXDEN you'll be prompted for your
