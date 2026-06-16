@@ -11,7 +11,10 @@ FOXDEN provides web UI and Command Line Interface (CLI).
 ### FOXDEN web interface
 For our tutorial we will use a demo version of FOXDEN infrastructure.
 We will also rely on set of pre-populated records available at
-[FOXDEN demo repository](https://github.com/CHESSComputing/FOXDEN/tree/main/demo)
+[FOXDEN demo repository](https://github.com/CHESSComputing/FOXDEN/tree/main/demo).
+If you are outside of CLASSE network please use the following VPN or ssh tunnel
+to access the 
+[foxden-demo server](https://foxden-demo.classe.cornell.edu:18344/)
 
 #### Setup VPN or SSH tunnel for remote access
 If you reside outside of lab network you may need to run VPN or ssh tunnel.
@@ -27,7 +30,7 @@ instead or any other VPN software of your choice to access CLASSE nodes.
 
 #### foxden-demo server
 Please use the following link to access 
-[foxden-demo server](https://foxden-demo.classe.cornell.edu:18344/) server.
+[foxden-demo server](https://foxden-demo.classe.cornell.edu:18344/)
 
 #### Authentication page
 First time you access FOXDEN you'll be prompted for your
