@@ -15,7 +15,6 @@ We will also rely on set of pre-populated records available at
 
 To proceed please navigate to this
 [foxden-demo URL](https://foxden-demo.classe.cornell.edu:18344/)
-and follow these steps:
 
 #### Setup VPN or SSH tunnel for remote access
 If you reside outside of lab network you may need to run VPN or ssh tunnel.
