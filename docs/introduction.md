@@ -30,3 +30,6 @@ A strong emphasis on **cybersecurity** ensures that FOXDEN integrates industry
 best practices. Web interfaces and APIs are secured with encryption and
 token-based authentication. Each token carries specific scopes for
 fine-granularity access to underlying data and operations.
+
+## Video Tutorial
+[![Using FOXDEN](images/video-screenshot.png)](https://www.youtube.com/watch?v=7WD1Co6BtiM)
