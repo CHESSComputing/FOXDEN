@@ -12,16 +12,23 @@ Here the  main APIs:
   - `/records` end-point provides all meta-data records for given
   query, requires valid authorization token
   - `/` main end-point to search for meta-data
+  - `/tmpl/record` fetches template record
+  - `/updatedoi` updates doi information in metadata record
 - POST end-points:
   - `/` main end-point in inject meta-data record, required write authorization
     scope
   - `/search` end-point to search for meta-data records based on Query
     Language, requires valid authorization token
   - `/count` end-point provides number of documents for provided query,
+  - `/tmpl/submit/record` submits template record
   requires valid authorization token
+- PUT end-points:
+  - `/` updates metadata record
+  - `/tmpl/record` updates template record
 - DELETE end-points:
   - `/record` end-point allows delete meta-data record, requires `delete`
     authorization token
+  - `/tmp/record` end-point deletes template record
 
 ### Examples of using meta-data service APIs
 ```
