@@ -40,10 +40,18 @@ curl -X POST \
     -d '{"client":"go-client","service_query":{"query":"{}","spec":null,"sql":"","idx":0,"limit":2}}' \
     http://localhost:8300/search
 
-# retrieve concrete record with did=123456789
+# Retrieve concrete record with did=/beamline=4b/btr=btr-123/cycle=myc/samples_name=ms
+# we need to properly encode did parameter, i.e. replace / with %2F and = with %3D
+# User should rely on specific library to do this, e.g. in python
+#
+# from urllib.parse import urlencode
+# did = "/beamline=4b/btr=btr-123/cycle=myc/samples_name=ms"
+# params = {"did": did}
+# url = "http://localhost:8300?" + urlencode(params)
+
 curl -H "Accept: application/json" \
     -H "Authorization: bearer $token" \
-    http://localhost:8300/123456789
+    http://localhost:8300?did=%2Fbeamline%3D4b%2Fbtr%3Dbtr-123%2Fcycle%3Dmyc%2Fsamples_name%3Dms
 ```
 
 ### Backends
