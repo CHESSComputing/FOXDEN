@@ -2,6 +2,7 @@
 - [Introduction](/docs/introduction.md)
 <!-- - [Current system](/docs/current-system.md)-->
 - [Quick start guide](/docs/quickstart.md)
+- [arXiv preprint](https://arxiv.org/abs/2609.03105)
 
 ### FOXDEN internals
 - [Architecture](/docs/architecture.md)
