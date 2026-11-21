@@ -5,7 +5,7 @@ services
 - [Authz](https://github.com/CHESSComputing/Authz/blob/main/docs/ENDPOINTS.md)
 - [BeamPass](https://github.com/CHESSComputing/BeamPass/blob/main/docs/ENDPOINTS.md)
 - [CalibrationService](https://github.com/CHESSComputing/CalibrationService/blob/main/docs/ENDPOINTS.md)
-- [ClassInfoService](https://github.com/CHESSComputing/ClassInfoService/blob/main/docs/ENDPOINTS.md)
+- [ClasseInfoService](https://github.com/CHESSComputing/ClasseInfoService/blob/main/docs/ENDPOINTS.md)
 - [DataBookkeeping](https://github.com/CHESSComputing/DataBookkeeping/blob/main/docs/ENDPOINTS.md)
 - [DataDiscovery](https://github.com/CHESSComputing/DataDiscovery/blob/main/docs/ENDPOINTS.md)
 - [DataHub](https://github.com/CHESSComputing/DataHub/blob/main/docs/ENDPOINTS.md)
