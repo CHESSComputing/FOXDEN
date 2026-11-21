@@ -14,6 +14,7 @@
 - [DOI support](/docs/doi.md)
 
 ### FOXDEN services
+- [End-points](/docs/endpoints.md)
 - [Frontend service (web UI)](/docs/web.md)
 - [FOXDEN tools](/docs/tools.md)
 - [Command line (CLI) tool](/docs/cli.md) and [demo](/docs/demo.md)
